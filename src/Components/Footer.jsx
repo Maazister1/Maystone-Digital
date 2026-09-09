@@ -1,5 +1,5 @@
 import React from 'react';
-import logoImage from '../assets/navbar.png'; // Adjust path if your assets folder is located elsewhere
+import logoImage from '../assets/Navbar.png'; // Adjust path if your assets folder is located elsewhere
 
 const FooterSection = () => {
   return (

@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Mobile par heavy shadows aur backdrop-blur ko halka ya disable karne ke liye */
+@media (max-width: 768px) {
+  * {
+    /* Yeh mobile GPU par load kam karta hai */
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Mobile Devices Performance Boost */
+@media (max-width: 768px) {
+  /* Heavy backdrop blur mobile par lag karta hai, ise solid ya light kar dein */
+  .backdrop-blur-md, 
+  .backdrop-blur-lg, 
+  .backdrop-blur-xl {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+    background-color: rgba(28, 19, 19, 0.95) !important; /* Solid dark background */
+  }
+
+  /* Mobile par saare heavy box-shadows hata dein jo GPU khinchtay hain */
+  * {
+    box-shadow: none !important;
+  }
+}

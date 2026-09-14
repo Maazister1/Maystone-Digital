@@ -1,54 +1,5 @@
-// import React from 'react'
-// import Navbar from './Components/Navbar'
-// import Hero from './Components/Hero'
-// import Stack from './Components/Stack'
-// import Services from './Services/Services'
-// import DeliveryProcess from './Components/DeliveryProcess'
-// import AboutSection from './About/AboutSection'
-// import WhyUsSection from './Whyus/WhyUsSection'
-// import ProcessSection from './OurProcess/ProcessSection'
-// import CaseStudiesSection from './CaseStudy/CaseStudiesSection'
-// import PortfolioSection from './Portfolio/PortfolioSection'
-// import PricingSection from './Pricing/PricingSection'
-// import TestimonialsSection from './Reviews/TestimonialsSection'
-// import LatestArticlesSection from './Articles/LatestArticlesSection'
-// import ContactSection from './Contact/ContactSection'
-// import FooterSection from './Components/Footer'
-
-// function App() {
-//   return (
-
-
-// <>
-
-// <Navbar />
-// <Hero />
-// <Stack />
-// <Services />
-// <DeliveryProcess />
-// <AboutSection />
-// <WhyUsSection />
-// <ProcessSection />
-// <CaseStudiesSection />
-// <PortfolioSection />
-// <PricingSection />
-// <TestimonialsSection />
-// <LatestArticlesSection />
-// <ContactSection />
-// <FooterSection />
-
-
-// </>
-
-
-
-//   )
-// }
-
-// export default App
-
-
 import React, { useEffect } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import Lenis from 'lenis';
 
 import Navbar from './Components/Navbar';
@@ -67,9 +18,45 @@ import LatestArticlesSection from './Articles/LatestArticlesSection';
 import ContactSection from './Contact/ContactSection';
 import FooterSection from './Components/Footer';
 
+// Website Development component import from Services folder
+import WebsiteDevelopment from './Services/WebsiteDevelopment';
+import CTA from './Components/CTA';
+import MobileDevelopment from './Services/MobileDevelopment';
+import AiBpo from './Services/AiBpo';
+import FinancialReporting from './Services/FinancialReporting';
+import DigitalMarketing from './Services/DigitalMarketing';
+import CreativeBranding from './Services/CreativeBranding';
+import BackOfficeSupport from './Services/BackOfficeSupport';
+import AboutPage from './About/AboutPage';
+import ProcessPage from './OurProcess/ProcessPage';
+import BlogsPage from './Blogs/BlogsPage';
+import CaseStudiesPage from './CaseStudy/CaseStudiePage';
+import StartProject from './Contact/StartProject';
+import Pricing from './Pricing/PricingPage';
+
+
+function HomeView() {
+  return (
+    <>
+      <Hero />
+      <Stack />
+      <Services />
+      <DeliveryProcess />
+      <AboutSection />
+      <WhyUsSection />
+      <ProcessSection />
+      <CaseStudiesSection />
+      <PortfolioSection />
+      <PricingSection />
+      <TestimonialsSection />
+      <LatestArticlesSection />
+      <ContactSection />
+    </>
+  );
+}
+
 function App() {
   useEffect(() => {
-    // Agar screen width 768px se kam hai (Mobile/Tablet), toh Lenis bilkul mat chalao!
     if (window.innerWidth < 768) {
       return;
     }
@@ -93,23 +80,32 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="bg-[#0a0a0a] min-h-screen text-white font-['Outfit']">
       <Navbar />
-      <Hero />
-      <Stack />
-      <Services />
-      <DeliveryProcess />
-      <AboutSection />
-      <WhyUsSection />
-      <ProcessSection />
-      <CaseStudiesSection />
-      <PortfolioSection />
-      <PricingSection />
-      <TestimonialsSection />
-      <LatestArticlesSection />
-      <ContactSection />
+      <Routes>
+        {/* Main Home Page */}
+        <Route path="/" element={<HomeView />} />
+        
+        {/* Dedicated Web Development Page */}
+        <Route path="/services/web-development" element={<WebsiteDevelopment />} />
+        <Route path="/services/app-development" element={<MobileDevelopment />} /> 
+        <Route path="/services/ai-bpo" element={<AiBpo />} />
+        <Route path="/services/financial-reporting" element={<FinancialReporting />} />
+        <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
+        <Route path="/services/creative-branding" element={<CreativeBranding />} />
+        <Route path="/services/back-office" element={<BackOfficeSupport />} />
+        <Route path="/components/cta" element={<CTA />} />
+       <Route path="/about/aboutpage" element={<AboutPage />} />
+       <Route path="/about/processpage" element={<ProcessPage />} />
+       <Route path="/blogs/blogspage" element={<BlogsPage />} />
+       <Route path="/casestudy/casestudiepage" element={<CaseStudiesPage />} />
+       <Route path="/contact/startproject" element={<StartProject />} /> 
+       <Route path="/pricing/pricingpage" element={<Pricing />} /> 
+       
+    
+      </Routes>
       <FooterSection />
-    </>
+    </div>
   );
 }
 

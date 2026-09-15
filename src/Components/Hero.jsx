@@ -100,7 +100,7 @@ const Hero = () => {
             className="inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full font-semibold text-white border border-neutral-700 bg-neutral-900/60 hover:bg-neutral-800/80 transition-all backdrop-blur-sm text-xs"
           >
             <IconPlayerPlay className="w-3.5 h-3.5 text-[#FE5211] fill-current" />
-            <span>Explore Services</span>
+            <span>Explorerere Services</span>
           </a>
         </div>
       </div>

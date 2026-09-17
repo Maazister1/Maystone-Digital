@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { IconHeadset, IconSettings, IconDatabase, IconClipboardCheck, IconChevronDown, IconStar, IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
+import { IconHeadset, IconSettings, IconDatabase, IconClipboardCheck, IconChevronDown, IconStar, IconArrowLeft, IconArrowRight, IconShieldCheck, IconNetwork, IconCpu, IconChartBar } from '@tabler/icons-react';
 import CTA from '../Components/CTA';
 
 export default function BackOfficeSupport() {
@@ -112,9 +112,9 @@ export default function BackOfficeSupport() {
       {/* 1. HERO SECTION */}
       <div className="px-6 md:px-16 lg:px-24">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-block">
-            <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-              Back-Office Support
+          <div className="inline-block px-4 py-1.5 rounded-full border border-[#FE083B]/30 bg-[#FE083B]/10">
+            <span className="text-[#FE083B] font-serif italic text-sm md:text-base tracking-wide flex items-center gap-2">
+              ✓ Back-Office Support
             </span>
           </div>
 
@@ -184,46 +184,79 @@ export default function BackOfficeSupport() {
         </div>
       </div>
 
-      {/* 3. WHY BACK-OFFICE SUPPORT MATTERS SECTION */}
-      <div className="max-w-4xl mx-auto px-6 pt-24 text-center space-y-8">
-        <div className="inline-block">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Operational Excellence
+      {/* 3. INTELLIGENT ARCHITECTURE / BPO DIFFERENCE GRID (Style like image_7f8606.png) */}
+      <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 text-center">
+        <div className="inline-block px-4 py-1.5 rounded-full border border-[#FE083B]/30 bg-[#FE083B]/10 mb-6">
+          <span className="text-[#FE083B] font-serif italic text-sm tracking-wide flex items-center gap-2">
+            ✓ Our Difference
           </span>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.2]">
-          Efficient back-office management saves valuable time and eliminates operational bottlenecks.
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white max-w-3xl mx-auto leading-tight mb-20">
+          <span>Intelligent Architecture Built For</span> <br />
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">Smart Businesses And BPO Scaling</span>
         </h2>
 
-        <p className="text-neutral-300 text-base md:text-lg font-normal max-w-2xl mx-auto leading-relaxed">
-          Jab aapke routine administrative tasks aur data management expert hands mein hon, toh aapki team poori tarah business expansion aur revenue generation par dhyan de sakti hai.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto pt-8">
-          <div className="p-6 rounded-2xl bg-[#141211] border border-white/5 text-center shadow-lg">
-            <div className="text-[#FE083B] font-bold text-2xl">40+ Hrs</div>
-            <div className="text-xs text-neutral-400 mt-1 font-medium">Saved Weekly For Your Core Team</div>
+        {/* Line-grid layout with no rounded box corners */}
+        <div className="grid grid-cols-1 md:grid-cols-2 border-t border-white/10 text-left">
+          
+          {/* Grid Item 1 */}
+          <div className="p-8 md:p-12 border-b border-r border-white/10 flex flex-col justify-between group">
+            <div>
+              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B]">
+                <IconNetwork className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Connected Workflows & Automations</h3>
+              <p className="text-neutral-400 text-sm leading-relaxed">
+                We integrate custom CRM pipelines, automated data triggers, and back-office squads directly with your operations so logic and data stay aligned.
+              </p>
+            </div>
           </div>
-          <div className="p-6 rounded-2xl bg-[#141211] border border-white/5 text-center shadow-lg">
-            <div className="text-[#FE083B] font-bold text-2xl">100%</div>
-            <div className="text-xs text-neutral-400 mt-1 font-medium">Data Accuracy & Confidentiality</div>
-          </div>
-        </div>
 
-        <div className="pt-6 flex justify-center">
-          <a 
-            href="#contact" 
-            className="group bg-[#FE083B] text-white px-8 py-4 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#F72531] transition shadow-lg shadow-[#FE083B]/30 whitespace-nowrap"
-          >
-            <span>Optimize Your Workflow Today</span>
-            <IconArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
+          {/* Grid Item 2 */}
+          <div className="p-8 md:p-12 border-b border-white/10 flex flex-col justify-between group">
+            <div>
+              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B]">
+                <IconShieldCheck className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Ready For Enterprise Complexity</h3>
+              <p className="text-neutral-400 text-sm leading-relaxed">
+                From secure API webhooks and data encryption to multi-tier BPO squads, we handle the infrastructure robust businesses demand.
+              </p>
+            </div>
+          </div>
+
+          {/* Grid Item 3 */}
+          <div className="p-8 md:p-12 border-b md:border-b-0 border-r border-white/10 flex flex-col justify-between group">
+            <div>
+              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B]">
+                <IconCpu className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Built For Faster Scaling</h3>
+              <p className="text-neutral-400 text-sm leading-relaxed">
+                A streamlined automation setup means fewer manual bottlenecks, quicker response loops, and faster time-to-market.
+              </p>
+            </div>
+          </div>
+
+          {/* Grid Item 4 */}
+          <div className="p-8 md:p-12 flex flex-col justify-between group">
+            <div>
+              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B]">
+                <IconChartBar className="w-6 h-6" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-3">Structured For Long-Term Growth</h3>
+              <p className="text-neutral-400 text-sm leading-relaxed">
+                We engineer systems with scalability in mind so your automated workflows and outsourced teams expand smoothly as you grow.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
 
-      {/* 4. THE CORE SERVICES SECTION */}
-      <div id="services" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 mt-16">
+      {/* 4. THE CORE SERVICES SECTION (Line Grid Style) */}
+      <div id="services" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
             Core Service Offerings
@@ -236,24 +269,24 @@ export default function BackOfficeSupport() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 border-t border-white/10">
           
-          {/* Service 1: Admin & Executive Assistance */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
+          {/* Service 1 */}
+          <div className="p-8 md:p-10 border-b md:border-b-0 border-r border-white/10 flex flex-col justify-between group">
             <div>
-              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconHeadset className="w-8 h-8 text-[#FE083B]" />
+              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#FE083B]">
+                <IconHeadset className="w-7 h-7" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">1. Admin & Executive Assistance</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Routine Operations & Support</p>
-              <ul className="text-neutral-400 text-sm space-y-2 mb-6 leading-relaxed">
+              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-6">Routine Operations & Support</p>
+              <ul className="text-neutral-400 text-sm space-y-3 mb-8 leading-relaxed">
                 <li>• Calendar management & meeting scheduling</li>
                 <li>• Email inbox management & client sorting</li>
                 <li>• Document preparation & report generation</li>
                 <li>• Routine customer support coordination</li>
               </ul>
             </div>
-            <div className="pt-6 border-t border-white/5">
+            <div className="pt-6 border-t border-white/10">
               <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
                 <span>Explore Admin Support</span>
                 <span>→</span>
@@ -261,22 +294,22 @@ export default function BackOfficeSupport() {
             </div>
           </div>
 
-          {/* Service 2: CRM & Data Management */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
+          {/* Service 2 */}
+          <div className="p-8 md:p-10 border-b md:border-b-0 border-r border-white/10 flex flex-col justify-between group">
             <div>
-              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconDatabase className="w-8 h-8 text-[#FE083B]" />
+              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#FE083B]">
+                <IconDatabase className="w-7 h-7" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">2. CRM & Data Management</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Database Organization & Tracking</p>
-              <ul className="text-neutral-400 text-sm space-y-2 mb-6 leading-relaxed">
+              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-6">Database Organization & Tracking</p>
+              <ul className="text-neutral-400 text-sm space-y-3 mb-8 leading-relaxed">
                 <li>• HubSpot, Salesforce & Airtable data entry</li>
                 <li>• Lead pipeline tracking & clean-up</li>
                 <li>• Customer database organization</li>
                 <li>• Secure spreadsheet & record management</li>
               </ul>
             </div>
-            <div className="pt-6 border-t border-white/5">
+            <div className="pt-6 border-t border-white/10">
               <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
                 <span>Explore CRM Support</span>
                 <span>→</span>
@@ -284,22 +317,22 @@ export default function BackOfficeSupport() {
             </div>
           </div>
 
-          {/* Service 3: Workflow Automation */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
+          {/* Service 3 */}
+          <div className="p-8 md:p-10 flex flex-col justify-between group">
             <div>
-              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconSettings className="w-8 h-8 text-[#FE083B]" />
+              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#FE083B]">
+                <IconSettings className="w-7 h-7" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">3. Workflow Automation</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Zapier, Notion & System Setup</p>
-              <ul className="text-neutral-400 text-sm space-y-2 mb-6 leading-relaxed">
+              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-6">Zapier, Notion & System Setup</p>
+              <ul className="text-neutral-400 text-sm space-y-3 mb-8 leading-relaxed">
                 <li>• Zapier integration & task automation</li>
                 <li>• Notion workspace setup & documentation</li>
                 <li>• Internal communication systems (Slack)</li>
                 <li>• Process optimization & SOP creation</li>
               </ul>
             </div>
-            <div className="pt-6 border-t border-white/5">
+            <div className="pt-6 border-t border-white/10">
               <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
                 <span>Explore Automation</span>
                 <span>→</span>
@@ -329,26 +362,26 @@ export default function BackOfficeSupport() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 border-t border-white/10">
           {[
             { img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1000&auto=format&fit=crop", tag: "CRM Migration", title: "Enterprise HubSpot Clean-up", desc: "Organized 15,000+ customer records and optimized sales pipeline tracking." },
             { img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop", tag: "Workflow Automation", title: "Zapier Automated Onboarding", desc: "Built seamless client onboarding workflows reducing manual data entry by 80%." },
             { img: "https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=1000&auto=format&fit=crop", tag: "Admin Support", title: "Logistics Inbox & Schedule Ops", desc: "Managed executive email triage and high-volume meeting schedules daily." },
             { img: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1000&auto=format&fit=crop", tag: "Notion Systems", title: "Custom Internal Workspace Setup", desc: "Designed structured Notion databases and SOP manuals for a scaling agency." }
           ].map((project, idx) => (
-            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-4">
-              <div className="h-72 rounded-2xl bg-gradient-to-br from-neutral-900 to-black overflow-hidden relative border border-white/5">
+            <div key={idx} className="group relative p-6 md:p-8 border-b border-r border-white/10 bg-transparent">
+              <div className="h-64 rounded-xl bg-neutral-900 overflow-hidden relative border border-white/10 mb-4">
                 <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-80" />
-                <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#FE083B] border border-white/10">
+                <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#FE083B] border border-white/10">
                   {project.tag}
                 </div>
               </div>
-              <div className="p-4 flex justify-between items-center">
+              <div className="flex justify-between items-center">
                 <div>
                   <h3 className="text-lg font-bold text-white">{project.title}</h3>
                   <p className="text-xs text-neutral-400 mt-1">{project.desc}</p>
                 </div>
-                <span className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#FE083B] group-hover:border-[#FE083B] transition">
+                <span className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#FE083B] group-hover:border-[#FE083B] transition">
                   ↗
                 </span>
               </div>
@@ -368,10 +401,10 @@ export default function BackOfficeSupport() {
           </h2>
         </div>
 
-        <div className="bg-[#141211] border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative">
+        <div className="border-t border-b border-white/10 py-12 relative">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
             <div className="flex items-start gap-4 md:gap-6 flex-1">
-              <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#FE083B]/10 border border-[#FE083B]/20 flex-shrink-0 flex items-center justify-center text-[#FE083B] shadow-inner">
+              <div className="w-12 h-12 md:w-16 md:h-16 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex-shrink-0 flex items-center justify-center text-[#FE083B]">
                 <span className="text-2xl md:text-3xl font-serif font-bold">“</span>
               </div>
               <div className="space-y-6">
@@ -388,17 +421,17 @@ export default function BackOfficeSupport() {
               </div>
             </div>
 
-            <div className="flex items-center justify-between lg:justify-end gap-6 pt-6 lg:pt-0 border-t lg:border-t-0 border-white/5">
+            <div className="flex items-center justify-between lg:justify-end gap-6 pt-6 lg:pt-0 border-t lg:border-t-0 border-white/10">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
                   <IconStar key={i} className="w-5 h-5 fill-[#FE083B] text-[#FE083B]" />
                 ))}
               </div>
               <div className="flex items-center gap-3">
-                <button onClick={prevTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Previous">
+                <button onClick={prevTestimonial} className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Previous">
                   <IconArrowLeft className="w-5 h-5" />
                 </button>
-                <button onClick={nextTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Next">
+                <button onClick={nextTestimonial} className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Next">
                   <IconArrowRight className="w-5 h-5" />
                 </button>
               </div>
@@ -407,8 +440,8 @@ export default function BackOfficeSupport() {
         </div>
       </div>
 
-      {/* 7. FAQ SECTION */}
-      <div className="max-w-4xl mx-auto px-6 py-24 border-t border-white/10">
+      {/* 7. FAQ SECTION (Line Grid Style) */}
+      <div className="max-w-5xl mx-auto px-6 py-24 border-t border-white/10">
         <div className="text-center space-y-4 mb-16">
           <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
             Got Questions?
@@ -421,19 +454,19 @@ export default function BackOfficeSupport() {
           </p>
         </div>
 
-        <div className="space-y-4">
+        <div className="border-t border-white/10">
           {faqs.map((faq, index) => {
             const isOpen = openFaq === index;
             return (
-              <div key={index} className="bg-[#141211] border border-white/10 rounded-2xl overflow-hidden transition">
-                <button onClick={() => toggleFaq(index)} className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+              <div key={index} className="border-b border-white/10 transition">
+                <button onClick={() => toggleFaq(index)} className="w-full py-6 text-left flex items-center justify-between gap-4 focus:outline-none">
                   <span className="font-semibold text-white text-base md:text-lg">{faq.question}</span>
-                  <span className={`w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-neutral-300 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-[#FE083B]/20 text-[#FE083B] border-[#FE083B]/30' : ''}`}>
+                  <span className={`w-8 h-8 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-neutral-300 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-[#FE083B]/20 text-[#FE083B] border-[#FE083B]/30' : ''}`}>
                     <IconChevronDown className="w-4 h-4" />
                   </span>
                 </button>
                 {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-neutral-400 text-sm md:text-base leading-relaxed border-t border-white/5">
+                  <div className="pb-6 pt-1 text-neutral-400 text-sm md:text-base leading-relaxed">
                     {faq.answer}
                   </div>
                 )}
@@ -495,7 +528,7 @@ export default function BackOfficeSupport() {
                 
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
-                  <div className="bg-[#141211] border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 transition group shadow-xl">
+                  <div className="border border-white/10 p-8 rounded-xl bg-transparent hover:border-[#FE083B]/50 transition group">
                     <span className="text-xs font-bold text-[#FE083B] uppercase tracking-wider font-mono">
                       Phase {item.step}
                     </span>
@@ -509,7 +542,7 @@ export default function BackOfficeSupport() {
                 </div>
 
                 {/* Center Badge Node */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#141211] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.4)] z-10">
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-xl bg-[#0a0a0a] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.4)] z-10">
                   {item.step}
                 </div>
 

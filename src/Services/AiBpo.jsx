@@ -1,6 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { IconArrowRight, IconRobot, IconCpu, IconHeadset, IconAutomation, IconChevronDown, IconStar, IconArrowLeft } from '@tabler/icons-react';
+import { 
+  IconArrowRight, 
+  IconRobot, 
+  IconCpu, 
+  IconHeadset, 
+  IconAutomation, 
+  IconChevronDown, 
+  IconStar, 
+  IconArrowLeft,
+  IconCheck,
+  IconBuildingArch,
+  IconShieldLock,
+  IconChartBar,
+  IconPlus
+} from '@tabler/icons-react';
 import CTA from '../Components/CTA';
 
 export default function AiBpo() {
@@ -22,7 +36,7 @@ export default function AiBpo() {
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
     },
     {
-      quote: "Their AI workflow automation handles our customer queries seamlessly 24/7. Absolute game-changer for our scaling business.",
+      quote: "His AI workflow automation handles our customer queries seamlessly 24/7. Absolute game-changer for our scaling business.",
       name: "Sobia Khan",
       role: "Founder, Digital Agency",
       avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop"
@@ -71,6 +85,50 @@ export default function AiBpo() {
     { name: "RPA", text: "Robotic Process Automation" },
   ];
 
+  const differenceCards = [
+    {
+      icon: IconBuildingArch,
+      title: "Connected AI & Workflows",
+      desc: "We integrate custom AI models, chatbots, and backend pipelines directly with your operations so logic and data stay aligned."
+    },
+    {
+      icon: IconShieldLock,
+      title: "Ready For Enterprise Complexity",
+      desc: "From secure API webhooks and data encryption to multi-tier BPO squads, we handle the infrastructure robust businesses demand."
+    },
+    {
+      icon: IconRobot,
+      title: "Built For Faster Scaling",
+      desc: "A streamlined automation setup means fewer manual bottlenecks, quicker response loops, and faster time-to-market."
+    },
+    {
+      icon: IconChartBar,
+      title: "Structured For Long-Term Growth",
+      desc: "We engineer systems with scalability in mind so your automated workflows and outsourced teams expand smoothly as you grow."
+    }
+  ];
+
+  const services = [
+    {
+      icon: IconAutomation,
+      title: "AI Workflow Automation",
+      subtitle: "Zapier, Make.com & Webhooks",
+      desc: "Connect your apps, automate repetitive data entry, streamline lead scoring, and sync your CRMs automatically without human intervention."
+    },
+    {
+      icon: IconRobot,
+      title: "Custom AI Agents & LLMs",
+      subtitle: "OpenAI GPT & Vector DBs",
+      desc: "Train custom AI assistants on your internal documents or product catalogs to handle 24/7 customer support and instant data retrieval."
+    },
+    {
+      icon: IconHeadset,
+      title: "Outsourced Operations (BPO)",
+      subtitle: "Dedicated Remote Teams",
+      desc: "Deploy trained virtual assistants, customer success reps, and content moderators managed professionally to scale your day-to-day output."
+    }
+  ];
+
   const faqs = [
     {
       question: "How do AI agents and automation integrate with our existing software?",
@@ -87,12 +145,24 @@ export default function AiBpo() {
     {
       question: "How long does it take to deploy an AI workflow automation system?",
       answer: "Standard workflow automations and customer support bots typically take 1 to 3 weeks to build, test, and deploy, depending on your system complexity."
+    },
+    {
+      question: "Do you provide ongoing maintenance and monitoring after launch?",
+      answer: "Yes, we offer continuous system monitoring, prompt fine-tuning, and workflow maintenance to ensure peak reliability 24/7."
+    },
+    {
+      question: "Can we combine custom AI chatbots with human BPO teams?",
+      answer: "Definitely. Our hybrid model routes complex queries directly to your human remote teams while automated bots handle routine questions instantly."
     }
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] py-12 overflow-hidden">
+    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] py-12 overflow-hidden relative">
       
+      {/* Background Neon Glow Accents */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#FE083B]/10 blur-[140px] pointer-events-none rounded-full" />
+      <div className="absolute top-[45%] left-[-10%] w-[500px] h-[500px] bg-[#FE083B]/5 blur-[160px] pointer-events-none rounded-full" />
+
       {/* Infinite Marquee Animation Style */}
       <style>{`
         @keyframes marqueeScroll {
@@ -110,24 +180,24 @@ export default function AiBpo() {
       `}</style>
 
       {/* 1. HERO SECTION */}
-      <div className="px-6 md:px-16 lg:px-24">
+      <div className="px-6 md:px-16 lg:px-24 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <div className="inline-block">
-            <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
+            <span className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full border border-[#FE083B]/40 bg-[#141211]/90 text-[#FE083B] font-serif italic text-base md:text-lg tracking-wide shadow-lg">
               AI & BPO Solutions
             </span>
           </div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
             <span>Scale Faster & Cut Costs With</span> 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]"> Intelligent AI & BPO</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] via-[#ff4d6d] to-[#F72531]"> Intelligent AI & BPO</span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-normal max-w-2xl mx-auto leading-relaxed">
             Streamline your repetitive workflows, deploy custom AI agents, and delegate operational workloads to expert outsourced teams.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
             {[
               { label: 'Custom AI Agents', icon: IconRobot },
               { label: 'Workflow Automation', icon: IconAutomation },
@@ -136,7 +206,7 @@ export default function AiBpo() {
             ].map((item, idx) => {
               const IconComp = item.icon;
               return (
-                <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#141211] border border-white/10 text-xs text-neutral-300 font-medium shadow-md">
+                <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#141211]/90 border border-white/10 hover:border-[#FE083B]/40 transition text-xs text-neutral-300 font-medium shadow-md backdrop-blur-sm">
                   <IconComp className="w-4 h-4 text-[#FE083B]" />
                   <span>{item.label}</span>
                 </div>
@@ -144,17 +214,17 @@ export default function AiBpo() {
             })}
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <a 
               href="#contact" 
-              className="bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white px-8 py-3.5 rounded-full text-sm font-medium flex items-center gap-2 hover:opacity-90 transition shadow-lg shadow-[#FE083B]/25"
+              className="bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white px-8 py-3.5 rounded-full text-sm font-medium flex items-center gap-2 hover:opacity-90 transition shadow-lg shadow-[#FE083B]/30"
             >
               <span>Automate Your Workflow</span>
               <IconArrowRight className="w-4 h-4" />
             </a>
             <a 
               href="#services" 
-              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#141211] border border-white/10 hover:border-[#FE083B]/50 transition text-white"
+              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#141211]/90 border border-white/10 hover:border-[#FE083B]/50 transition text-white backdrop-blur-sm"
             >
               Explore Solutions
             </a>
@@ -163,7 +233,7 @@ export default function AiBpo() {
       </div>
 
       {/* 2. INFINITE MARQUEE SECTION */}
-      <div className="mt-24 border-t border-b border-white/10 py-10 bg-[#0c0a09]/60 backdrop-blur-md relative">
+      <div className="mt-20 border-t border-b border-white/10 py-10 bg-[#0c0a09]/80 backdrop-blur-md relative z-10">
         <div className="text-center mb-6">
           <p className="text-xs uppercase tracking-widest text-neutral-400 font-medium">
             Powered by industry-leading AI models and integration tools
@@ -184,46 +254,49 @@ export default function AiBpo() {
         </div>
       </div>
 
-      {/* 3. WHY AI & BPO MATTERS SECTION */}
-      <div className="max-w-4xl mx-auto px-6 pt-24 text-center space-y-8">
-        <div className="inline-block">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Why AI Automation & BPO
-          </span>
+      {/* 3. OUR DIFFERENCE SECTION (Divided by Lines, No Box Cards) */}
+      <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 relative z-10">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <div className="inline-block">
+            <span className="inline-flex items-center gap-1.5 px-4 py-1 rounded-full border border-[#FE083B]/30 bg-[#141211] text-[#FE083B] text-xs font-semibold tracking-wide">
+              <IconCheck className="w-3.5 h-3.5" /> Our Difference
+            </span>
+          </div>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
+            <span>Intelligent Architecture Built For</span>
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] via-[#ff4d6d] to-[#F72531] mt-1">Smart Businesses And AI Scaling</span>
+          </h2>
         </div>
 
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.2]">
-          Eliminate manual bottlenecks and scale operations without multiplying headcount costs.
-        </h2>
-
-        <p className="text-neutral-300 text-base md:text-lg font-normal max-w-2xl mx-auto leading-relaxed">
-          Modern companies save up to 70% in operational overhead by blending smart automation workflows with trained dedicated remote teams.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto pt-8">
-          <div className="p-6 rounded-2xl bg-[#141211] border border-white/5 text-center shadow-lg">
-            <div className="text-[#FE083B] font-bold text-2xl">70%</div>
-            <div className="text-xs text-neutral-400 mt-1 font-medium">Average Reduction in Operational Costs</div>
-          </div>
-          <div className="p-6 rounded-2xl bg-[#141211] border border-white/5 text-center shadow-lg">
-            <div className="text-[#FE083B] font-bold text-2xl">10x</div>
-            <div className="text-xs text-neutral-400 mt-1 font-medium">Faster Lead Response & Processing</div>
-          </div>
-        </div>
-
-        <div className="pt-6 flex justify-center">
-          <a 
-            href="#contact" 
-            className="group bg-[#FE083B] text-white px-8 py-4 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#F72531] transition shadow-lg shadow-[#FE083B]/30 whitespace-nowrap"
-          >
-            <span>Ready to scale? Let's discuss</span>
-            <IconArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
+        <div className="grid grid-cols-1 md:grid-cols-2">
+          {differenceCards.map((card, idx) => {
+            const IconComp = card.icon;
+            const isLeftCol = idx % 2 === 0;
+            const isTopRow = idx < 2;
+            return (
+              <div 
+                key={idx} 
+                className={`p-8 md:p-12 flex flex-col justify-start group transition-all duration-300 
+                  ${isLeftCol ? 'md:border-r border-white/10' : ''} 
+                  ${isTopRow ? 'border-b border-white/10' : ''}`}
+              >
+                <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:border-[#FE083B]/40 transition">
+                  <IconComp className="w-6 h-6 text-[#FE083B]" />
+                </div>
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#FE083B] transition">
+                  {card.title}
+                </h3>
+                <p className="text-neutral-400 text-sm md:text-base leading-relaxed">
+                  {card.desc}
+                </p>
+              </div>
+            );
+          })}
         </div>
       </div>
 
-      {/* 4. AI & BPO SERVICES SECTION */}
-      <div id="services" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 mt-16">
+      {/* 4. AI & BPO SERVICES SECTION (Divided by Lines, No Box Cards) */}
+      <div id="services" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
             Our Core Offerings
@@ -236,71 +309,40 @@ export default function AiBpo() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Card 1: AI Workflow Automation */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
-            <div>
-              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconAutomation className="w-8 h-8 text-[#FE083B]" />
+        <div className="grid grid-cols-1 md:grid-cols-3">
+          {services.map((service, idx) => {
+            const IconComp = service.icon;
+            const isNotLastCol = idx < services.length - 1;
+            return (
+              <div 
+                key={idx} 
+                className={`p-8 md:p-10 flex flex-col justify-between group transition-all duration-300
+                  ${isNotLastCol ? 'md:border-r border-white/10' : ''}`}
+              >
+                <div>
+                  <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 group-hover:border-[#FE083B]/40 transition">
+                    <IconComp className="w-8 h-8 text-[#FE083B]" />
+                  </div>
+                  <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
+                  <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4 font-mono">{service.subtitle}</p>
+                  <p className="text-neutral-400 text-sm leading-relaxed">
+                    {service.desc}
+                  </p>
+                </div>
+                <div className="pt-6 mt-6 border-t border-white/5">
+                  <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
+                    <span>Let's Chat</span>
+                    <span>→</span>
+                  </a>
+                </div>
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">AI Workflow Automation</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Zapier, Make.com & Webhooks</p>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Connect your apps, automate repetitive data entry, streamline lead scoring, and sync your CRMs automatically without human intervention.
-              </p>
-            </div>
-            <div className="pt-6 mt-6 border-t border-white/5">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
-                <span>Let's Chat</span>
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Card 2: AI Agents & LLM Solutions */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
-            <div>
-              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconRobot className="w-8 h-8 text-[#FE083B]" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Custom AI Agents & LLMs</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">OpenAI GPT & Vector DBs</p>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Train custom AI assistants on your internal documents or product catalogs to handle 24/7 customer support and instant data retrieval.
-              </p>
-            </div>
-            <div className="pt-6 mt-6 border-t border-white/5">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
-                <span>Let's Connect</span>
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Card 3: Outsourced Operations (BPO) */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
-            <div>
-              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconHeadset className="w-8 h-8 text-[#FE083B]" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">Outsourced Operations (BPO)</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Dedicated Remote Teams</p>
-              <p className="text-neutral-400 text-sm leading-relaxed">
-                Deploy trained virtual assistants, customer success reps, and content moderators managed professionally to scale your day-to-day output.
-              </p>
-            </div>
-            <div className="pt-6 mt-6 border-t border-white/5">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
-                <span>Let's Chat</span>
-                <span>→</span>
-              </a>
-            </div>
-          </div>
+            );
+          })}
         </div>
       </div>
 
       {/* 5. PORTFOLIO / CASE STUDIES SECTION */}
-      <div id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
+      <div id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
@@ -325,19 +367,19 @@ export default function AiBpo() {
             { img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop", tag: "SaaS Operations", title: "Automated Billing & Onboarding", desc: "Make.com pipeline connecting Stripe, Slack, and HubSpot" },
             { img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop", tag: "Outsourced BPO", title: "Dedicated Remote Support Squad", desc: "Managed team of 10+ agents scaling client success operations" }
           ].map((project, idx) => (
-            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-4">
+            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211]/90 border border-white/10 hover:border-[#FE083B]/50 transition-all duration-300 p-4 shadow-xl backdrop-blur-md">
               <div className="h-72 rounded-2xl bg-gradient-to-br from-neutral-900 to-black overflow-hidden relative border border-white/5">
                 <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-80" />
-                <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#FE083B] border border-white/10">
+                <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-medium text-[#FE083B] border border-white/10 shadow-lg">
                   {project.tag}
                 </div>
               </div>
               <div className="p-4 flex justify-between items-center">
                 <div>
-                  <h3 className="text-lg font-bold text-white">{project.title}</h3>
+                  <h3 className="text-lg font-bold text-white group-hover:text-[#FE083B] transition">{project.title}</h3>
                   <p className="text-xs text-neutral-400 mt-1">{project.desc}</p>
                 </div>
-                <span className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#FE083B] group-hover:border-[#FE083B] transition">
+                <span className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#FE083B] group-hover:border-[#FE083B] transition shadow-md">
                   ↗
                 </span>
               </div>
@@ -347,9 +389,9 @@ export default function AiBpo() {
       </div>
 
       {/* 6. CLIENT FEEDBACK SECTION */}
-      <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
+      <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 relative z-10">
         <div className="space-y-3 mb-10">
-          <span className="text-[#FE083B] font-bold uppercase tracking-widest text-xs">
+          <span className="text-[#FE083B] font-bold uppercase tracking-widest text-xs font-mono">
             CLIENT FEEDBACK
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
@@ -357,10 +399,10 @@ export default function AiBpo() {
           </h2>
         </div>
 
-        <div className="bg-[#141211] border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative">
+        <div className="bg-[#141211]/90 border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative backdrop-blur-md">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
             <div className="flex items-start gap-4 md:gap-6 flex-1">
-              <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#FE083B]/10 border border-[#FE083B]/20 flex-shrink-0 flex items-center justify-center text-[#FE083B] shadow-inner">
+              <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#FE083B]/10 border border-[#FE083B]/30 flex-shrink-0 flex items-center justify-center text-[#FE083B] shadow-inner">
                 <span className="text-2xl md:text-3xl font-serif font-bold">“</span>
               </div>
               <div className="space-y-6">
@@ -384,10 +426,10 @@ export default function AiBpo() {
                 ))}
               </div>
               <div className="flex items-center gap-3">
-                <button onClick={prevTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Previous">
+                <button onClick={prevTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10 shadow-md" aria-label="Previous">
                   <IconArrowLeft className="w-5 h-5" />
                 </button>
-                <button onClick={nextTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Next">
+                <button onClick={nextTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10 shadow-md" aria-label="Next">
                   <IconArrowRight className="w-5 h-5" />
                 </button>
               </div>
@@ -397,43 +439,86 @@ export default function AiBpo() {
       </div>
 
       {/* 7. FAQ SECTION */}
-      <div className="max-w-4xl mx-auto px-6 py-24 border-t border-white/10">
-        <div className="text-center space-y-4 mb-16">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Got Questions?
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
-            Frequently Asked Questions
-          </h2>
-          <p className="text-neutral-400 text-sm md:text-base">
-            Everything you need to know about our AI automation pipelines and outsourced BPO services.
-          </p>
-        </div>
+      <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+          
+          {/* Left Column: Heading & Booking Card */}
+          <div className="lg:col-span-5 space-y-8 sticky top-28">
+            <div className="space-y-4">
+              <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-[1.1]">
+                Got Questions?<br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] via-[#ff4d6d] to-[#F72531]">We've Got Answers</span>
+              </h2>
+              <p className="text-neutral-300 text-sm md:text-base leading-relaxed">
+                If you're unsure where to start or want to see how we can help, reach out, and we'll walk you through it.
+              </p>
+            </div>
 
-        <div className="space-y-4">
-          {faqs.map((faq, index) => {
-            const isOpen = openFaq === index;
-            return (
-              <div key={index} className="bg-[#141211] border border-white/10 rounded-2xl overflow-hidden transition">
-                <button onClick={() => toggleFaq(index)} className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
-                  <span className="font-semibold text-white text-base md:text-lg">{faq.question}</span>
-                  <span className={`w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-neutral-300 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-[#FE083B]/20 text-[#FE083B] border-[#FE083B]/30' : ''}`}>
-                    <IconChevronDown className="w-4 h-4" />
-                  </span>
-                </button>
-                {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-neutral-400 text-sm md:text-base leading-relaxed border-t border-white/5">
-                    {faq.answer}
-                  </div>
-                )}
+            {/* Booking Card */}
+            <div className="bg-[#141211]/90 border border-white/10 rounded-3xl p-6 shadow-2xl backdrop-blur-md space-y-6">
+              <div className="flex items-center gap-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" 
+                  alt="Consultant" 
+                  className="w-12 h-12 rounded-full object-cover border border-white/10" 
+                />
+                <div>
+                  <h4 className="text-white font-bold text-base">Book an Intro Call</h4>
+                  <p className="text-neutral-400 text-xs mt-0.5">Let's talk through your goals and timeline.</p>
+                </div>
               </div>
-            );
-          })}
+
+              <a 
+                href="#contact" 
+                className="w-full bg-[#0a0a0a] border border-white/10 hover:border-[#FE083B]/50 text-white px-5 py-4 rounded-full text-sm font-medium flex items-center justify-between transition shadow-inner group"
+              >
+                <span>Book a Call</span>
+                <span className="w-8 h-8 rounded-full bg-[#FE083B] flex items-center justify-center text-white group-hover:scale-105 transition">
+                  <IconArrowRight className="w-4 h-4" />
+                </span>
+              </a>
+
+              <div className="pt-2 border-t border-white/5 text-xs text-neutral-400 flex items-center gap-2">
+                <span>Prefer email?</span>
+                <a href="mailto:hello@maystone.digital" className="text-white hover:text-[#FE083B] underline transition">
+                  hello@maystone.digital
+                </a>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Accordion FAQs */}
+          <div className="lg:col-span-7 space-y-4">
+            {faqs.map((faq, index) => {
+              const isOpen = openFaq === index;
+              return (
+                <div key={index} className="bg-[#141211]/90 border border-white/10 rounded-2xl overflow-hidden transition backdrop-blur-md shadow-lg">
+                  <button 
+                    onClick={() => toggleFaq(index)} 
+                    className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none group"
+                  >
+                    <span className="font-semibold text-white text-base md:text-lg group-hover:text-[#FE083B] transition">
+                      {faq.question}
+                    </span>
+                    <span className={`w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-neutral-300 transition-transform duration-300 flex-shrink-0 ${isOpen ? 'rotate-45 bg-[#FE083B]/20 text-[#FE083B] border-[#FE083B]/30 shadow-[0_0_10px_rgba(254,8,59,0.3)]' : ''}`}>
+                      <IconPlus className="w-4 h-4" />
+                    </span>
+                  </button>
+                  {isOpen && (
+                    <div className="px-6 pb-6 pt-1 text-neutral-400 text-sm md:text-base leading-relaxed border-t border-white/5">
+                      {faq.answer}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+
         </div>
       </div>
 
       {/* 8. OUR PROCESS SECTION */}
-      <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative overflow-hidden">
+      <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
           <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
             OUR PROCESS
@@ -449,7 +534,7 @@ export default function AiBpo() {
         <div className="max-w-5xl mx-auto relative space-y-12 md:space-y-16">
           {/* Vertical Timeline Bar */}
           <div className="hidden md:block absolute left-1/2 top-10 bottom-10 w-[2px] bg-white/10 -translate-x-1/2"></div>
-          <div className="hidden md:block absolute left-1/2 top-10 w-[2px] bg-[#FE083B] -translate-x-1/2 transition-all duration-75 ease-out shadow-[0_0_12px_rgba(254,8,59,0.8)]" style={{ height: `${scrollProgress}%` }}></div>
+          <div className="hidden md:block absolute left-1/2 top-10 w-[2px] bg-[#FE083B] -translate-x-1/2 transition-all duration-75 ease-out shadow-[0_0_15px_rgba(254,8,59,0.9)]" style={{ height: `${scrollProgress}%` }}></div>
 
           {[
             {
@@ -484,7 +569,7 @@ export default function AiBpo() {
                 
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
-                  <div className="bg-[#141211] border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 transition group shadow-xl">
+                  <div className="bg-[#141211]/90 border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 transition group shadow-xl backdrop-blur-md">
                     <span className="text-xs font-bold text-[#FE083B] uppercase tracking-wider font-mono">
                       Phase {item.step}
                     </span>
@@ -498,7 +583,7 @@ export default function AiBpo() {
                 </div>
 
                 {/* Center Badge Node */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#141211] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.4)] z-10">
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#141211] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.5)] z-10 font-mono">
                   {item.step}
                 </div>
 
@@ -512,7 +597,9 @@ export default function AiBpo() {
       </div>
 
       {/* Global CTA Component */}
-      <CTA />
+      <div className="relative z-10 pt-12">
+        <CTA />
+      </div>
 
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { IconPalette, IconBrush, IconLayout, IconSparkles, IconDeviceDesktop, IconChevronDown, IconStar, IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
+import { IconPalette, IconBrush, IconLayout, IconSparkles, IconDeviceDesktop, IconChevronDown, IconStar, IconArrowLeft, IconArrowRight, IconCheck } from '@tabler/icons-react';
 import CTA from '../Components/CTA';
 
 export default function CreativeBranding() {
@@ -91,7 +91,7 @@ export default function CreativeBranding() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] py-12 overflow-hidden">
+    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] pt-8 pb-16 overflow-hidden">
       
       {/* Infinite Marquee Animation Style */}
       <style>{`
@@ -110,7 +110,7 @@ export default function CreativeBranding() {
       `}</style>
 
       {/* 1. HERO SECTION */}
-      <div className="px-6 md:px-16 lg:px-24">
+      <div className="px-6 md:px-16 lg:px-24 pt-6 pb-16">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <div className="inline-block">
             <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
@@ -120,14 +120,14 @@ export default function CreativeBranding() {
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
             <span>Build Iconic Brand Identity</span> 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]"> & Stunning UI/UX Design  <br /> & Graphic Designing </span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]"> & Stunning UI/UX Design <br /> & Graphic Designing</span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-normal max-w-2xl mx-auto leading-relaxed">
             Apne business ko professional look dein unforgettable graphic design, brand identity systems, aur user-friendly digital interfaces ke sath.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
+          <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
             {[
               { label: 'Brand Identity & Logos', icon: IconPalette },
               { label: 'UI/UX Design Systems', icon: IconLayout },
@@ -144,7 +144,7 @@ export default function CreativeBranding() {
             })}
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
+          <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <a 
               href="#contact" 
               className="bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white px-8 py-3.5 rounded-full text-sm font-medium flex items-center gap-2 hover:opacity-90 transition shadow-lg shadow-[#FE083B]/25"
@@ -162,9 +162,153 @@ export default function CreativeBranding() {
         </div>
       </div>
 
-      {/* 2. INFINITE MARQUEE SECTION */}
-      <div className="mt-24 border-t border-b border-white/10 py-10 bg-[#0c0a09]/60 backdrop-blur-md relative">
-        <div className="text-center mb-6">
+      {/* STATS COUNTER BAR */}
+      <div className="max-w-6xl mx-auto px-6 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 px-6 rounded-3xl bg-[#141211]/80 border border-white/10 backdrop-blur-md text-center">
+          <div>
+            <div className="text-3xl md:text-4xl font-extrabold text-[#FE083B]">150+</div>
+            <div className="text-xs md:text-sm text-neutral-400 mt-1">Brands Transformed</div>
+          </div>
+          <div>
+            <div className="text-3xl md:text-4xl font-extrabold text-[#FE083B]">99%</div>
+            <div className="text-xs md:text-sm text-neutral-400 mt-1">Client Satisfaction</div>
+          </div>
+          <div>
+            <div className="text-3xl md:text-4xl font-extrabold text-[#FE083B]">3x</div>
+            <div className="text-xs md:text-sm text-neutral-400 mt-1">Higher User Engagement</div>
+          </div>
+          <div>
+            <div className="text-3xl md:text-4xl font-extrabold text-[#FE083B]">4.9</div>
+            <div className="text-xs md:text-sm text-neutral-400 mt-1">Average Rating</div>
+          </div>
+        </div>
+      </div>
+
+      {/* 2. WHY BRANDING MATTERS SECTION */}
+      <div className="max-w-5xl mx-auto px-6 py-12 text-center space-y-6">
+        <div className="inline-block">
+          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
+            Why Maystone Digital
+          </span>
+        </div>
+
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.2]">
+          A Stronger Design Presence Solves Real Business Problems
+        </h2>
+
+        <p className="text-neutral-300 text-base md:text-lg font-normal max-w-2xl mx-auto leading-relaxed">
+          Aapka brand wohi hota hai jo log aapke peeche baat hain. Hum appealing visual identities aur seamless digital interfaces banate hain jo lambi yaadgar chhorhte hain.
+        </p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-6">
+          {[
+            { title: "Instant Trust", desc: "Professional aesthetics build immediate credibility with new customers." },
+            { title: "Market Recall", desc: "Distinctive logo and visual style make your business memorable." },
+            { title: "Higher Conversions", desc: "Optimized UI/UX layouts drive better user actions and retention." },
+            { title: "Brand Equity", desc: "Cohesive style guides build long-term enterprise value." }
+          ].map((card, i) => (
+            <div key={i} className="p-6 rounded-2xl bg-[#141211] border border-white/10 text-left space-y-2 hover:border-[#FE083B]/40 transition">
+              <div className="w-10 h-10 rounded-xl bg-[#FE083B]/10 flex items-center justify-center text-[#FE083B] font-bold">
+                0{i+1}
+              </div>
+              <h3 className="text-white font-bold text-lg">{card.title}</h3>
+              <p className="text-xs text-neutral-400 leading-relaxed">{card.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 3. THE CORE SERVICES SECTION */}
+      <div id="services" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 mt-12">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
+            Core Service Offerings
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
+            Graphic Design, Brand Identity & UI/UX Suite
+          </h2>
+          <p className="text-neutral-400 text-sm md:text-base">
+            Har creative asset aur interface detail aapke business ki kamyabi ke liye perfection ke sath design ki jati hai.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          
+          {/* Service 1 */}
+          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
+            <div>
+              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
+                <IconPalette className="w-8 h-8 text-[#FE083B]" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">1. Brand Identity & Logos</h3>
+              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Logo Design & Style Guides</p>
+              <ul className="text-neutral-400 text-sm space-y-3 mb-6 leading-relaxed">
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> Custom logo design & vector variations</li>
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> Brand color palettes & typography systems</li>
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> Complete brand style guide manuals</li>
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> Business cards, letterheads & stationery</li>
+              </ul>
+            </div>
+            <div className="pt-6 border-t border-white/5">
+              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
+                <span>Explore Branding</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Service 2 */}
+          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
+            <div>
+              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
+                <IconLayout className="w-8 h-8 text-[#FE083B]" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">2. UI/UX Design Systems</h3>
+              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Web & Mobile Interfaces</p>
+              <ul className="text-neutral-400 text-sm space-y-3 mb-6 leading-relaxed">
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> User research, wireframes & user flows</li>
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> High-fidelity Figma prototypes & UI</li>
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> Modern SaaS dashboards & mobile apps</li>
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> Developer-ready component libraries</li>
+              </ul>
+            </div>
+            <div className="pt-6 border-t border-white/5">
+              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
+                <span>Explore UI/UX Design</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+          {/* Service 3 */}
+          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
+            <div>
+              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
+                <IconBrush className="w-8 h-8 text-[#FE083B]" />
+              </div>
+              <h3 className="text-xl font-bold text-white mb-2">3. Graphic Design & Assets</h3>
+              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Marketing & Social Graphics</p>
+              <ul className="text-neutral-400 text-sm space-y-3 mb-6 leading-relaxed">
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> Custom social media post templates & kits</li>
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> High-converting ad creatives & banners</li>
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> Pitch decks, brochures & presentations</li>
+                <li className="flex items-center gap-2"><IconCheck className="w-4 h-4 text-[#FE083B]" /> Vector illustrations & custom icons</li>
+              </ul>
+            </div>
+            <div className="pt-6 border-t border-white/5">
+              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
+                <span>Explore Graphics</span>
+                <span>→</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      {/* 4. INFINITE MARQUEE SECTION */}
+      <div className="border-t border-b border-white/10 py-12 bg-[#0c0a09]/60 backdrop-blur-md my-16">
+        <div className="text-center mb-8">
           <p className="text-xs uppercase tracking-widest text-neutral-400 font-medium">
             Powered by industry-standard design tools and creative software
           </p>
@@ -184,134 +328,8 @@ export default function CreativeBranding() {
         </div>
       </div>
 
-      {/* 3. WHY BRANDING MATTERS SECTION */}
-      <div className="max-w-4xl mx-auto px-6 pt-24 text-center space-y-8">
-        <div className="inline-block">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            The Power of Design
-          </span>
-        </div>
-
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.2]">
-          Behtareen design instant trust, strong recognition aur customer loyalty build karta hai.
-        </h2>
-
-        <p className="text-neutral-300 text-base md:text-lg font-normal max-w-2xl mx-auto leading-relaxed">
-          Aapka brand wohi hota hai jo log aapke peeche baat karte hain. Hum appealing visual identities aur seamless digital interfaces banate hain jo lambi yaadgar chhorhte hain.
-        </p>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-xl mx-auto pt-8">
-          <div className="p-6 rounded-2xl bg-[#141211] border border-white/5 text-center shadow-lg">
-            <div className="text-[#FE083B] font-bold text-2xl">94%</div>
-            <div className="text-xs text-neutral-400 mt-1 font-medium">First Impressions Based on Design</div>
-          </div>
-          <div className="p-6 rounded-2xl bg-[#141211] border border-white/5 text-center shadow-lg">
-            <div className="text-[#FE083B] font-bold text-2xl">3x</div>
-            <div className="text-xs text-neutral-400 mt-1 font-medium">Higher User Engagement with Custom UI/UX</div>
-          </div>
-        </div>
-
-        <div className="pt-6 flex justify-center">
-          <a 
-            href="#contact" 
-            className="group bg-[#FE083B] text-white px-8 py-4 rounded-full text-sm font-medium flex items-center gap-2 hover:bg-[#F72531] transition shadow-lg shadow-[#FE083B]/30 whitespace-nowrap"
-          >
-            <span>Redefine Your Brand Today</span>
-            <IconArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-          </a>
-        </div>
-      </div>
-
-      {/* 4. THE CORE SERVICES SECTION (Graphic Design, Identity, UI/UX) */}
-      <div id="services" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 mt-16">
-        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Core Service Offerings
-          </span>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
-            Graphic Design, Brand Identity & UI/UX Suite
-          </h2>
-          <p className="text-neutral-400 text-sm md:text-base">
-            Har creative asset aur interface detail aapke business ki kamyabi ke liye perfection ke sath design ki jati hai.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          
-          {/* Service 1: Brand Identity & Logos */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
-            <div>
-              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconPalette className="w-8 h-8 text-[#FE083B]" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">1. Brand Identity & Logos</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Logo Design & Style Guides</p>
-              <ul className="text-neutral-400 text-sm space-y-2 mb-6 leading-relaxed">
-                <li>• Custom logo design aur vector variations</li>
-                <li>• Brand color palettes aur typography systems</li>
-                <li>• Complete brand style guide manuals</li>
-                <li>• Business cards, letterheads & stationery</li>
-              </ul>
-            </div>
-            <div className="pt-6 border-t border-white/5">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
-                <span>Explore Branding</span>
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Service 2: UI/UX Design Systems */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
-            <div>
-              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconLayout className="w-8 h-8 text-[#FE083B]" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">2. UI/UX Design Systems</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Web & Mobile Interfaces</p>
-              <ul className="text-neutral-400 text-sm space-y-2 mb-6 leading-relaxed">
-                <li>• User research, wireframes & user flows</li>
-                <li>• High-fidelity Figma prototypes & UI design</li>
-                <li>• Modern SaaS dashboards & mobile apps</li>
-                <li>• Developer-ready component libraries</li>
-              </ul>
-            </div>
-            <div className="pt-6 border-t border-white/5">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
-                <span>Explore UI/UX Design</span>
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-
-          {/* Service 3: Graphic Design & Assets */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
-            <div>
-              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconBrush className="w-8 h-8 text-[#FE083B]" />
-              </div>
-              <h3 className="text-xl font-bold text-white mb-2">3. Graphic Design & Assets</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Marketing & Social Graphics</p>
-              <ul className="text-neutral-400 text-sm space-y-2 mb-6 leading-relaxed">
-                <li>• Custom social media post templates & kits</li>
-                <li>• High-converting ad creatives & banners</li>
-                <li>• Pitch decks, brochures & presentations</li>
-                <li>• Vector illustrations & custom icons</li>
-              </ul>
-            </div>
-            <div className="pt-6 border-t border-white/5">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
-                <span>Explore Graphics</span>
-                <span>→</span>
-              </a>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
       {/* 5. PORTFOLIO / CASE STUDIES SECTION */}
-      <div id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
+      <div id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
             <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
@@ -329,15 +347,14 @@ export default function CreativeBranding() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {[
-            { img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop", tag: "Brand Identity", title: "Luxury Fashion Rebrand", desc: "Complete brand identity system, custom logo, and packaging guidelines design." },
-            { img: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=1000&auto=format&fit=crop", tag: "UI/UX Design", title: "SaaS Analytics Dashboard UI", desc: "Clean, modern Figma UI/UX system for an enterprise financial portal." },
-            { img: "https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=1000&auto=format&fit=crop", tag: "Graphic Design", title: "Tech Startup Social Kit", desc: "High-converting social media marketing templates and advertising banners." },
-            { img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000&auto=format&fit=crop", tag: "Mobile App UI", title: "Fintech Mobile Application", desc: "Intuitive user flows and sleek dark-mode mobile screens designed in Figma." }
+            { img: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1000&auto=format&fit=crop", tag: "Brand Identity", title: "Luxury Fashion Rebrand", desc: "Complete brand identity system and packaging guidelines." },
+            { img: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=1000&auto=format&fit=crop", tag: "UI/UX Design", title: "SaaS Analytics Dashboard", desc: "Clean, modern Figma UI/UX system for enterprise." },
+            { img: "https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=1000&auto=format&fit=crop", tag: "Graphic Design", title: "Tech Startup Social Kit", desc: "High-converting social marketing templates & banners." }
           ].map((project, idx) => (
-            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-4">
-              <div className="h-72 rounded-2xl bg-gradient-to-br from-neutral-900 to-black overflow-hidden relative border border-white/5">
+            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-4 hover:border-[#FE083B]/50 transition">
+              <div className="h-64 rounded-2xl bg-gradient-to-br from-neutral-900 to-black overflow-hidden relative border border-white/5">
                 <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-80" />
                 <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#FE083B] border border-white/10">
                   {project.tag}
@@ -357,7 +374,112 @@ export default function CreativeBranding() {
         </div>
       </div>
 
-      {/* 6. CLIENT FEEDBACK SECTION */}
+      {/* 6. TEAM / ABOUT CREATIVE AGENCY SECTION */}
+      <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
+        <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 md:p-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
+              Who We Are
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+              A Team That Turns Ideas Into Digital Experiences
+            </h2>
+            <p className="text-neutral-400 text-sm md:text-base leading-relaxed">
+              Hum sirf designs nahi banate, hum aisi visual stories create karte hain jo aapke audience ke sath connect karti hain aur business growth ko accelerate karti hain.
+            </p>
+            <div className="space-y-3 pt-2">
+              <div className="flex items-center gap-3 text-sm text-neutral-300">
+                <div className="w-6 h-6 rounded-full bg-[#FE083B]/20 flex items-center justify-center text-[#FE083B]">✓</div>
+                <span>Strategic brand positioning & competitor analysis</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-neutral-300">
+                <div className="w-6 h-6 rounded-full bg-[#FE083B]/20 flex items-center justify-center text-[#FE083B]">✓</div>
+                <span>Pixel-perfect Figma UI/UX design systems</span>
+              </div>
+              <div className="flex items-center gap-3 text-sm text-neutral-300">
+                <div className="w-6 h-6 rounded-full bg-[#FE083B]/20 flex items-center justify-center text-[#FE083B]">✓</div>
+                <span>End-to-end vector asset handover</span>
+              </div>
+            </div>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden h-80 border border-white/10">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop" alt="Design team collaboration" className="w-full h-full object-cover opacity-80 hover:scale-105 transition duration-700" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-6">
+              <div className="text-xs text-neutral-300 font-mono">
+                <span className="text-[#FE083B] font-bold">MAYSTONE STUDIO</span> — CREATIVE WORKSPACE
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 7. PRICING / PLANS SECTION */}
+      <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
+        <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
+          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
+            Flexible Investment
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
+            Choose a Plan That Fits Your Goals
+          </h2>
+          <p className="text-neutral-400 text-sm md:text-base">
+            Transparent pricing packages designed for startups, growing brands, and established enterprises.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+          {[
+            {
+              name: "Brand Starter",
+              price: "$799",
+              desc: "Ideal for early-stage startups needing a solid identity foundation.",
+              features: ["Custom Logo Design", "Color Palette & Typography", "Basic Brand Guidelines", "Stationery Kit", "Vector Source Files (AI, EPS)"]
+            },
+            {
+              name: "UI/UX Suite",
+              price: "$1,499",
+              desc: "Perfect for SaaS apps and modern websites needing top-tier interfaces.",
+              features: ["Complete Brand Identity", "Wireframes & User Flows", "Figma High-Fi Prototypes", "Developer Design System", "Unlimited Revisions"],
+              popular: true
+            },
+            {
+              name: "Enterprise Rebrand",
+              price: "$2,999",
+              desc: "Comprehensive creative suite for established companies scaling up.",
+              features: ["Full Brand Transformation", "Web & Mobile UI/UX Design", "Social Media Asset Kit", "Pitch Deck & Marketing Banners", "Dedicated Design Director"]
+            }
+          ].map((plan, i) => (
+            <div key={i} className={`rounded-3xl p-8 flex flex-col justify-between transition relative ${plan.popular ? 'bg-[#141211] border-2 border-[#FE083B] shadow-2xl shadow-[#FE083B]/10' : 'bg-[#141211] border border-white/10'}`}>
+              {plan.popular && (
+                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
+                  Most Popular
+                </div>
+              )}
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">{plan.name}</h3>
+                <p className="text-xs text-neutral-400 mb-6">{plan.desc}</p>
+                <div className="text-3xl md:text-4xl font-extrabold text-white mb-6">
+                  {plan.price} <span className="text-xs text-neutral-400 font-normal">/ project</span>
+                </div>
+                <ul className="space-y-3 mb-8 text-sm text-neutral-300">
+                  {plan.features.map((feat, idx) => (
+                    <li key={idx} className="flex items-center gap-2">
+                      <IconCheck className="w-4 h-4 text-[#FE083B]" />
+                      <span>{feat}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <a href="#contact" className={`w-full py-3.5 rounded-full text-sm font-medium flex items-center justify-center gap-2 transition ${plan.popular ? 'bg-[#FE083B] text-white hover:bg-[#F72531] shadow-lg shadow-[#FE083B]/25' : 'bg-white/5 border border-white/10 text-white hover:bg-white/10'}`}>
+                <span>Get Started</span>
+                <span>→</span>
+              </a>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* 8. CLIENT FEEDBACK SECTION */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
         <div className="space-y-3 mb-10">
           <span className="text-[#FE083B] font-bold uppercase tracking-widest text-xs">
@@ -407,8 +529,8 @@ export default function CreativeBranding() {
         </div>
       </div>
 
-      {/* 7. FAQ SECTION */}
-      <div className="max-w-4xl mx-auto px-6 py-24 border-t border-white/10">
+      {/* 9. FAQ SECTION */}
+      <div className="max-w-4xl mx-auto px-6 py-20 border-t border-white/10">
         <div className="text-center space-y-4 mb-16">
           <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
             Got Questions?
@@ -443,7 +565,7 @@ export default function CreativeBranding() {
         </div>
       </div>
 
-      {/* 8. OUR PROCESS SECTION */}
+      {/* 10. OUR PROCESS SECTION */}
       <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative overflow-hidden">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
           <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">

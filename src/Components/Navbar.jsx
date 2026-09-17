@@ -88,24 +88,24 @@ const Navbar = () => {
         />
       </a>
 
-
       <nav
         id="menu"
         className={`max-md:absolute max-md:top-0 max-md:left-0 max-md:overflow-hidden items-center justify-center max-md:h-screen transition-[width] duration-300 max-md:bg-[#0a0a0a]/95 max-md:backdrop-blur-md flex-col md:flex-row flex gap-8 text-neutral-300 text-sm font-medium ${
           isOpen ? 'max-md:w-full' : 'max-md:w-0'
         }`}>
+        
         {/* Services Dropdown Container */}
         <div 
           className="relative"
           ref={dropdownRef}
-          onMouseEnter={() => setIsServicesOpen(true)}
-          onMouseLeave={() => setIsServicesOpen(false)}>
+        >
           <button 
             onClick={() => setIsServicesOpen(prev => !prev)}
             className="flex items-center gap-1 hover:text-red-500 transition py-2 focus:outline-none cursor-pointer">
             Services 
             <IconChevronDown className={`w-4 h-4 transition-transform duration-200 ${isServicesOpen ? 'rotate-180' : ''}`} />
           </button>
+
           {/* Dropdown Card (2 Columns Layout) */}
           {isServicesOpen && (
             <div className="absolute top-full left-0 w-[620px] bg-[#141211] border border-white/10 rounded-2xl shadow-2xl p-6 grid grid-cols-2 gap-4 mt-2 text-left z-50">
@@ -117,10 +117,7 @@ const Navbar = () => {
                     setIsServicesOpen(false);
                     setIsOpen(false);
                   }}
-                  className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors group"
-                  
-                  
-                  >
+                  className="flex items-start gap-4 p-3 rounded-xl hover:bg-white/5 transition-colors group">
                   <div className="p-3 rounded-xl border border-white/10 bg-[#1c1917] group-hover:border-red-500/50 flex items-center justify-center shrink-0">
                     {service.icon}
                   </div>
@@ -146,7 +143,7 @@ const Navbar = () => {
         
         <button 
           onClick={() => setIsOpen(false)} 
-          className="md:hidden text-neutral-400 hover:text-white focus:outline-none absolute top-6 right-6"
+            className="md:hidden text-neutral-400 hover:text-white focus:outline-none absolute top-6 right-6"
           aria-label="Close Menu"
         >
           <IconX className="w-6 h-6" />

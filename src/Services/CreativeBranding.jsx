@@ -112,11 +112,16 @@ export default function CreativeBranding() {
       {/* 1. HERO SECTION */}
       <div className="px-6 md:px-16 lg:px-24 pt-6 pb-16">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-block">
+          {/* <div className="inline-block">
             <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
               Creative Branding & Graphic Design
             </span>
-          </div>
+          </div> */}
+          <div className="inline-block">
+  <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+    Creative Branding & Graphic Design
+  </span>
+</div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
             <span>Build Iconic Brand Identity</span> 
@@ -187,9 +192,9 @@ export default function CreativeBranding() {
       {/* 2. WHY BRANDING MATTERS SECTION */}
       <div className="max-w-5xl mx-auto px-6 py-12 text-center space-y-6">
         <div className="inline-block">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Why Maystone Digital
-          </span>
+       <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+   Why Maystone Digital
+  </span>
         </div>
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white leading-[1.2]">
@@ -221,9 +226,9 @@ export default function CreativeBranding() {
       {/* 3. THE CORE SERVICES SECTION */}
       <div id="services" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 mt-12">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Core Service Offerings
-          </span>
+          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+   Core Service Offerings
+  </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             Graphic Design, Brand Identity & UI/UX Suite
           </h2>
@@ -332,9 +337,9 @@ export default function CreativeBranding() {
       <div id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
-            <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-              Featured Work
-            </span>
+            <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+    Featured Work
+  </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mt-2">
               Creative Branding & UI/UX Portfolio
             </h2>
@@ -378,9 +383,9 @@ export default function CreativeBranding() {
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
         <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 md:p-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-              Who We Are
-            </span>
+          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+Who We Are
+  </span>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
               A Team That Turns Ideas Into Digital Experiences
             </h2>
@@ -416,9 +421,9 @@ export default function CreativeBranding() {
       {/* 7. PRICING / PLANS SECTION */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Flexible Investment
-          </span>
+          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+ Flexible Investment
+  </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             Choose a Plan That Fits Your Goals
           </h2>
@@ -532,9 +537,9 @@ export default function CreativeBranding() {
       {/* 9. FAQ SECTION */}
       <div className="max-w-4xl mx-auto px-6 py-20 border-t border-white/10">
         <div className="text-center space-y-4 mb-16">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Got Questions?
-          </span>
+          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+Got Questions?
+  </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             Frequently Asked Questions
           </h2>
@@ -568,9 +573,9 @@ export default function CreativeBranding() {
       {/* 10. OUR PROCESS SECTION */}
       <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative overflow-hidden">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            OUR PROCESS
-          </span>
+          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+   OUR PROCESS
+  </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             A Creative & Collaborative Design Process
           </h2>

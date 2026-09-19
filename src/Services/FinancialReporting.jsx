@@ -98,9 +98,11 @@ export default function FinancialReporting() {
 
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Tag */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FE083B]/10 border border-[#FE083B]/30 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#FE083B] mb-4">
-              Financial Reporting & Tax
-            </div>
+            <div className="inline-block">
+  <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+    Financial Reporting & Tax
+  </span>
+</div>
 
             <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] max-w-4xl mx-auto">
               Precise financial <br />

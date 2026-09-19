@@ -182,12 +182,11 @@ export default function AiBpo() {
       {/* 1. HERO SECTION */}
       <div className="px-6 md:px-16 lg:px-24 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-block">
-            <span className="inline-flex items-center gap-1.5 px-5 py-1.5 rounded-full border border-[#FE083B]/40 bg-[#141211]/90 text-[#FE083B] font-serif italic text-base md:text-lg tracking-wide shadow-lg">
-              AI & BPO Solutions
-            </span>
-          </div>
-
+        <div className="inline-block">
+        <h3 className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-[#FA0E33]">
+         AI & BPO Solutions
+         </h3>
+         </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
             <span>Scale Faster & Cut Costs With</span> 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] via-[#ff4d6d] to-[#F72531]"> Intelligent AI & BPO</span>
@@ -257,11 +256,6 @@ export default function AiBpo() {
       {/* 3. OUR DIFFERENCE SECTION (Divided by Lines, No Box Cards) */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <div className="inline-block">
-            <span className="inline-flex items-center gap-1.5 px-4 py-1 rounded-full border border-[#FE083B]/30 bg-[#141211] text-[#FE083B] text-xs font-semibold tracking-wide">
-              <IconCheck className="w-3.5 h-3.5" /> Our Difference
-            </span>
-          </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             <span>Intelligent Architecture Built For</span>
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] via-[#ff4d6d] to-[#F72531] mt-1">Smart Businesses And AI Scaling</span>
@@ -298,9 +292,11 @@ export default function AiBpo() {
       {/* 4. AI & BPO SERVICES SECTION (Divided by Lines, No Box Cards) */}
       <div id="services" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Our Core Offerings
-          </span>
+          <div className="inline-block">
+  <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+    Our Core Offerings
+  </span>
+</div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             Smart Automation & Outsourced Growth
           </h2>
@@ -345,9 +341,12 @@ export default function AiBpo() {
       <div id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
-            <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
+            {/* <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
               Success Stories
-            </span>
+            </span> */}
+            <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+    Success Stories
+  </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mt-2">
               Featured AI & BPO Deployments
             </h2>
@@ -520,9 +519,9 @@ export default function AiBpo() {
       {/* 8. OUR PROCESS SECTION */}
       <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            OUR PROCESS
-          </span>
+          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+Our Process
+  </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             A Clear, Collaborative Implementation Process
           </h2>

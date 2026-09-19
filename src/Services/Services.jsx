@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { 
   IconCode, 
   IconRobot, 
@@ -7,46 +9,53 @@ import {
   IconSpeakerphone, 
   IconPalette, 
   IconHeadset, 
-  IconArrowRight 
+  IconArrowRight,
+  IconDeviceMobile
 } from '@tabler/icons-react';
 
 const Services = () => {
   const servicesList = [
     {
       icon: <IconCode className="w-5 h-5 text-white" />,
-      title: "Digital Solutions",
-      description: "High-performance websites, web apps and platforms engineered for speed, scale and conversion.",
-      link: "#digital-solutions"
+      title: "Web Development",
+      description: "Bespoke sites, apps & platforms engineered for speed, scale and conversion.",
+      link: "/services/web-development"
+    },
+    {
+      icon: <IconDeviceMobile className="w-5 h-5 text-white" />,
+      title: "Mobile App Development",
+      description: "Mobile App Development Support and high-performance applications.",
+      link: "/services/app-development"
     },
     {
       icon: <IconRobot className="w-5 h-5 text-white" />,
       title: "AI & BPO",
       description: "AI-driven automation and outsourced back-office operations that cut costs and boost efficiency.",
-      link: "#ai-bpo"
+      link: "/services/ai-bpo"
     },
     {
       icon: <IconCalculator className="w-5 h-5 text-white" />,
       title: "Financial Reporting & Tax Advisory",
       description: "Accurate management reporting, bookkeeping and expert tax advisory to keep you compliant.",
-      link: "#financial-reporting"
+      link: "/services/financial-reporting"
     },
     {
       icon: <IconSpeakerphone className="w-5 h-5 text-white" />,
-      title: "Marketing",
+      title: "Digital Marketing",
       description: "SEO, PPC, paid social and content strategy built to generate measurable, sustainable growth.",
-      link: "#marketing"
+      link: "/services/digital-marketing"
     },
     {
       icon: <IconPalette className="w-5 h-5 text-white" />,
-      title: "Creative & Branding",
+      title: "Branding & Graphic Designing",
       description: "Distinctive brand identities, UI/UX design and creative campaigns that make you unforgettable.",
-      link: "#creative-branding"
+      link: "/services/creative-branding"
     },
     {
       icon: <IconHeadset className="w-5 h-5 text-white" />,
       title: "Back-Office Support",
-      description: "Reliable administrative and operational support so your team can focus on growth.",
-      link: "#back-office"
+      description: "Reliable administrative and workflow support so your team can focus on growth.",
+      link: "/services/back-office"
     }
   ];
 
@@ -116,7 +125,7 @@ const Services = () => {
             Everything you need, <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">under one roof</span>
           </h2>
           <p className="text-neutral-400 text-xs sm:text-sm mt-4 max-w-xl mx-auto font-normal leading-relaxed">
-            Six connected disciplines that work together to move your business forward.
+            Connected disciplines that work together to move your business forward.
           </p>
         </motion.div>
 
@@ -138,7 +147,7 @@ const Services = () => {
                   scale: 1.01,
                   transition: { duration: 0.25, ease: "easeOut" } 
                 }}
-                className="group relative bg-[#0D0B0B] border border-neutral-800 hover:border-[#FA0E33] rounded-2xl p-8 flex flex-col justify-between shadow-xl shadow-black/60 hover:shadow-2xl hover:shadow-[#FA0E33]/20 backdrop-blur-md transition-colors duration-300 cursor-pointer"
+                className="group relative bg-[#0D0B0B] border border-neutral-800 hover:border-[#FA0E33] rounded-2xl p-8 flex flex-col justify-between shadow-xl shadow-black/60 hover:shadow-2xl hover:shadow-[#FA0E33]/30 backdrop-blur-md transition-colors duration-300 cursor-pointer overflow-hidden"
               >
                 <div>
                   {/* Icon Box with Smooth Hover Zoom */}
@@ -159,17 +168,17 @@ const Services = () => {
 
                 {/* Learn More Link */}
                 <div>
-                  <a
-                    href={service.link}
+                  <Link
+                    to={service.link}
                     className="inline-flex items-center gap-2 text-xs font-semibold text-white group-hover:text-[#FE5211] transition-colors"
                   >
                     <span>Learn more</span>
                     <IconArrowRight className="w-3.5 h-3.5 transition-transform duration-300 group-hover:translate-x-1.5 text-[#FE5211]" />
-                  </a>
+                  </Link>
                 </div>
 
-                {/* Top Glowing Border Accent on Hover */}
-                <div className="absolute top-0 left-6 right-6 h-[2px] bg-gradient-to-r from-transparent via-[#FA0E33] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                {/* Exact Top Glowing Border Accent matching image reference */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-[2px] bg-gradient-to-r from-transparent via-[#FA0E33] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 shadow-[0_0_12px_#FA0E33]"></div>
               </motion.div>
             );
           })}

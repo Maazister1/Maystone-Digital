@@ -74,11 +74,12 @@ export default function DigitalMarketing() {
 
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Converted into a Tag/Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#FE083B]/10 border border-[#FE083B]/30 text-xs sm:text-sm font-semibold uppercase tracking-wider text-[#FE083B] mb-6">
-              Digital Marketing & Growth Systems
-            </div>
-
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] max-w-4xl mx-auto">
+               <div className="inline-block">
+  <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+     Digital Marketing & Growth Systems
+  </span>
+</div>
+<h1 className="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.1] max-w-4xl mx-auto">
               Campaigns, content and channels that <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">earn attention</span>
             </h1>

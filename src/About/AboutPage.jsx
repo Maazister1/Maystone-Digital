@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { IconArrowRight, IconTarget, IconEye, IconShieldCheck, IconUsers, IconSparkles, IconAward, IconCode, IconDeviceLaptop, IconServer, IconRocket } from '@tabler/icons-react';
+import OurTeam from '../OurTeam/OurTeam';
 
 export default function AboutPage() {
   const stats = [
@@ -11,39 +12,39 @@ export default function AboutPage() {
   ];
 
   const milestones = [
-    { year: "2021", title: "The Foundation", desc: "Small freelance web dev and creative design operations start kiye." },
-    { year: "2023", title: "Full-Stack Expansion", desc: "React, Node.js, aur mobile app development services add ki gayi." },
-    { year: "2024", title: "Digital Agency Scaling", desc: "Performance marketing, UI/UX systems, aur enterprise support teams onboard huin." },
-    { year: "2026", title: "Global Digital Partner", desc: "150+ successful projects deliver karte hue international standards establish kiye." }
+    { year: "2021", title: "The Foundation", desc: "Initiated small-scale freelance web development and creative design operations." },
+    { year: "2023", title: "Full-Stack Expansion", desc: "Integrated React, Node.js, and comprehensive mobile app development services." },
+    { year: "2024", title: "Digital Agency Scaling", desc: "Onboarded performance marketing, UI/UX systems, and enterprise support teams." },
+    { year: "2026", title: "Global Digital Partner", desc: "Successfully delivered 150+ projects while establishing international quality standards." }
   ];
 
   const expertises = [
-    { icon: <IconCode className="w-6 h-6 text-[#FE083B]" />, title: "Full-Stack Web Dev", desc: "React, Next.js, Node.js, Python, aur modern cloud databases par high-performing web applications." },
-    { icon: <IconDeviceLaptop className="w-6 h-6 text-[#FE083B]" />, title: "Creative Branding & UI/UX", desc: "Figma design systems, custom vector logos, brand manuals, aur intuitive user interfaces." },
-    { icon: <IconServer className="w-6 h-6 text-[#FE083B]" />, title: "Back-Office & Automation", desc: "Zapier workflows, Notion workspaces, CRM data management, aur admin assistance." },
-    { icon: <IconRocket className="w-6 h-6 text-[#FE083B]" />, title: "Performance Marketing", desc: "Google Ads (PPC), Meta Ads, aur targeted campaigns jo direct ROI generate karte hain." }
+    { icon: <IconCode className="w-6 h-6 text-[#FE083B]" />, title: "Full-Stack Web Dev", desc: "High-performing web applications built with React, Next.js, Node.js, Python, and modern cloud databases." },
+    { icon: <IconDeviceLaptop className="w-6 h-6 text-[#FE083B]" />, title: "Creative Branding & UI/UX", desc: "Figma design systems, custom vector logos, brand manuals, and intuitive user interfaces." },
+    { icon: <IconServer className="w-6 h-6 text-[#FE083B]" />, title: "Back-Office & Automation", desc: "Zapier workflows, Notion workspaces, CRM data management, and administrative assistance." },
+    { icon: <IconRocket className="w-6 h-6 text-[#FE083B]" />, title: "Performance Marketing", desc: "Google Ads (PPC), Meta Ads, and targeted campaigns designed to generate direct ROI." }
   ];
 
   const values = [
     {
       icon: <IconTarget className="w-6 h-6 text-[#FE083B]" />,
       title: "Result-Driven Focus",
-      description: "Hum sirf aesthetic designs ya standard code nahi banate, balki aisi solutions dete hain jo aapke business ki growth aur revenue ko directly boost karein."
+      description: "We go beyond standard code and aesthetics to build solutions that directly boost your business growth and revenue."
     },
     {
       icon: <IconShieldCheck className="w-6 h-6 text-[#FE083B]" />,
       title: "Uncompromising Quality",
-      description: "Code quality se lekar UI/UX tak, har project mein highest standards maintain kiye jaate hain taake long-term reliability milti rahe."
+      description: "From code architecture to UI/UX execution, we maintain the highest industry standards for long-term reliability."
     },
     {
       icon: <IconSparkles className="w-6 h-6 text-[#FE083B]" />,
       title: "Innovation & Speed",
-      description: "Latest tech stacks aur smart workflows ke zariye fast, scalable aur future-ready products deliver karte hain."
+      description: "Leveraging cutting-edge tech stacks and smart workflows to deliver fast, scalable, and future-ready products."
     },
     {
       icon: <IconUsers className="w-6 h-6 text-[#FE083B]" />,
       title: "Client-Centric Partnership",
-      description: "Hum clients ko sirf ek project nahi maante, balki long-term tech partner ke tor par unke vision ko reality mein convert karte hain."
+      description: "We act as your long-term technological partner, transforming your vision into reality with dedication."
     }
   ];
 
@@ -53,18 +54,17 @@ export default function AboutPage() {
       {/* 1. HERO SECTION */}
       <div className="max-w-4xl mx-auto text-center space-y-6 pt-8 mb-20">
         <div className="inline-block">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            About Maystone Digital
+          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+            About Maystone Digital 
           </span>
         </div>
-
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
           <span>Engineering Digital Success</span> 
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]"> With Passion & Precision</span>
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-normal max-w-2xl mx-auto leading-relaxed">
-          Hum ek passionate full-stack engineering aur creative digital agency hain jo complex business problems ko high-performing web apps, stunning UI/UX, aur scalable solutions mein badalte hain.
+          We are a passionate full-stack engineering and creative digital agency transforming complex business challenges into high-performing web applications, stunning UI/UX, and scalable solutions.
         </p>
       </div>
 
@@ -90,7 +90,7 @@ export default function AboutPage() {
             </div>
             <h2 className="text-2xl font-bold text-white">Our Mission</h2>
             <p className="text-neutral-300 text-sm md:text-base leading-relaxed">
-              Hmara maqsad businesses ko modern digital landscape mein empower karna hai. Chahe wo ek high-end web application ho, targeted performance marketing ho, ya seamless back-office operations—hum har step par excellence deliver karte hain.
+              Our mission is to empower businesses within the modern digital landscape. Whether it is an enterprise web application, targeted performance marketing, or seamless back-office operations—we deliver excellence at every step.
             </p>
           </div>
           <div className="pt-4 border-t border-white/5 text-xs text-[#FE083B] font-semibold tracking-wider uppercase">
@@ -105,7 +105,7 @@ export default function AboutPage() {
             </div>
             <h2 className="text-2xl font-bold text-white">Our Vision</h2>
             <p className="text-neutral-300 text-sm md:text-base leading-relaxed">
-              Ek aisi global digital agency banna jahan cutting-edge technology, creative branding, aur strategic execution ka perfect fusion milay. Hum future-proof digital products create karne mein believe rakhte hain jo long-term value generate karein.
+              To become a globally recognized digital agency where cutting-edge technology, creative branding, and strategic execution merge seamlessly to build future-proof products generating long-term value.
             </p>
           </div>
           <div className="pt-4 border-t border-white/5 text-xs text-[#FE083B] font-semibold tracking-wider uppercase">
@@ -118,12 +118,14 @@ export default function AboutPage() {
       {/* 4. OUR JOURNEY / MILESTONES TIMELINE */}
       <div className="max-w-5xl mx-auto mb-24 space-y-12">
         <div className="text-center space-y-3">
-          <span className="text-[#FE083B] font-serif italic text-xl tracking-wide">Our Evolution</span>
+          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+            Our Evolution
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
             The Journey <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">So Far</span>
           </h2>
           <p className="text-neutral-400 text-sm md:text-base max-w-xl mx-auto">
-            Chote beginnings se lekar ek trusted full-scale digital agency banne tak ka safar.
+            Tracing our path from modest beginnings to establishing a trusted full-scale digital agency.
           </p>
         </div>
 
@@ -141,12 +143,14 @@ export default function AboutPage() {
       {/* 5. WHAT WE BRING TO THE TABLE (EXPERTISE) */}
       <div className="max-w-5xl mx-auto mb-24 space-y-12">
         <div className="text-center space-y-3">
-          <span className="text-[#FE083B] font-serif italic text-xl tracking-wide">Our Capabilities</span>
+          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+            Our Capabilities
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
             Core Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">& Creative Expertise</span>
           </h2>
           <p className="text-neutral-400 text-sm md:text-base max-w-xl mx-auto">
-            Hum multidimensional services provide karte hain taake aapko alag alag vendors ke paas na jana paray.
+            Providing multidimensional services under one roof so you never have to coordinate across multiple vendors.
           </p>
         </div>
 
@@ -166,12 +170,14 @@ export default function AboutPage() {
       {/* 6. CORE VALUES SECTION */}
       <div className="max-w-5xl mx-auto space-y-12 mb-20">
         <div className="text-center space-y-3">
-          <span className="text-[#FE083B] font-serif italic text-xl tracking-wide">Our Principles</span>
+          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+            Our Principles
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
             What Drives <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">Our Work</span>
           </h2>
           <p className="text-neutral-400 text-sm md:text-base max-w-xl mx-auto">
-            Ye core principles hain jo hamare har project, decision aur client interaction ki base banate hain.
+            The fundamental core principles that shape our projects, decisions, and client interactions.
           </p>
         </div>
 
@@ -188,6 +194,8 @@ export default function AboutPage() {
         </div>
       </div>
 
+      <OurTeam />
+
       {/* 7. CALL TO ACTION / BOTTOM BANNER */}
       <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#141211] to-[#1c1918] border border-white/10 rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden">
         <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#FE083B]/10 rounded-full blur-3xl pointer-events-none"></div>
@@ -196,7 +204,7 @@ export default function AboutPage() {
           Ready to Bring Your Idea to Life?
         </h2>
         <p className="text-neutral-300 text-sm sm:text-base max-w-lg mx-auto">
-          Aayein mil kar aapke next big project par kaam shuru karte hain. Hamari team aapki requirements ke mutabiq best solution degi.
+          Let's discuss what's on your mind. We love exploring new concepts, ensuring clear and transparent communication every step of the way. Reach out to us today—we look forward to hearing from you!
         </p>
         <div className="pt-2">
           <Link 

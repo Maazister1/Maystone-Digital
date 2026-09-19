@@ -1,8 +1,84 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { IconMail, IconPhone, IconMapPin, IconArrowRight } from '@tabler/icons-react';
+import React, { useState, useRef, useEffect } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { IconMail, IconPhone, IconMapPin, IconArrowRight, IconChevronDown, IconCheck } from '@tabler/icons-react';
 
 const ContactSection = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState('');
+  const [selectedSubServices, setSelectedSubServices] = useState([]);
+  const dropdownRef = useRef(null);
+
+  // Categories and their respective sub-services for checkboxes
+  const serviceCategories = {
+    "Web Development & Apps": [
+      "Frontend Development",
+      "Backend & APIs",
+      "E-commerce Store",
+      "Full Web App",
+      "UI/UX Implementation",
+      "Performance & Speed"
+    ],
+    "SaaS & Custom CRMs": [
+      "SaaS Product Build",
+      "Custom CRM Development",
+      "Subscription Billing Setup",
+      "Multi-tenant Architecture",
+      "User Dashboard & Analytics",
+      "API Integrations & Webhooks"
+    ],
+    "Digital Marketing & Growth": [
+      "SEO & Organic Growth",
+      "Paid Ads (Meta & Google)",
+      "Conversion Rate Optimization",
+      "Social Media Management",
+      "Email Marketing Automation",
+      "Funnel Building & Strategy"
+    ],
+    "AI & Automation Workflows": [
+      "AI Chatbots",
+      "Workflow Automation",
+      "Custom LLM Integrations",
+      "Data Scraping & Bots",
+      "CRM Automations",
+      "Back-office AI"
+    ],
+    "Branding & UI/UX Design": [
+      "Brand Identity & Logo",
+      "Figma Wireframes",
+      "Design Systems",
+      "Marketing Creatives",
+      "Pitch Decks",
+      "Landing Page Design"
+    ],
+    "BPO & Back-office Support": [
+      "Customer Support",
+      "Data Entry & Ops",
+      "Virtual Assistants",
+      "Content Moderation",
+      "Lead Generation",
+      "QA Testing"
+    ]
+  };
+
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const handleCheckboxChange = (subService) => {
+    if (selectedSubServices.includes(subService)) {
+      setSelectedSubServices(selectedSubServices.filter(item => item !== subService));
+    } else {
+      setSelectedSubServices([...selectedSubServices, subService]);
+    }
+  };
+
   return (
     <section className="relative w-full bg-[#000000] py-24 px-4 sm:px-6 overflow-hidden border-t border-neutral-800/80">
       
@@ -163,32 +239,106 @@ const ContactSection = () => {
                   />
                 </div>
 
-                {/* Service */}
-                <div className="flex flex-col gap-1.5">
-                  <label className="text-[11px] font-medium text-neutral-300">Service</label>
-                  <motion.select 
-                    whileFocus={{ scale: 1.01 }}
-                    className="bg-[#140D0D] border border-neutral-800/80 rounded-xl px-3 py-2.5 text-xs text-neutral-400 focus:outline-none focus:border-[#FA0E33] focus:ring-1 focus:ring-[#FA0E33]/50 transition-all shadow-inner cursor-pointer"
-                    defaultValue=""
+                {/* Creative Service Category Dropdown */}
+                <div className="flex flex-col gap-1.5 relative" ref={dropdownRef}>
+                  <label className="text-[11px] font-medium text-neutral-300">Service Category</label>
+                  
+                  <div 
+                    onClick={() => setIsOpen(!isOpen)}
+                    className="bg-[#140D0D] border border-neutral-800/80 hover:border-[#FA0E33]/60 rounded-xl px-3.5 py-2.5 text-xs text-white flex items-center justify-between cursor-pointer transition-all shadow-inner select-none"
                   >
-                    <option value="" disabled>Select a service</option>
-                    <option value="web">Web Development</option>
-                    <option value="ai">AI & Automation</option>
-                    <option value="branding">Branding & Design</option>
-                    <option value="marketing">Growth Marketing</option>
-                  </motion.select>
+                    <span className={selectedCategory ? "text-white font-medium" : "text-neutral-500"}>
+                      {selectedCategory || "Select a service category"}
+                    </span>
+                    <motion.div animate={{ rotate: isOpen ? 180 : 0 }} transition={{ duration: 0.2 }}>
+                      <IconChevronDown className="w-4 h-4 text-[#FA0E33]" />
+                    </motion.div>
+                  </div>
+
+                  <AnimatePresence>
+                    {isOpen && (
+                      <motion.div 
+                        initial={{ opacity: 0, y: -8, scale: 0.98 }}
+                        animate={{ opacity: 1, y: 4, scale: 1 }}
+                        exit={{ opacity: 0, y: -8, scale: 0.98 }}
+                        transition={{ duration: 0.2, ease: "easeOut" }}
+                        className="absolute top-full left-0 right-0 z-50 bg-[#140D0D] border border-neutral-800 rounded-2xl shadow-2xl shadow-black/90 overflow-hidden backdrop-blur-xl p-1.5 max-h-64 overflow-y-auto"
+                      >
+                        {Object.keys(serviceCategories).map((category, index) => (
+                          <div
+                            key={index}
+                            onClick={() => {
+                              setSelectedCategory(category);
+                              setSelectedSubServices([]); // Reset sub-services when category changes
+                              setIsOpen(false);
+                            }}
+                            className={`flex items-center justify-between px-3 py-2.5 rounded-xl text-xs cursor-pointer transition-all ${
+                              selectedCategory === category 
+                                ? "bg-[#FA0E33]/15 text-[#FA0E33] font-semibold" 
+                                : "text-neutral-300 hover:bg-neutral-900 hover:text-white"
+                            }`}
+                          >
+                            <span>{category}</span>
+                            {selectedCategory === category && <IconCheck className="w-3.5 h-3.5 text-[#FA0E33]" />}
+                          </div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
                 </div>
               </div>
+
+              {/* Dynamic Checkboxes for Sub-services (Appears when a category is selected) */}
+              <AnimatePresence>
+                {selectedCategory && serviceCategories[selectedCategory] && (
+                  <motion.div 
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    transition={{ duration: 0.3 }}
+                    className="flex flex-col gap-2 pt-1 pb-1 overflow-hidden"
+                  >
+                    <label className="text-[11px] font-medium text-[#FE5211] flex items-center justify-between">
+                      <span>Select specific requirements for {selectedCategory}:</span>
+                      <span className="text-[10px] text-neutral-500 font-normal">Multiple selection allowed</span>
+                    </label>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 bg-[#140D0D]/60 border border-neutral-800/80 rounded-xl p-3.5">
+                      {serviceCategories[selectedCategory].map((sub, idx) => {
+                        const isChecked = selectedSubServices.includes(sub);
+                        return (
+                          <div 
+                            key={idx}
+                            onClick={() => handleCheckboxChange(sub)}
+                            className={`flex items-center gap-2.5 p-2 rounded-lg cursor-pointer transition-all border ${
+                              isChecked 
+                                ? "bg-[#FA0E33]/10 border-[#FA0E33]/50 text-white" 
+                                : "bg-neutral-900/50 border-neutral-800/60 text-neutral-400 hover:text-neutral-200 hover:border-neutral-700"
+                            }`}
+                          >
+                            <div className={`w-4 h-4 rounded flex items-center justify-center border transition-colors ${
+                              isChecked ? "bg-[#FA0E33] border-[#FA0E33] text-white" : "border-neutral-700 bg-neutral-950"
+                            }`}>
+                              {isChecked && <IconCheck className="w-3 h-3 stroke-[3]" />}
+                            </div>
+                            <span className="text-[11px] font-medium">{sub}</span>
+                          </div>
+                        );
+                      })}
+                    </div>
+                  </motion.div>
+                )}
+              </AnimatePresence>
 
               {/* Project Details */}
               <div className="flex flex-col gap-1.5">
                 <label className="text-[11px] font-medium text-neutral-300">Project details</label>
-                <motion.textarea 
+                <motion.input 
                   whileFocus={{ scale: 1.01 }}
-                  rows="3"
+                  type="text"
                   placeholder="Tell us what you're looking to achieve..."
-                  className="bg-[#140D0D] border border-neutral-800/80 rounded-xl p-3 text-xs text-white placeholder-neutral-600 focus:outline-none focus:border-[#FA0E33] focus:ring-1 focus:ring-[#FA0E33]/50 transition-all resize-none shadow-inner"
-                ></motion.textarea>
+                  className="bg-[#140D0D] border border-neutral-800/80 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 focus:outline-none focus:border-[#FA0E33] focus:ring-1 focus:ring-[#FA0E33]/50 transition-all shadow-inner"
+                />
               </div>
 
               {/* Submit Button with Framer Motion Physics */}

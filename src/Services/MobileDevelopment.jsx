@@ -137,12 +137,11 @@ export default function MobileDevelopment() {
       {/* 1. HERO SECTION */}
       <div className="px-6 md:px-16 lg:px-24 pt-8">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#141211] border border-[#FE083B]/30 shadow-[0_0_15px_rgba(254,8,59,0.15)]">
-            <IconSparkles className="w-4 h-4 text-[#FE083B]" />
-            <span className="text-[#FE083B] font-serif italic text-sm md:text-base tracking-wide">
-              Next-Gen Mobile App Engineering
-            </span>
-          </div>
+        <div className="inline-block">
+  <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+    Next-Gen Mobile App Engineering
+  </span>
+</div>
 
           <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold tracking-tight text-white leading-[1.1]">
             <span>High-Performance Apps</span> 
@@ -332,9 +331,9 @@ export default function MobileDevelopment() {
       <div id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
-            <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-              Our Recent Work
-            </span>
+           <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+    Our Recent Work
+  </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mt-2">
               Featured Mobile Applications
             </h2>
@@ -504,9 +503,9 @@ export default function MobileDevelopment() {
       {/* 7. OUR PROCESS SECTION */}
       <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative overflow-hidden">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            OUR PROCESS
-          </span>
+        <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+   OUR PROCESS
+  </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             A Clear, Collaborative Process
           </h2>

@@ -33,6 +33,8 @@ import BlogsPage from './Blogs/BlogsPage';
 import CaseStudiesPage from './CaseStudy/CaseStudiePage';
 import StartProject from './Contact/StartProject';
 import Pricing from './Pricing/PricingPage';
+import SoftwareSaaSPage from './Services/SoftwareSaaSPage';
+import OurTeam from './OurTeam/OurTeam';
 
 
 function HomeView() {
@@ -100,8 +102,9 @@ function App() {
        <Route path="/blogs/blogspage" element={<BlogsPage />} />
        <Route path="/casestudy/casestudiepage" element={<CaseStudiesPage />} />
        <Route path="/contact/startproject" element={<StartProject />} /> 
-       <Route path="/pricing/pricingpage" element={<Pricing />} /> 
-       
+       <Route path="/pricing/pricingpage" element={<Pricing />} />
+       <Route path="/services/software-sas" element={<SoftwareSaaSPage />} />  
+         <Route path="/ourteam/ourteam" element={<OurTeam />} />  
     
       </Routes>
       <FooterSection />

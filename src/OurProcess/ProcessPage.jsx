@@ -54,9 +54,9 @@ export default function ProcessPage() {
       {/* 1. HERO SECTION */}
       <div className="max-w-4xl mx-auto text-center space-y-6 pt-8 mb-20">
         <div className="inline-block">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            How We Work
-          </span>
+         <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+   How We Work
+  </span>
         </div>
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">

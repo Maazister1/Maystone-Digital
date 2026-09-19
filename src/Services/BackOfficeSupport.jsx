@@ -112,11 +112,11 @@ export default function BackOfficeSupport() {
       {/* 1. HERO SECTION */}
       <div className="px-6 md:px-16 lg:px-24">
         <div className="max-w-4xl mx-auto text-center space-y-6">
-          <div className="inline-block px-4 py-1.5 rounded-full border border-[#FE083B]/30 bg-[#FE083B]/10">
-            <span className="text-[#FE083B] font-serif italic text-sm md:text-base tracking-wide flex items-center gap-2">
-              ✓ Back-Office Support
-            </span>
-          </div>
+        <div className="inline-block">
+  <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+   Back Office Support
+  </span>
+</div>
 
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
             <span>Streamline Operations</span> 
@@ -186,11 +186,11 @@ export default function BackOfficeSupport() {
 
       {/* 3. INTELLIGENT ARCHITECTURE / BPO DIFFERENCE GRID (Style like image_7f8606.png) */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 text-center">
-        <div className="inline-block px-4 py-1.5 rounded-full border border-[#FE083B]/30 bg-[#FE083B]/10 mb-6">
-          <span className="text-[#FE083B] font-serif italic text-sm tracking-wide flex items-center gap-2">
-            ✓ Our Difference
-          </span>
-        </div>
+       <div className="inline-block">
+  <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+    Our Difference
+  </span>
+</div>
 
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white max-w-3xl mx-auto leading-tight mb-20">
           <span>Intelligent Architecture Built For</span> <br />
@@ -258,9 +258,9 @@ export default function BackOfficeSupport() {
       {/* 4. THE CORE SERVICES SECTION (Line Grid Style) */}
       <div id="services" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Core Service Offerings
-          </span>
+          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+    Core Service Offerings
+  </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             Admin Support, CRM & Workflow Solutions
           </h2>
@@ -347,9 +347,9 @@ export default function BackOfficeSupport() {
       <div id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
-            <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-              Success Stories
-            </span>
+            <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+    Success Stories
+  </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mt-2">
               Featured Back-Office Projects
             </h2>
@@ -443,9 +443,9 @@ export default function BackOfficeSupport() {
       {/* 7. FAQ SECTION (Line Grid Style) */}
       <div className="max-w-5xl mx-auto px-6 py-24 border-t border-white/10">
         <div className="text-center space-y-4 mb-16">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Got Questions?
-          </span>
+        <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+   Got Questions?
+  </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             Frequently Asked Questions
           </h2>
@@ -479,9 +479,9 @@ export default function BackOfficeSupport() {
       {/* 8. OUR PROCESS SECTION */}
       <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative overflow-hidden">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
-          <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            OUR PROCESS
-          </span>
+       <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+   OUR PROCESS
+  </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             A Structured & Secure Support Process
           </h2>

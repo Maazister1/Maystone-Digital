@@ -138,7 +138,7 @@ export default function MobileDevelopment() {
       <div className="px-6 md:px-16 lg:px-24 pt-8">
         <div className="max-w-4xl mx-auto text-center space-y-6">
         <div className="inline-block">
-  <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+  <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
     Next-Gen Mobile App Engineering
   </span>
 </div>
@@ -331,7 +331,7 @@ export default function MobileDevelopment() {
       <div id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
-           <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+           <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
     Our Recent Work
   </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mt-2">
@@ -377,8 +377,8 @@ export default function MobileDevelopment() {
       {/* 5. CLIENT FEEDBACK SECTION */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10">
         <div className="space-y-3 mb-10 text-center md:text-left">
-          <span className="text-[#FE083B] font-bold uppercase tracking-widest text-xs flex items-center justify-center md:justify-start gap-2">
-            <IconShieldCheck className="w-4 h-4 text-[#FE083B]" />
+          <span className="text-[#FE5211] font-bold uppercase tracking-widest text-xs flex items-center justify-center md:justify-start gap-2">
+            <IconShieldCheck className="w-4 h-4 text-[#FE5211]" />
             CLIENT FEEDBACK
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
@@ -503,7 +503,7 @@ export default function MobileDevelopment() {
       {/* 7. OUR PROCESS SECTION */}
       <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative overflow-hidden">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
-        <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+        <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
    OUR PROCESS
   </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">

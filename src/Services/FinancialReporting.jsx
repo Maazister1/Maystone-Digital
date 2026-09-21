@@ -99,7 +99,7 @@ export default function FinancialReporting() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Tag */}
             <div className="inline-block">
-  <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+  <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
     Financial Reporting & Tax
   </span>
 </div>
@@ -177,7 +177,7 @@ export default function FinancialReporting() {
         <section className="py-24 bg-[#0a0a0a]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mb-14">
-              <span className="text-[#FE083B] font-semibold text-sm tracking-wider uppercase">Capabilities</span>
+              <span className="text-[#FE5211] font-semibold text-sm tracking-wider uppercase">Capabilities</span>
               <h2 className="text-3xl font-bold sm:text-4xl mt-2">What we <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">look after</span></h2>
               <p className="mt-3 text-neutral-400 text-sm sm:text-base">{s.capabilitiesHeading.desc}</p>
             </div>
@@ -203,7 +203,7 @@ export default function FinancialReporting() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid gap-14 lg:grid-cols-[1fr_1.2fr] items-start">
               <div>
-                <span className="text-[#FE083B] font-semibold text-sm tracking-wider uppercase">Value</span>
+                <span className="text-[#FE5211] font-semibold text-sm tracking-wider uppercase">Value</span>
                 <h2 className="text-3xl font-bold sm:text-4xl mt-2">Why clients keep these records <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">with us</span></h2>
               </div>
               
@@ -226,7 +226,7 @@ export default function FinancialReporting() {
         <section className="py-24 bg-[#0a0a0a]">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="max-w-2xl mb-16">
-              <span className="text-[#FE083B] font-semibold text-sm tracking-wider uppercase">Process</span>
+              <span className="text-[#FE5211] font-semibold text-sm tracking-wider uppercase">Process</span>
               <h2 className="text-3xl font-bold sm:text-4xl mt-2">A predictable monthly <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">rhythm</span></h2>
             </div>
 
@@ -247,7 +247,7 @@ export default function FinancialReporting() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12">
               <div>
-                <span className="text-[#FE083B] font-semibold text-sm tracking-wider uppercase">Support</span>
+                <span className="text-[#FE5211] font-semibold text-sm tracking-wider uppercase">Support</span>
                 <h2 className="text-3xl font-bold mt-2">Questions about <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">working with us</span></h2>
                 <p className="text-neutral-400 text-sm mt-4">Everything you need to know about transitioning your accounts and ongoing reporting.</p>
               </div>

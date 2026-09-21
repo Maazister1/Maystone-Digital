@@ -75,7 +75,7 @@ export default function DigitalMarketing() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             {/* Converted into a Tag/Badge */}
                <div className="inline-block">
-  <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+  <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
      Digital Marketing & Growth Systems
   </span>
 </div>
@@ -179,7 +179,7 @@ export default function DigitalMarketing() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
               <div>
-                <span className="text-[#FE083B] font-semibold text-sm tracking-wider uppercase">Capabilities</span>
+                <span className="text-[#FE5211] font-semibold text-sm tracking-wider uppercase">Capabilities</span>
                 <h2 className="text-3xl font-bold sm:text-4xl mt-2">Every channel we can <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">run for you</span></h2>
               </div>
               <p className="text-neutral-400 max-w-md mt-4 md:mt-0">
@@ -279,7 +279,7 @@ export default function DigitalMarketing() {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12">
               <div>
-                <span className="text-[#FE083B] font-semibold text-sm tracking-wider uppercase">Got Questions?</span>
+                <span className="text-[#FE5211] font-semibold text-sm tracking-wider uppercase">Got Questions?</span>
                 <h2 className="text-3xl font-bold mt-2">Marketing <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">Questions</span></h2>
                 <p className="text-neutral-400 text-sm mt-4">Everything you need to know about how we partner, report, and drive predictable growth.</p>
               </div>

@@ -54,7 +54,7 @@ export default function AboutPage() {
       {/* 1. HERO SECTION */}
       <div className="max-w-4xl mx-auto text-center space-y-6 pt-8 mb-20">
         <div className="inline-block">
-          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             About Maystone Digital 
           </span>
         </div>
@@ -118,7 +118,7 @@ export default function AboutPage() {
       {/* 4. OUR JOURNEY / MILESTONES TIMELINE */}
       <div className="max-w-5xl mx-auto mb-24 space-y-12">
         <div className="text-center space-y-3">
-          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             Our Evolution
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
@@ -143,7 +143,7 @@ export default function AboutPage() {
       {/* 5. WHAT WE BRING TO THE TABLE (EXPERTISE) */}
       <div className="max-w-5xl mx-auto mb-24 space-y-12">
         <div className="text-center space-y-3">
-          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             Our Capabilities
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">
@@ -170,7 +170,7 @@ export default function AboutPage() {
       {/* 6. CORE VALUES SECTION */}
       <div className="max-w-5xl mx-auto space-y-12 mb-20">
         <div className="text-center space-y-3">
-          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             Our Principles
           </span>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-white">

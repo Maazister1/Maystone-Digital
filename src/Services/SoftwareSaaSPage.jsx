@@ -47,7 +47,7 @@ const SoftwareSaaSPage = () => {
           
           {/* Section Heading Style */}
           <div className="inline-block mb-4">
-            <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+            <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               Software Development & SaaS CRMs
             </span>
           </div>
@@ -110,7 +110,7 @@ const SoftwareSaaSPage = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div>
-              <span className="text-[#FE083B] font-bold uppercase text-xs tracking-[0.2em]">Enterprise Grade</span>
+              <span className="text-[#FE5211] font-bold uppercase text-xs tracking-[0.2em]">Enterprise Grade</span>
               <h2 className="text-2xl sm:text-4xl font-bold text-white mt-2 mb-4">Why Businesses Trust Our SaaS & CRM Solutions</h2>
               <p className="text-neutral-400 text-sm leading-relaxed mb-6">
                 We don't just write code; we build scalable digital ecosystems designed to optimize your operations, lower overheads, and boost user retention.

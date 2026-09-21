@@ -235,7 +235,7 @@ export default function PricingPage() {
       {/* 1. HERO SECTION */}
       <div className="max-w-4xl mx-auto text-center space-y-6 pt-8 mb-16">
         <div className="inline-block">
-          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             Transparent Investment
           </span>
         </div>
@@ -315,7 +315,7 @@ export default function PricingPage() {
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#FE083B]/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="text-center space-y-3 mb-10 relative z-10">
-          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             Custom Solution Builder
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">

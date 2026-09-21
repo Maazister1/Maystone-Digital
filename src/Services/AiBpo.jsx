@@ -183,7 +183,7 @@ export default function AiBpo() {
       <div className="px-6 md:px-16 lg:px-24 relative z-10">
         <div className="max-w-4xl mx-auto text-center space-y-6">
         <div className="inline-block">
-        <h3 className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-[#FA0E33]">
+        <h3 className="text-xs sm:text-sm font-bold uppercase tracking-[0.25em] text-[#FE5211]">
          AI & BPO Solutions
          </h3>
          </div>
@@ -293,7 +293,7 @@ export default function AiBpo() {
       <div id="services" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <div className="inline-block">
-  <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+  <span className=" text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
     Our Core Offerings
   </span>
 </div>
@@ -341,10 +341,7 @@ export default function AiBpo() {
       <div id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 relative z-10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
-            {/* <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-              Success Stories
-            </span> */}
-            <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+            <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
     Success Stories
   </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mt-2">
@@ -390,7 +387,7 @@ export default function AiBpo() {
       {/* 6. CLIENT FEEDBACK SECTION */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 relative z-10">
         <div className="space-y-3 mb-10">
-          <span className="text-[#FE083B] font-bold uppercase tracking-widest text-xs font-mono">
+          <span className="text-[#FE5211] font-bold uppercase tracking-widest text-xs font-mono">
             CLIENT FEEDBACK
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
@@ -519,7 +516,7 @@ export default function AiBpo() {
       {/* 8. OUR PROCESS SECTION */}
       <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
-          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
 Our Process
   </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">

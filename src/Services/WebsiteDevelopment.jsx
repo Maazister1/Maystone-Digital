@@ -129,10 +129,7 @@ export default function WebsiteDevelopment() {
 
         <div className="max-w-4xl mx-auto text-center space-y-6 relative z-10">
           <div className="inline-block">
-            {/* <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-              Web Development & Digital Platforms
-            </span> */}
-            <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+            <span className="text-[#FE5211]  font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
      Web Development & Digital Platforms
   </span>
           </div>
@@ -220,10 +217,7 @@ export default function WebsiteDevelopment() {
       <section className="py-24 px-6 md:px-16 lg:px-24 border-t border-white/10 bg-[#0c0a09]/60">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mb-16 space-y-4">
-            {/* <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-              Architectural Rigor
-            </span> */}
-            <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+            <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
      Architectural Rigor
   </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
@@ -274,10 +268,7 @@ export default function WebsiteDevelopment() {
       {/* 5. STATS & STANDARDS SECTION */}
       <section className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
-          {/* <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-            Our Commitments
-          </span> */}
-          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
     Our Commitments
   </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
@@ -308,7 +299,7 @@ export default function WebsiteDevelopment() {
       {/* 6. TECH STACK BREAKDOWN */}
       <section className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 bg-[#0c0a09]/40">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
-          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
            Tech Ecosystem
            </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
@@ -336,7 +327,7 @@ export default function WebsiteDevelopment() {
       {/* 7. OUR PROCESS SECTION (WITH SCROLL PROGRESS LINE) */}
       <section id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative overflow-hidden">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
-         <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+         <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
            Our Process
           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
@@ -416,10 +407,7 @@ export default function WebsiteDevelopment() {
       <section id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
           <div>
-            {/* <span className="text-[#FE083B] font-serif italic text-xl md:text-2xl tracking-wide">
-              Portfolio Showcase
-            </span> */}
-            <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+            <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
     Portfolio Showcase
   </span>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white mt-2">
@@ -465,7 +453,7 @@ export default function WebsiteDevelopment() {
       {/* 9. TESTIMONIALS SECTION */}
       <section className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
         <div className="space-y-3 mb-10">
-          <span className="text-[#FE083B] font-bold uppercase tracking-widest text-xs">
+          <span className="text-[#FE5211] font-bold uppercase tracking-widest text-xs">
             CLIENT FEEDBACK
           </span>
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
@@ -515,7 +503,7 @@ export default function WebsiteDevelopment() {
       {/* 10. FAQ SECTION */}
       <section className="max-w-4xl mx-auto px-6 py-24 border-t border-white/10">
         <div className="text-center space-y-4 mb-16">
-         <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+         <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
    Got Questions?
   </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">

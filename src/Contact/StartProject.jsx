@@ -43,7 +43,7 @@ export default function StartProject() {
       {/* 1. HEADER SECTION */}
       <div className="max-w-4xl mx-auto text-center space-y-6 pt-8 mb-16">
         <div className="inline-block">
-          <span className="text-[#FE083B] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
     Let's Build Something Great
   </span>
         </div>

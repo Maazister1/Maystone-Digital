@@ -3,16 +3,21 @@ import {
   IconArrowRight, IconPhone, IconMail, IconMapPin, 
   IconCode, IconDeviceMobile, IconPalette, IconVideo, IconDeviceLaptop, IconShare3,
   IconHome, IconMessage, IconInfoCircle, IconBriefcase,
-  IconFileText, IconShieldCheck, IconLock, IconChevronUp,
-  IconBrandInstagram, IconBrandYoutube, IconBrandX
+  IconFileText, IconShieldCheck, IconLock, IconChevronUp
 } from '@tabler/icons-react';
 
-// Assets import (4 Active Flags)
+// Assets import (4 Active Flags + Footer Image + Social PNGs)
 import footerLogo from '../assets/footer.png';
 import usaFlag from '../assets/usa-icon.png';
 import ukFlag from '../assets/uk-icon.png';
 import pakistanFlag from '../assets/pakistan-icon.png';
 import canadaFlag from '../assets/canada-icon.png';
+import maystoneFooterImg from '../assets/MAYSTONE FOOTER.png';
+
+import instagramPng from '../assets/instagram.png';
+import youtubePng from '../assets/youtube.png';
+import xPng from '../assets/x.png';
+import linkPng from '../assets/link.png';
 
 const FooterSection = () => {
   const scrollToTop = () => {
@@ -169,7 +174,7 @@ const FooterSection = () => {
           </div>
         </div>
 
-        {/* Bottom Bar: Back to top, Copyright & Social Icons */}
+        {/* Bottom Bar: Back to top, Copyright & Social Icons (Using user PNGs with red border & transparent bg) */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-6 pt-6 border-t border-neutral-900 text-xs text-neutral-500 mb-12">
           
           <button 
@@ -183,24 +188,29 @@ const FooterSection = () => {
           <p>© 2026 Maystone Digital. All Right Reserved.</p>
 
           <div className="flex items-center gap-3">
-            <a href="#" className="w-9 h-9 rounded-xl bg-neutral-900 border border-[#FE083B] flex items-center justify-center text-white hover:bg-[#FE083B]/20 transition">
-              <IconBrandInstagram className="w-4 h-4 text-[#FE083B]" />
+            <a href="#" className="w-9 h-9 rounded-xl border border-[#FE083B] flex items-center justify-center bg-transparent hover:bg-[#FE083B]/10 transition p-2">
+              <img src={instagramPng} alt="Instagram" className="w-full h-full object-contain" />
             </a>
-            <a href="#" className="w-9 h-9 rounded-xl bg-neutral-900 border border-[#FE083B] flex items-center justify-center text-white hover:bg-[#FE083B]/20 transition">
-              <IconBrandYoutube className="w-4 h-4 text-[#FE083B]" />
+            <a href="#" className="w-9 h-9 rounded-xl border border-[#FE083B] flex items-center justify-center bg-transparent hover:bg-[#FE083B]/10 transition p-2">
+              <img src={youtubePng} alt="YouTube" className="w-full h-full object-contain" />
             </a>
-            <a href="#" className="w-9 h-9 rounded-xl bg-neutral-900 border border-[#FE083B] flex items-center justify-center text-white hover:bg-[#FE083B]/20 transition">
-              <IconBrandX className="w-4 h-4 text-[#FE083B]" />
+            <a href="#" className="w-9 h-9 rounded-xl border border-[#FE083B] flex items-center justify-center bg-transparent hover:bg-[#FE083B]/10 transition p-2">
+              <img src={xPng} alt="X" className="w-full h-full object-contain" />
+            </a>
+            <a href="#" className="w-9 h-9 rounded-xl border border-[#FE083B] flex items-center justify-center bg-transparent hover:bg-[#FE083B]/10 transition p-2">
+              <img src={linkPng} alt="Link" className="w-full h-full object-contain" />
             </a>
           </div>
 
         </div>
 
-        {/* LAST DARK "MAYSTONE" TEXT (Clean & Dark Red Gradient at the Very End) */}
+        {/* LAST RESPONSIVE MAYSTONE FOOTER IMAGE */}
         <div className="w-full text-center pt-6 pb-2 overflow-hidden select-none">
-          <h2 className="text-[15vw] sm:text-[17vw] font-black tracking-tighter uppercase leading-none text-transparent bg-clip-text bg-gradient-to-t from-[#8A0420] via-[#C9062F] to-[#500212] font-['Outfit'] drop-shadow-[0_15px_35px_rgba(138,4,32,0.4)]">
-            MAYSTONE
-          </h2>
+          <img 
+            src={maystoneFooterImg} 
+            alt="Maystone Footer" 
+            className="w-full h-auto object-contain max-h-[180px] sm:max-h-[250px] mx-auto opacity-90 hover:opacity-100 transition-opacity"
+          />
         </div>
 
       </div>

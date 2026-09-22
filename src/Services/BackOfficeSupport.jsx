@@ -534,7 +534,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
                 
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
-                  <div className="border border-white/10 p-8 rounded-xl bg-transparent hover:border-[#FE083B]/50 transition group">
+                  <div className="border border-white/10 p-8 rounded-xl bg-transparent hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
                     <span className="text-xs font-bold text-[#FE083B] uppercase tracking-wider font-mono">
                       Phase {item.step}
                     </span>

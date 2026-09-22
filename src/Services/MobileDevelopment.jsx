@@ -353,7 +353,7 @@ export default function MobileDevelopment() {
             { img: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop", tag: "Health & Fitness", title: "FitPulse Workout Tracker", desc: "Interactive health monitoring & routines app" },
             { img: "https://images.unsplash.com/photo-1551650975-87deedd944c3?q=80&w=1000&auto=format&fit=crop", tag: "Productivity SaaS", title: "Taskify Team Companion", desc: "Cross-platform mobile workspace manager" }
           ].map((project, idx) => (
-            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-5 hover:border-[#FE083B]/50 transition duration-500 shadow-xl">
+            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-5 hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition duration-500 shadow-xl">
               <div className="h-72 rounded-2xl bg-gradient-to-br from-neutral-900 to-black overflow-hidden relative border border-white/5">
                 <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-80" />
                 <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-3 py-1.5 rounded-full text-xs font-medium text-[#FE083B] border border-white/10 shadow-md">
@@ -552,7 +552,7 @@ export default function MobileDevelopment() {
                 
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
-                  <div className="bg-[#141211] border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 transition group shadow-xl relative overflow-hidden">
+                  <div className="bg-[#141211] border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group shadow-xl relative overflow-hidden">
                     <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-[#FE083B] to-transparent opacity-0 group-hover:opacity-100 transition"></div>
                     <span className="text-xs font-bold text-[#FE083B] uppercase tracking-wider font-mono">
                       Phase {item.step}

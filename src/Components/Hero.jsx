@@ -63,7 +63,7 @@ const Hero = () => {
         {/* Eyebrow Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-0.5 rounded-full border border-neutral-800 bg-neutral-950/80 backdrop-blur-md mb-3">
           <span className="w-1.5 h-1.5 rounded-full bg-gradient-to-r from-[#FA0E33] to-[#FE5211]"></span>
-          <span className="text-[10px] font-semibold tracking-wider text-neutral-300 uppercase">
+          <span className="text-xs font-semibold tracking-wider text-neutral-300 uppercase">
             {slides[currentSlide].eyebrow}
           </span>
         </div>

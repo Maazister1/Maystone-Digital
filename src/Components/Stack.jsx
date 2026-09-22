@@ -61,9 +61,13 @@ const Stack = () => {
       <div className="relative z-10 max-w-7xl mx-auto flex flex-col items-center">
         
         {/* Top Title / Trust Text */}
-        <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-6 md:mb-8 text-center">
+        {/* <p className="text-[30px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-neutral-400 mb-6 md:mb-8 text-center">
           TRUSTED BY AMBITIOUS UK BUSINESSES ACROSS RETAIL, FINANCE, PROPERTY & SAAS
-        </p>
+        </p> */}
+        <p className="text-base sm:text-lg md:text-xl text-neutral-400 font-normal max-w-2xl mx-auto leading-relaxed text-center mb-6 md:mb-8">
+  Trusted by ambitious UK businesses across retail, finance, property &amp; SaaS
+</p>
+  
 
         {/* Stats Grid - Compact & Responsive */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full">
@@ -73,9 +77,9 @@ const Stack = () => {
               className="group relative bg-neutral-950/60 border border-neutral-800/80 hover:border-[#FA0E33]/50 rounded-xl p-5 md:p-6 flex flex-col items-center justify-center text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-[#FA0E33]/10 backdrop-blur-sm"
             >
               {/* Animated Counter Number */}
-              <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent mb-1 transition-transform duration-300 group-hover:scale-105">
+              <p className="text-3xl md:text-4xl font-extrabold tracking-tight bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent mb-1 transition-transform duration-300 group-hover:scale-105">
                 {counts[index]}{item.suffix}
-              </h3>
+              </p>
 
               {/* Label */}
               <p className="text-neutral-400 text-[11px] md:text-xs font-medium tracking-wide">

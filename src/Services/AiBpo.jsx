@@ -363,7 +363,7 @@ export default function AiBpo() {
             { img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop", tag: "SaaS Operations", title: "Automated Billing & Onboarding", desc: "Make.com pipeline connecting Stripe, Slack, and HubSpot" },
             { img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop", tag: "Outsourced BPO", title: "Dedicated Remote Support Squad", desc: "Managed team of 10+ agents scaling client success operations" }
           ].map((project, idx) => (
-            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211]/90 border border-white/10 hover:border-[#FE083B]/50 transition-all duration-300 p-4 shadow-xl backdrop-blur-md">
+            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211]/90 border border-white/10 hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition-all duration-300 p-4 shadow-xl backdrop-blur-md">
               <div className="h-72 rounded-2xl bg-gradient-to-br from-neutral-900 to-black overflow-hidden relative border border-white/5">
                 <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-80" />
                 <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-medium text-[#FE083B] border border-white/10 shadow-lg">
@@ -565,7 +565,7 @@ Our Process
                 
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
-                  <div className="bg-[#141211]/90 border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 transition group shadow-xl backdrop-blur-md">
+                  <div className="bg-[#141211]/90 border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group shadow-xl backdrop-blur-md">
                     <span className="text-xs font-bold text-[#FE083B] uppercase tracking-wider font-mono">
                       Phase {item.step}
                     </span>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { IconCheck } from '@tabler/icons-react';
+import { IconCheck, IconArrowRight } from '@tabler/icons-react';
 
 const PricingSection = () => {
   const plans = [
@@ -177,13 +177,14 @@ const PricingSection = () => {
                     href="#contact"
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className={`w-full inline-flex items-center justify-center py-3.5 px-4 rounded-xl font-bold text-xs transition-all duration-300 cursor-pointer ${
+                    className={`w-full inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl font-bold text-xs transition-all duration-300 cursor-pointer group ${
                       plan.popular
                         ? 'bg-gradient-to-r from-[#FA0E33] to-[#FE5211] text-white shadow-lg shadow-[#FA0E33]/30 hover:shadow-[#FA0E33]/50'
                         : 'bg-neutral-950 border border-neutral-800 text-white hover:border-neutral-700 hover:bg-neutral-900'
                     }`}
                   >
-                    {plan.ctaText}
+                    <span>{plan.ctaText}</span>
+                    <IconArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
                   </motion.a>
                 </div>
 

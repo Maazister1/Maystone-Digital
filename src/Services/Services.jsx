@@ -124,9 +124,12 @@ const Services = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white max-w-2xl leading-[1.15]">
             Everything you need, <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">under one roof</span>
           </h2>
-          <p className="text-neutral-400 text-xs sm:text-sm mt-4 max-w-xl mx-auto font-normal leading-relaxed">
+          {/* <p className="text-neutral-400 text-xs sm:text-sm mt-4 max-w-xl mx-auto font-normal leading-relaxed">
             Connected disciplines that work together to move your business forward.
-          </p>
+          </p> */}
+          <p className="text-base sm:text-lg md:text-xl text-neutral-400 font-normal max-w-2xl mx-auto leading-relaxed text-center mb-6 md:mb-8">
+  Connected disciplines that work together to move your business forward.
+</p>
         </motion.div>
 
         {/* Services Grid with Staggered Container */}
@@ -142,12 +145,14 @@ const Services = () => {
               <motion.div
                 key={index}
                 variants={getCardVariant(index)}
-                whileHover={{ 
-                  y: -8, 
+                whileHover={{
+                  y: -8,
                   scale: 1.01,
-                  transition: { duration: 0.25, ease: "easeOut" } 
+                  transition: { duration: 0.25, ease: "easeOut" }
                 }}
-                className="group relative bg-[#0D0B0B] border border-neutral-800 hover:border-[#FA0E33] rounded-2xl p-8 flex flex-col justify-between shadow-xl shadow-black/60 hover:shadow-2xl hover:shadow-[#FA0E33]/30 backdrop-blur-md transition-colors duration-300 cursor-pointer overflow-hidden"
+                className={`group relative bg-[#0D0B0B] border border-neutral-800 hover:border-[#FA0E33] rounded-2xl p-8 flex flex-col justify-between shadow-xl shadow-black/60 hover:shadow-2xl hover:shadow-[#FA0E33]/30 backdrop-blur-md transition-colors duration-300 cursor-pointer overflow-hidden ${
+                  index === servicesList.length - 1 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''
+                }`}
               >
                 <div>
                   {/* Icon Box with Smooth Hover Zoom */}

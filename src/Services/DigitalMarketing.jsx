@@ -189,7 +189,7 @@ export default function DigitalMarketing() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {capabilities.map((c, i) => (
-                <div key={c.title} className="bg-[#141211] border border-white/10 rounded-2xl p-6 flex flex-col justify-between hover:border-[#FE083B]/50 transition-all">
+                <div key={c.title} className="bg-[#141211] border border-white/10 rounded-2xl p-6 flex flex-col justify-between hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition-all">
                   <div>
                     <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center text-[#FE083B] mb-6">
                       {i === 0 ? <IconSpeakerphone className="w-6 h-6" /> : i === 1 ? <IconTarget className="w-6 h-6" /> : i === 2 ? <IconShare3 className="w-6 h-6" /> : <IconDeviceLaptop className="w-6 h-6" />}

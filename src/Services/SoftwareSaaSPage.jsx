@@ -90,7 +90,7 @@ const SoftwareSaaSPage = () => {
             {features.map((item, index) => (
               <div 
                 key={index}
-                className="p-8 rounded-2xl bg-[#141211]/80 border border-white/10 hover:border-[#FE083B]/40 transition-all group"
+                className="p-8 rounded-2xl bg-[#141211]/80 border border-white/10 hover:border-[#FE083B]/40 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition-all group"
               >
                 <div className="p-3 rounded-xl bg-[#1c1918] border border-white/10 w-fit group-hover:bg-[#FE083B]/10 transition-colors mb-6">
                   {item.icon}

@@ -321,9 +321,16 @@ export default function PricingPage() {
           <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
             Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">Custom Scope</span>
           </h2>
-          <p className="text-neutral-400 text-sm max-w-xl mx-auto">
+          {/* <p className="text-neutral-400 text-sm max-w-xl mx-auto">
             Click on any service category dropdown to view and select specific requirements with multiple selections allowed.
-          </p>
+          </p> */}
+
+          {/* <p className="text-base sm:text-lg md:text-xl text-neutral-400 font-normal max-w-2xl mx-auto leading-relaxed text-center mb-6 md:mb-8">
+  Click on any service category dropdown to view and select specific requirements with multiple selections allowed.
+</p> */}
+<p className="text-base sm:text-lg md:text-xl text-neutral-400 font-normal max-w-2xl mx-auto leading-relaxed text-center mb-6 md:mb-8">
+  Flexible engagements for every stage. No hidden fees — ever.
+</p>
         </div>
 
         <div className="space-y-4 mb-10 relative z-10">

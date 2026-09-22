@@ -146,9 +146,9 @@ const DeliveryProcess = () => {
                 transition={{ duration: 0.35, ease: "easeInOut" }}
               >
                 
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 tracking-tight">
+                <h4 className="text-lg sm:text-xl font-bold text-white mb-2 tracking-tight">
                   {tabsData[activeTab].heading}
-                </h3>
+                </h4>
 
                 <p className="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-6">
                   {tabsData[activeTab].description}

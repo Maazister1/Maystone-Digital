@@ -230,7 +230,7 @@ export default function WebsiteDevelopment() {
 
           <ol className="space-y-4">
             {layers.map((l, i) => (
-              <li key={l.label} className="group grid items-baseline gap-4 rounded-2xl border border-white/10 bg-[#141211] px-6 py-6 transition-all hover:border-[#FE083B]/50 sm:grid-cols-[4rem_14rem_1fr] sm:px-9 shadow-lg">
+              <li key={l.label} className="group grid items-baseline gap-4 rounded-2xl border border-white/10 bg-[#141211] px-6 py-6 transition-all hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] sm:grid-cols-[4rem_14rem_1fr] sm:px-9 shadow-lg">
                 <span className="font-mono text-sm text-[#FE083B]">{String(i + 1).padStart(2, "0")}</span>
                 <span className="text-xl font-semibold text-white group-hover:text-[#FE083B] transition">{l.label}</span>
                 <span className="text-sm text-neutral-400 leading-relaxed">{l.desc}</span>
@@ -285,7 +285,7 @@ export default function WebsiteDevelopment() {
             { value: "< 1.2s", label: "Average Page Load Speed", desc: "Optimized asset delivery, server-side rendering, and strict performance budgets." },
             { value: "100%", label: "Code Ownership & Handover", desc: "Clean, documented codebases handed directly to your internal engineering team." }
           ].map((stat, idx) => (
-            <div key={idx} className="p-8 rounded-3xl bg-[#141211] border border-white/10 hover:border-[#FE083B]/50 transition group space-y-3">
+            <div key={idx} className="p-8 rounded-3xl bg-[#141211] border border-white/10 hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group space-y-3">
               <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">
                 {stat.value}
               </div>
@@ -376,7 +376,7 @@ export default function WebsiteDevelopment() {
                 
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
-                  <div className="bg-[#141211] border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 transition group shadow-xl">
+                  <div className="bg-[#141211] border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group shadow-xl">
                     <span className="text-xs font-bold text-[#FE083B] uppercase tracking-wider font-mono">
                       Phase {item.step}
                     </span>
@@ -429,7 +429,7 @@ export default function WebsiteDevelopment() {
             { img: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000&auto=format&fit=crop", tag: "SaaS Application", title: "Cloud Workflow Automation", desc: "Secure multi-tenant architecture with real-time sync." },
             { img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop", tag: "Mobile UI / Web", title: "Collaborative Workspace Portal", desc: "Real-time collaboration tools with sub-millisecond latency." }
           ].map((project, idx) => (
-            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-4">
+            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-4 hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition">
               <div className="h-72 rounded-2xl bg-gradient-to-br from-neutral-900 to-black overflow-hidden relative border border-white/5">
                 <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-80" />
                 <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#FE083B] border border-white/10">

@@ -148,10 +148,10 @@ const TestimonialsSection = () => {
                   exit={{ opacity: 0, y: -10 }}
                   transition={{ duration: 0.3 }}
                 >
-                  <h4 className="text-xs sm:text-sm font-bold text-white">
+                  <h3 className="text-xs sm:text-sm font-bold text-white">
                     {current.name}
-                  </h4>
-                  <p className="text-neutral-400 text-[11px]">
+                  </h3>
+                  <p className="text-neutral-400 text-xs">
                     {current.role}
                   </p>
                 </motion.div>

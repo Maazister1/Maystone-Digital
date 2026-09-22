@@ -68,26 +68,20 @@ function App() {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smooth: true,
     });
-
     function raf(time) {
       lenis.raf(time);
+      requestAnimationFrame(raf);}
       requestAnimationFrame(raf);
-    }
-
-    requestAnimationFrame(raf);
-
     return () => {
       lenis.destroy();
     };
   }, []);
-
   return (
     <div className="bg-[#0a0a0a] min-h-screen text-white font-['Outfit']">
       <Navbar />
       <Routes>
         {/* Main Home Page */}
         <Route path="/" element={<HomeView />} />
-        
         {/* Dedicated Web Development Page */}
         <Route path="/services/web-development" element={<WebsiteDevelopment />} />
         <Route path="/services/app-development" element={<MobileDevelopment />} /> 
@@ -105,11 +99,10 @@ function App() {
        <Route path="/pricing/pricingpage" element={<Pricing />} />
        <Route path="/services/software-sas" element={<SoftwareSaaSPage />} />  
          <Route path="/ourteam/ourteam" element={<OurTeam />} />  
-    
       </Routes>
       <FooterSection />
     </div>
   );
 }
-
 export default App;
+

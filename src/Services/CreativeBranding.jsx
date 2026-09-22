@@ -208,7 +208,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             { title: "Higher Conversions", desc: "Optimized UI/UX layouts drive better user actions and retention." },
             { title: "Brand Equity", desc: "Cohesive style guides build long-term enterprise value." }
           ].map((card, i) => (
-            <div key={i} className="p-6 rounded-2xl bg-[#141211] border border-white/10 text-left space-y-2 hover:border-[#FE083B]/40 transition">
+            <div key={i} className="p-6 rounded-2xl bg-[#141211] border border-white/10 text-left space-y-2 hover:border-[#FE083B]/40 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition">
               <div className="w-10 h-10 rounded-xl bg-[#FE083B]/10 flex items-center justify-center text-[#FE083B] font-bold">
                 0{i+1}
               </div>
@@ -237,7 +237,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Service 1 */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
+          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
             <div>
               <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
                 <IconPalette className="w-8 h-8 text-[#FE083B]" />
@@ -260,7 +260,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           </div>
 
           {/* Service 2 */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
+          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
             <div>
               <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
                 <IconLayout className="w-8 h-8 text-[#FE083B]" />
@@ -283,7 +283,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           </div>
 
           {/* Service 3 */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 transition group">
+          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
             <div>
               <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
                 <IconBrush className="w-8 h-8 text-[#FE083B]" />
@@ -356,7 +356,7 @@ text-[#FE5211]  font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             { img: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=1000&auto=format&fit=crop", tag: "UI/UX Design", title: "SaaS Analytics Dashboard", desc: "Clean, modern Figma UI/UX system for enterprise." },
             { img: "https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=1000&auto=format&fit=crop", tag: "Graphic Design", title: "Tech Startup Social Kit", desc: "High-converting social marketing templates & banners." }
           ].map((project, idx) => (
-            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-4 hover:border-[#FE083B]/50 transition">
+            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-4 hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition">
               <div className="h-64 rounded-2xl bg-gradient-to-br from-neutral-900 to-black overflow-hidden relative border border-white/5">
                 <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-80" />
                 <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#FE083B] border border-white/10">
@@ -452,7 +452,7 @@ Who We Are
               features: ["Full Brand Transformation", "Web & Mobile UI/UX Design", "Social Media Asset Kit", "Pitch Deck & Marketing Banners", "Dedicated Design Director"]
             }
           ].map((plan, i) => (
-            <div key={i} className={`rounded-3xl p-8 flex flex-col justify-between transition relative ${plan.popular ? 'bg-[#141211] border-2 border-[#FE083B] shadow-2xl shadow-[#FE083B]/10' : 'bg-[#141211] border border-white/10'}`}>
+            <div key={i} className={`rounded-3xl p-8 flex flex-col justify-between transition relative hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] ${plan.popular ? 'bg-[#141211] border-2 border-[#FE083B] shadow-2xl shadow-[#FE083B]/10' : 'bg-[#141211] border border-white/10 hover:border-[#FE083B]/50'}`}>
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                   Most Popular

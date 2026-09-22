@@ -50,11 +50,11 @@ const ProcessSection = () => {
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-[#FE5211] mb-2"
+            className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#FE5211] mb-2"
           >
             HOW WE WORK
           </motion.p>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white max-w-lg leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white max-w-lg leading-tight">
             A simple, proven <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">3-step process</span>
           </h2>
         </motion.div>
@@ -87,7 +87,7 @@ const ProcessSection = () => {
                   borderColor: "rgba(250, 14, 51, 0.5)",
                   backgroundColor: "rgba(17, 15, 15, 0.95)"
                 }}
-                className="bg-[#0D0B0B] border border-neutral-800/80 rounded-2xl p-6 sm:p-7 relative overflow-hidden backdrop-blur-md transition-colors duration-300 group shadow-xl shadow-black/50 cursor-pointer flex flex-col items-start"
+                className="bg-[#000000] border border-neutral-800/80 rounded-2xl p-6 sm:p-7 relative overflow-hidden backdrop-blur-md transition-colors duration-300 group shadow-xl shadow-black/50 cursor-pointer flex flex-col items-start"
               >
                 {/* Top Red Glow Accent on Hover */}
                 <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-[#FA0E33] to-[#FE5211] opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>

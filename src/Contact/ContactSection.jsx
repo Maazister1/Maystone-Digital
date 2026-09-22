@@ -109,22 +109,22 @@ const ContactSection = () => {
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-[#FA0E33] mb-2"
+            className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#FA0E33] mb-2"
           >
             CONTACT US
           </motion.p>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
             We are <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">here</span>
           </h2>
         </motion.div>
 
-        {/* Main Card Container with exact #1C1313 background */}
+        {/* Main Card Container with exact #000000 background */}
         <motion.div 
           initial={{ opacity: 0, y: 40, scale: 0.96 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.8, type: "spring", stiffness: 75, damping: 18 }}
-          className="w-full bg-[#1C1313] border border-neutral-800/80 rounded-3xl p-6 sm:p-10 relative overflow-hidden backdrop-blur-md shadow-2xl shadow-black/70"
+          className="w-full bg-[#000000] border border-neutral-800/80 rounded-3xl p-6 sm:p-10 relative overflow-hidden backdrop-blur-md shadow-2xl shadow-black/70"
         >
           
           {/* Top Red Glow Accent */}
@@ -145,7 +145,7 @@ const ContactSection = () => {
                   initial={{ opacity: 0, y: -10 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.3 }}
-                  className="text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-[#FA0E33] mb-2"
+                  className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#FA0E33] mb-2"
                 >
                   LET'S TALK
                 </motion.p>
@@ -165,7 +165,7 @@ const ContactSection = () => {
                   whileHover={{ x: 4 }}
                   className="flex items-center gap-3 cursor-pointer group"
                 >
-                  <div className="w-8 h-8 rounded-xl bg-[#140D0D] border border-neutral-800/80 flex items-center justify-center text-[#FA0E33] shrink-0 group-hover:border-[#FA0E33]/50 transition-colors">
+                  <div className="w-8 h-8 rounded-xl bg-[#000000] border border-neutral-800/80 flex items-center justify-center text-[#FA0E33] shrink-0 group-hover:border-[#FA0E33]/50 transition-colors">
                     <IconMail className="w-4 h-4" />
                   </div>
                   <span className="text-neutral-300 text-xs font-medium group-hover:text-white transition-colors">hello@maystonedigital.co.uk</span>
@@ -175,7 +175,7 @@ const ContactSection = () => {
                   whileHover={{ x: 4 }}
                   className="flex items-center gap-3 cursor-pointer group"
                 >
-                  <div className="w-8 h-8 rounded-xl bg-[#140D0D] border border-neutral-800/80 flex items-center justify-center text-[#FA0E33] shrink-0 group-hover:border-[#FA0E33]/50 transition-colors">
+                  <div className="w-8 h-8 rounded-xl bg-[#000000] border border-neutral-800/80 flex items-center justify-center text-[#FA0E33] shrink-0 group-hover:border-[#FA0E33]/50 transition-colors">
                     <IconPhone className="w-4 h-4" />
                   </div>
                   <span className="text-neutral-300 text-xs font-medium group-hover:text-white transition-colors">+44 20 3000 0000</span>
@@ -185,7 +185,7 @@ const ContactSection = () => {
                   whileHover={{ x: 4 }}
                   className="flex items-center gap-3 cursor-pointer group"
                 >
-                  <div className="w-8 h-8 rounded-xl bg-[#140D0D] border border-neutral-800/80 flex items-center justify-center text-[#FA0E33] shrink-0 group-hover:border-[#FA0E33]/50 transition-colors">
+                  <div className="w-8 h-8 rounded-xl bg-[#000000] border border-neutral-800/80 flex items-center justify-center text-[#FA0E33] shrink-0 group-hover:border-[#FA0E33]/50 transition-colors">
                     <IconMapPin className="w-4 h-4" />
                   </div>
                   <span className="text-neutral-300 text-xs font-medium group-hover:text-white transition-colors">London, United Kingdom</span>
@@ -211,7 +211,7 @@ const ContactSection = () => {
                     whileFocus={{ scale: 1.01 }}
                     type="text" 
                     placeholder="Jane Smith"
-                    className="bg-[#140D0D] border border-neutral-800/80 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 focus:outline-none focus:border-[#FA0E33] focus:ring-1 focus:ring-[#FA0E33]/50 transition-all shadow-inner"
+                    className="bg-[#000000] border border-neutral-800/80 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 focus:outline-none focus:border-[#FA0E33] focus:ring-1 focus:ring-[#FA0E33]/50 transition-all shadow-inner"
                   />
                 </div>
 
@@ -222,7 +222,7 @@ const ContactSection = () => {
                     whileFocus={{ scale: 1.01 }}
                     type="email" 
                     placeholder="jane@company.com"
-                    className="bg-[#140D0D] border border-neutral-800/80 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 focus:outline-none focus:border-[#FA0E33] focus:ring-1 focus:ring-[#FA0E33]/50 transition-all shadow-inner"
+                    className="bg-[#000000] border border-neutral-800/80 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 focus:outline-none focus:border-[#FA0E33] focus:ring-1 focus:ring-[#FA0E33]/50 transition-all shadow-inner"
                   />
                 </div>
               </div>
@@ -235,7 +235,7 @@ const ContactSection = () => {
                     whileFocus={{ scale: 1.01 }}
                     type="text" 
                     placeholder="Company Ltd"
-                    className="bg-[#140D0D] border border-neutral-800/80 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 focus:outline-none focus:border-[#FA0E33] focus:ring-1 focus:ring-[#FA0E33]/50 transition-all shadow-inner"
+                    className="bg-[#000000] border border-neutral-800/80 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 focus:outline-none focus:border-[#FA0E33] focus:ring-1 focus:ring-[#FA0E33]/50 transition-all shadow-inner"
                   />
                 </div>
 
@@ -245,7 +245,7 @@ const ContactSection = () => {
                   
                   <div 
                     onClick={() => setIsOpen(!isOpen)}
-                    className="bg-[#140D0D] border border-neutral-800/80 hover:border-[#FA0E33]/60 rounded-xl px-3.5 py-2.5 text-xs text-white flex items-center justify-between cursor-pointer transition-all shadow-inner select-none"
+                    className="bg-[#000000] border border-neutral-800/80 hover:border-[#FA0E33]/60 rounded-xl px-3.5 py-2.5 text-xs text-white flex items-center justify-between cursor-pointer transition-all shadow-inner select-none"
                   >
                     <span className={selectedCategory ? "text-white font-medium" : "text-neutral-500"}>
                       {selectedCategory || "Select a service category"}
@@ -262,7 +262,7 @@ const ContactSection = () => {
                         animate={{ opacity: 1, y: 4, scale: 1 }}
                         exit={{ opacity: 0, y: -8, scale: 0.98 }}
                         transition={{ duration: 0.2, ease: "easeOut" }}
-                        className="absolute top-full left-0 right-0 z-50 bg-[#140D0D] border border-neutral-800 rounded-2xl shadow-2xl shadow-black/90 overflow-hidden backdrop-blur-xl p-1.5 max-h-64 overflow-y-auto"
+                        className="absolute top-full left-0 right-0 z-50 bg-[#000000] border border-neutral-800 rounded-2xl shadow-2xl shadow-black/90 overflow-hidden backdrop-blur-xl p-1.5 max-h-64 overflow-y-auto"
                       >
                         {Object.keys(serviceCategories).map((category, index) => (
                           <div
@@ -303,7 +303,7 @@ const ContactSection = () => {
                       <span className="text-[10px] text-neutral-500 font-normal">Multiple selection allowed</span>
                     </label>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 bg-[#140D0D]/60 border border-neutral-800/80 rounded-xl p-3.5">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 bg-[#000000]/60 border border-neutral-800/80 rounded-xl p-3.5">
                       {serviceCategories[selectedCategory].map((sub, idx) => {
                         const isChecked = selectedSubServices.includes(sub);
                         return (
@@ -337,7 +337,7 @@ const ContactSection = () => {
                   whileFocus={{ scale: 1.01 }}
                   type="text"
                   placeholder="Tell us what you're looking to achieve..."
-                  className="bg-[#140D0D] border border-neutral-800/80 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 focus:outline-none focus:border-[#FA0E33] focus:ring-1 focus:ring-[#FA0E33]/50 transition-all shadow-inner"
+                  className="bg-[#000000] border border-neutral-800/80 rounded-xl px-3.5 py-2.5 text-xs text-white placeholder-neutral-600 focus:outline-none focus:border-[#FA0E33] focus:ring-1 focus:ring-[#FA0E33]/50 transition-all shadow-inner"
                 />
               </div>
 

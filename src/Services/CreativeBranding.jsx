@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { IconPalette, IconBrush, IconLayout, IconSparkles, IconDeviceDesktop, IconChevronDown, IconStar, IconArrowLeft, IconArrowRight, IconCheck } from '@tabler/icons-react';
+import { IconPalette, IconBrush, IconLayout, IconSparkles, IconDeviceDesktop, IconChevronDown, IconStar, IconArrowLeft, IconArrowRight, IconCheck, IconHelpCircle } from '@tabler/icons-react';
 import CTA from '../Components/CTA';
 
 export default function CreativeBranding() {
@@ -10,22 +10,22 @@ export default function CreativeBranding() {
 
   const testimonials = [
     {
-      quote: "Maystone Digital ne hamari brand identity ko bilkul transform kardiya. Logo, color palette aur UI/UX design ne hamare startup ko ek world-class premium look de diya.",
-      name: "Zainab Ahmed",
-      role: "Founder, Modern Apparel",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      quote: "Maystone Digital completely transformed our brand identity. The logo, color palette, and UI/UX design gave our startup a world-class, premium look.",
+      name: "Emily Carter",
+      role: "Founder, Modern Apparel Co.",
+      avatar: "https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?q=80&w=200&auto=format&fit=crop"
     },
     {
-      quote: "Inka graphic design aur brand style guide ka kaam behtareen hai. Hamari social media aur marketing channels par visual consistency bilkul professional ho gayi hai.",
-      name: "Bilal Khan",
-      role: "Creative Director, Media House",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+      quote: "Their graphic design and brand style guide work is outstanding. Our visual presence across social media and marketing channels is now completely professional and consistent.",
+      name: "Benjamin Locke",
+      role: "Creative Director, Lumen Media House",
+      avatar: "https://images.unsplash.com/photo-1531891437562-4301cf35b7e5?q=80&w=200&auto=format&fit=crop"
     },
     {
-      quote: "UI/UX aur visual branding ke absolute masters hain. Inke redesign ke baad hamare app interface aur web layouts ki user engagement double ho gayi.",
-      name: "Daniyal Sheikh",
-      role: "Product Lead, Tech Solutions",
-      avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop"
+      quote: "They are absolute masters of UI/UX and visual branding. After their redesign, our app interface and web layouts saw a huge jump in user engagement.",
+      name: "Natalie Hargrove",
+      role: "Product Lead, Vertex Tech Solutions",
+      avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=200&auto=format&fit=crop"
     }
   ];
 
@@ -73,25 +73,25 @@ export default function CreativeBranding() {
 
   const faqs = [
     {
-      question: "Complete Brand Identity package mein kya kya milta hai?",
-      answer: "Hamare brand identity package mein custom logo design, color palette selection, typography guidelines, brand style guide manuals, aur custom social media visual kits shamil hote hain."
+      question: "What's included in the Complete Brand Identity package?",
+      answer: "Our brand identity package includes custom logo design, color palette selection, typography guidelines, complete brand style guide manuals, and custom social media visual kits."
     },
     {
-      question: "Websites aur Mobile Apps ke liye UI/UX design ka kya process hota hai?",
-      answer: "Hum user research aur wireframing se start karte hain, Figma mein interactive high-fidelity prototypes banate hain, aur developer-ready UI design systems deliver karte hain."
+      question: "What's the UI/UX design process for websites and mobile apps?",
+      answer: "We start with user research and wireframing, build interactive high-fidelity prototypes in Figma, and deliver developer-ready UI design systems."
     },
     {
-      question: "Kya aap social media aur marketing ke liye graphic design assets banate hain?",
-      answer: "Haan bilkul! Hum custom post templates, Instagram feed layouts, ad creatives, brochures, banners, aur presentation decks aapki brand guidelines ke mutabiq design karte hain."
+      question: "Do you create graphic design assets for social media and marketing?",
+      answer: "Absolutely! We design custom post templates, Instagram feed layouts, ad creatives, brochures, banners, and presentation decks tailored to your brand guidelines."
     },
     {
-      question: "Project complete hone par kaunse file formats milte hain?",
-      answer: "Hum saare industry-standard vector aur raster formats provide karte hain jisme AI, EPS, SVG, PDF, high-res PNG/JPG, aur fully organized Figma source files shamil hain."
+      question: "What file formats do we receive once the project is complete?",
+      answer: "We provide all industry-standard vector and raster formats, including AI, EPS, SVG, PDF, high-res PNG/JPG, and fully organized Figma source files."
     }
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] pt-8 pb-16 overflow-hidden">
+    <div className="min-h-screen bg-[#000000] text-white font-['Outfit'] pt-8 pb-16 overflow-hidden">
       
       {/* Infinite Marquee Animation Style */}
       <style>{`
@@ -137,7 +137,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             ].map((item, idx) => {
               const IconComp = item.icon;
               return (
-                <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#141211] border border-white/10 text-xs text-neutral-300 font-medium shadow-md">
+                <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#000000] border border-white/10 text-xs text-neutral-300 font-medium shadow-md">
                   <IconComp className="w-4 h-4 text-[#FE083B]" />
                   <span>{item.label}</span>
                 </div>
@@ -155,7 +155,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             </a>
             <a 
               href="#services" 
-              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#141211] border border-white/10 hover:border-[#FE083B]/50 transition text-white"
+              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#000000] border border-white/10 hover:border-[#FE083B] transition text-white"
             >
               Explore Services
             </a>
@@ -165,7 +165,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
 
       {/* STATS COUNTER BAR */}
       <div className="max-w-6xl mx-auto px-6 mb-20">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 px-6 rounded-3xl bg-[#141211]/80 border border-white/10 backdrop-blur-md text-center">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 py-8 px-6 rounded-3xl bg-[#000000]/80 border border-white/10 backdrop-blur-md text-center">
           <div>
             <div className="text-3xl md:text-4xl font-extrabold text-[#FE083B]">150+</div>
             <div className="text-xs md:text-sm text-neutral-400 mt-1">Brands Transformed</div>
@@ -208,7 +208,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             { title: "Higher Conversions", desc: "Optimized UI/UX layouts drive better user actions and retention." },
             { title: "Brand Equity", desc: "Cohesive style guides build long-term enterprise value." }
           ].map((card, i) => (
-            <div key={i} className="p-6 rounded-2xl bg-[#141211] border border-white/10 text-left space-y-2 hover:border-[#FE083B]/40 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition">
+            <div key={i} className="p-6 rounded-2xl bg-[#000000] border border-white/10 text-left space-y-2 hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition">
               <div className="w-10 h-10 rounded-xl bg-[#FE083B]/10 flex items-center justify-center text-[#FE083B] font-bold">
                 0{i+1}
               </div>
@@ -237,10 +237,10 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           
           {/* Service 1 */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
+          <div className="bg-[#000000] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
             <div>
               <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconPalette className="w-8 h-8 text-[#FE083B]" />
+                <IconPalette className="w-8 h-8 text-[#FE083B] group-hover:text-[#FE5211] transition-colors" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">1. Brand Identity & Logos</h3>
               <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Logo Design & Style Guides</p>
@@ -252,7 +252,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </ul>
             </div>
             <div className="pt-6 border-t border-white/5">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
+              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE5211] flex items-center gap-2 transition">
                 <span>Explore Branding</span>
                 <span>→</span>
               </a>
@@ -260,10 +260,10 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           </div>
 
           {/* Service 2 */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
+          <div className="bg-[#000000] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
             <div>
               <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconLayout className="w-8 h-8 text-[#FE083B]" />
+                <IconLayout className="w-8 h-8 text-[#FE083B] group-hover:text-[#FE5211] transition-colors" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">2. UI/UX Design Systems</h3>
               <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Web & Mobile Interfaces</p>
@@ -275,7 +275,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </ul>
             </div>
             <div className="pt-6 border-t border-white/5">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
+              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE5211] flex items-center gap-2 transition">
                 <span>Explore UI/UX Design</span>
                 <span>→</span>
               </a>
@@ -283,10 +283,10 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           </div>
 
           {/* Service 3 */}
-          <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
+          <div className="bg-[#000000] border border-white/10 rounded-3xl p-8 flex flex-col justify-between hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
             <div>
               <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 transition">
-                <IconBrush className="w-8 h-8 text-[#FE083B]" />
+                <IconBrush className="w-8 h-8 text-[#FE083B] group-hover:text-[#FE5211] transition-colors" />
               </div>
               <h3 className="text-xl font-bold text-white mb-2">3. Graphic Design & Assets</h3>
               <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4">Marketing & Social Graphics</p>
@@ -298,7 +298,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </ul>
             </div>
             <div className="pt-6 border-t border-white/5">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
+              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE5211] flex items-center gap-2 transition">
                 <span>Explore Graphics</span>
                 <span>→</span>
               </a>
@@ -309,15 +309,15 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
       </div>
 
       {/* 4. INFINITE MARQUEE SECTION */}
-      <div className="border-t border-b border-white/10 py-12 bg-[#0c0a09]/60 backdrop-blur-md my-16">
+      <div className="border-t border-b border-white/10 py-12 bg-[#000000]/60 backdrop-blur-md my-16">
         <div className="text-center mb-8">
           <p className="text-xs uppercase tracking-widest text-neutral-400 font-medium">
             Powered by industry-standard design tools and creative software
           </p>
         </div>
         <div className="relative overflow-hidden w-full flex">
-          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#000000] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#000000] to-transparent z-10 pointer-events-none"></div>
           <div className="animate-custom-marquee flex items-center gap-16 whitespace-nowrap">
             {[...techStack, ...techStack].map((tech, idx) => (
               <div key={idx} className="flex items-center gap-3 text-neutral-400 hover:text-white transition duration-300 opacity-60 hover:opacity-100 cursor-pointer">
@@ -356,7 +356,7 @@ text-[#FE5211]  font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             { img: "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?q=80&w=1000&auto=format&fit=crop", tag: "UI/UX Design", title: "SaaS Analytics Dashboard", desc: "Clean, modern Figma UI/UX system for enterprise." },
             { img: "https://images.unsplash.com/photo-1542744094-24638eff58bb?q=80&w=1000&auto=format&fit=crop", tag: "Graphic Design", title: "Tech Startup Social Kit", desc: "High-converting social marketing templates & banners." }
           ].map((project, idx) => (
-            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-4 hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition">
+            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#000000] border border-white/10 p-4 hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition">
               <div className="h-64 rounded-2xl bg-gradient-to-br from-neutral-900 to-black overflow-hidden relative border border-white/5">
                 <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-80" />
                 <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#FE083B] border border-white/10">
@@ -365,7 +365,7 @@ text-[#FE5211]  font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </div>
               <div className="p-4 flex justify-between items-center">
                 <div>
-                  <h3 className="text-lg font-bold text-white">{project.title}</h3>
+                  <h3 className="text-lg font-bold text-white group-hover:text-[#FE5211] transition-colors">{project.title}</h3>
                   <p className="text-xs text-neutral-400 mt-1">{project.desc}</p>
                 </div>
                 <span className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#FE083B] group-hover:border-[#FE083B] transition">
@@ -379,12 +379,12 @@ text-[#FE5211]  font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
 
       {/* 6. TEAM / ABOUT CREATIVE AGENCY SECTION */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
-        <div className="bg-[#141211] border border-white/10 rounded-3xl p-8 md:p-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="group bg-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-8 md:p-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center transition-colors">
           <div className="space-y-6">
           <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
 Who We Are
   </span>
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white group-hover:text-[#FE5211] transition-colors">
               A Team That Turns Ideas Into Digital Experiences
             </h2>
             <p className="text-neutral-400 text-sm md:text-base leading-relaxed">
@@ -392,15 +392,15 @@ Who We Are
             </p>
             <div className="space-y-3 pt-2">
               <div className="flex items-center gap-3 text-sm text-neutral-300">
-                <div className="w-6 h-6 rounded-full bg-[#FE083B]/20 flex items-center justify-center text-[#FE083B]">✓</div>
+                <div className="w-6 h-6 rounded-full bg-[#FE083B]/20 flex items-center justify-center text-[#FE083B] group-hover:text-[#FE5211] transition-colors">✓</div>
                 <span>Strategic brand positioning & competitor analysis</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-neutral-300">
-                <div className="w-6 h-6 rounded-full bg-[#FE083B]/20 flex items-center justify-center text-[#FE083B]">✓</div>
+                <div className="w-6 h-6 rounded-full bg-[#FE083B]/20 flex items-center justify-center text-[#FE083B] group-hover:text-[#FE5211] transition-colors">✓</div>
                 <span>Pixel-perfect Figma UI/UX design systems</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-neutral-300">
-                <div className="w-6 h-6 rounded-full bg-[#FE083B]/20 flex items-center justify-center text-[#FE083B]">✓</div>
+                <div className="w-6 h-6 rounded-full bg-[#FE083B]/20 flex items-center justify-center text-[#FE083B] group-hover:text-[#FE5211] transition-colors">✓</div>
                 <span>End-to-end vector asset handover</span>
               </div>
             </div>
@@ -452,7 +452,7 @@ Who We Are
               features: ["Full Brand Transformation", "Web & Mobile UI/UX Design", "Social Media Asset Kit", "Pitch Deck & Marketing Banners", "Dedicated Design Director"]
             }
           ].map((plan, i) => (
-            <div key={i} className={`rounded-3xl p-8 flex flex-col justify-between transition relative hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] ${plan.popular ? 'bg-[#141211] border-2 border-[#FE083B] shadow-2xl shadow-[#FE083B]/10' : 'bg-[#141211] border border-white/10 hover:border-[#FE083B]/50'}`}>
+            <div key={i} className={`rounded-3xl p-8 flex flex-col justify-between transition relative hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] ${plan.popular ? 'bg-[#000000] border-2 border-[#FE083B] shadow-2xl shadow-[#FE083B]/10' : 'bg-[#000000] border border-white/10 hover:border-[#FE083B]'}`}>
               {plan.popular && (
                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider">
                   Most Popular
@@ -493,20 +493,20 @@ Who We Are
           </h2>
         </div>
 
-        <div className="bg-[#141211] border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative">
+        <div className="bg-[#000000] border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
             <div className="flex items-start gap-4 md:gap-6 flex-1">
               <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#FE083B]/10 border border-[#FE083B]/20 flex-shrink-0 flex items-center justify-center text-[#FE083B] shadow-inner">
                 <span className="text-2xl md:text-3xl font-serif font-bold">“</span>
               </div>
               <div className="space-y-6">
-                <p className="text-neutral-200 text-base sm:text-lg md:text-xl font-normal leading-relaxed">
+                <p className="text-neutral-200 text-xs md:text-sm leading-relaxed">
                   {testimonials[currentTestimonial].quote}
                 </p>
                 <div className="flex items-center gap-3 pt-2">
-                  <img src={testimonials[currentTestimonial].avatar} alt={testimonials[currentTestimonial].name} className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border border-white/10" />
+                  <img src={testimonials[currentTestimonial].avatar} alt={testimonials[currentTestimonial].name} className="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border border-white/10" />
                   <div>
-                    <h4 className="text-white font-bold text-sm md:text-base">{testimonials[currentTestimonial].name}</h4>
+                    <h4 className="text-white font-bold text-xs sm:text-sm">{testimonials[currentTestimonial].name}</h4>
                     <p className="text-neutral-400 text-xs md:text-sm">{testimonials[currentTestimonial].role}</p>
                   </div>
                 </div>
@@ -520,10 +520,10 @@ Who We Are
                 ))}
               </div>
               <div className="flex items-center gap-3">
-                <button onClick={prevTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Previous">
+                <button onClick={prevTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B] flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Previous">
                   <IconArrowLeft className="w-5 h-5" />
                 </button>
-                <button onClick={nextTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Next">
+                <button onClick={nextTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B] flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Next">
                   <IconArrowRight className="w-5 h-5" />
                 </button>
               </div>
@@ -550,15 +550,16 @@ Got Questions?
           {faqs.map((faq, index) => {
             const isOpen = openFaq === index;
             return (
-              <div key={index} className="bg-[#141211] border border-white/10 rounded-2xl overflow-hidden transition">
+              <div key={index} className="bg-[#000000] border border-white/10 rounded-2xl overflow-hidden transition-all">
                 <button onClick={() => toggleFaq(index)} className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
-                  <span className="font-semibold text-white text-base md:text-lg">{faq.question}</span>
-                  <span className={`w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-neutral-300 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-[#FE083B]/20 text-[#FE083B] border-[#FE083B]/30' : ''}`}>
-                    <IconChevronDown className="w-4 h-4" />
+                  <span className="flex items-center gap-3 font-semibold text-[#FE083B]">
+                    <IconHelpCircle className="w-4 h-4 shrink-0" />
+                    {faq.question}
                   </span>
+                  <IconChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#FE083B]' : 'text-neutral-400'}`} />
                 </button>
                 {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-neutral-400 text-sm md:text-base leading-relaxed border-t border-white/5">
+                  <div className="px-6 pb-5 pt-4 text-neutral-400 text-sm md:text-base leading-relaxed border-t border-white/5">
                     {faq.answer}
                   </div>
                 )}
@@ -620,11 +621,11 @@ Got Questions?
                 
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
-                  <div className="bg-[#141211] border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 transition group shadow-xl">
-                    <span className="text-xs font-bold text-[#FE083B] uppercase tracking-wider font-mono">
+                  <div className="bg-[#000000] border border-white/10 p-8 rounded-3xl hover:border-[#FE083B] transition group shadow-xl">
+                    <span className="text-xs font-bold text-[#FE083B] group-hover:text-[#FE5211] uppercase tracking-wider font-mono transition-colors">
                       Phase {item.step}
                     </span>
-                    <h3 className="text-xl font-bold text-white mt-1 mb-2 group-hover:text-[#FE083B] transition">
+                    <h3 className="text-xl font-bold text-white mt-1 mb-2 group-hover:text-[#FE5211] transition">
                       {item.title}
                     </h3>
                     <p className="text-neutral-400 text-sm leading-relaxed">
@@ -634,7 +635,7 @@ Got Questions?
                 </div>
 
                 {/* Center Badge Node */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#141211] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.4)] z-10">
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#000000] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.4)] z-10">
                   {item.step}
                 </div>
 

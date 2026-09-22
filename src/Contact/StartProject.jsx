@@ -38,7 +38,7 @@ export default function StartProject() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] py-12 px-6 md:px-16 lg:px-24">
+    <div className="min-h-screen bg-[#000000] text-white font-['Outfit'] py-12 px-6 md:px-16 lg:px-24">
       
       {/* 1. HEADER SECTION */}
       <div className="max-w-4xl mx-auto text-center space-y-6 pt-8 mb-16">
@@ -59,7 +59,7 @@ export default function StartProject() {
       </div>
 
       {/* 2. FORM CONTAINER */}
-      <div className="max-w-3xl mx-auto bg-[#141211] border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative mb-12">
+      <div className="max-w-3xl mx-auto bg-[#000000] border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative mb-12">
         
         {submitted ? (
           <div className="text-center py-16 space-y-6">

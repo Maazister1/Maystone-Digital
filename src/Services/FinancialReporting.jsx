@@ -12,9 +12,14 @@ import {
 
 export default function FinancialReporting() {
   const [openFaq, setOpenFaq] = useState(null);
+  const [openWhy, setOpenWhy] = useState(0);
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
+  };
+
+  const toggleWhy = (index) => {
+    setOpenWhy(openWhy === index ? null : index);
   };
 
   const s = {
@@ -90,13 +95,13 @@ export default function FinancialReporting() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] selection:bg-[#FE083B] selection:text-white">
+    <div className="min-h-screen bg-[#000000] text-white font-['Outfit'] selection:bg-[#FE083B] selection:text-white">
       <main>
         {/* Page Hero Section - Shifted Up & Tightened */}
-        <section className="relative pt-10 pb-12 lg:pt-14 lg:pb-16 bg-[#0a0a0a] overflow-hidden text-center border-b border-white/5">
+        <section className="relative pt-10 pb-12 lg:pt-14 lg:pb-16 bg-[#000000] overflow-hidden text-center border-b border-white/5">
           <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[250px] bg-[#FE083B]/10 blur-[130px] rounded-full pointer-events-none" />
 
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="max-w-5xl mx-auto px-6 md:px-16 lg:px-24 relative z-10">
             {/* Tag */}
             <div className="inline-block">
   <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
@@ -123,7 +128,7 @@ export default function FinancialReporting() {
               </a>
               <a 
                 href="/process" 
-                className="inline-flex items-center px-8 py-4 rounded-xl font-semibold bg-[#141211] border border-white/10 hover:border-[#FE083B]/50 text-white transition-all"
+                className="inline-flex items-center px-8 py-4 rounded-xl font-semibold bg-[#000000] border border-white/10 hover:border-[#FE083B] text-white transition-all"
               >
                 How we work
               </a>
@@ -132,8 +137,8 @@ export default function FinancialReporting() {
         </section>
 
         {/* Statement Quote Section */}
-        <section className="py-20 bg-[#0a0a0a]">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <section className="py-20 bg-[#000000]">
+          <div className="max-w-4xl mx-auto px-6 md:px-16 lg:px-24 text-center">
             <blockquote className="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-white leading-snug">
               "{s.intro.heading}"
             </blockquote>
@@ -141,10 +146,10 @@ export default function FinancialReporting() {
         </section>
 
         {/* Intro Detail with Image & Stats Section */}
-        <section className="py-20 bg-gradient-to-b from-[#0a0a0a] to-[#12100f] border-y border-white/5">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-20 bg-gradient-to-b from-[#000000] to-[#000000] border-y border-white/5">
+          <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24">
             <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
-              <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#141211] shadow-2xl p-3">
+              <div className="overflow-hidden rounded-3xl border border-white/10 bg-[#000000] shadow-2xl p-3">
                 <img
                   src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=800"
                   alt="Financial reports and records prepared for review"
@@ -174,8 +179,8 @@ export default function FinancialReporting() {
         </section>
 
         {/* Capabilities Section */}
-        <section className="py-24 bg-[#0a0a0a]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-24 bg-[#000000]">
+          <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24">
             <div className="max-w-2xl mb-14">
               <span className="text-[#FE5211] font-semibold text-sm tracking-wider uppercase">Capabilities</span>
               <h2 className="text-3xl font-bold sm:text-4xl mt-2">What we <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">look after</span></h2>
@@ -184,12 +189,12 @@ export default function FinancialReporting() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {s.capabilities.map((cap, i) => (
-                <div key={cap.title} className="bg-[#141211] border border-white/10 rounded-2xl p-8 hover:border-[#FE083B]/50 transition-all flex flex-col justify-between">
+                <div key={cap.title} className="group bg-[#000000] border border-white/10 rounded-2xl p-8 hover:border-[#FE083B] transition-all flex flex-col justify-between">
                   <div>
-                    <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center text-[#FE083B] mb-6">
+                    <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center text-[#FE083B] mb-6 group-hover:text-[#FE5211] transition-colors">
                       {i === 0 ? <IconFileSpreadsheet className="w-6 h-6" /> : i === 1 ? <IconCalculator className="w-6 h-6" /> : i === 2 ? <IconShieldCheck className="w-6 h-6" /> : <IconClock className="w-6 h-6" />}
                     </div>
-                    <h3 className="text-xl font-bold">{cap.title}</h3>
+                    <h3 className="text-xl font-bold group-hover:text-[#FE5211] transition-colors">{cap.title}</h3>
                     <p className="text-sm text-neutral-400 mt-3 leading-relaxed">{cap.desc}</p>
                   </div>
                 </div>
@@ -199,32 +204,43 @@ export default function FinancialReporting() {
         </section>
 
         {/* Why Clients Keep Records Here Section */}
-        <section className="py-24 bg-[#12100f] border-t border-white/5">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-24 bg-[#000000] border-t border-white/5">
+          <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24">
             <div className="grid gap-14 lg:grid-cols-[1fr_1.2fr] items-start">
               <div>
                 <span className="text-[#FE5211] font-semibold text-sm tracking-wider uppercase">Value</span>
                 <h2 className="text-3xl font-bold sm:text-4xl mt-2">Why clients keep these records <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">with us</span></h2>
               </div>
               
-              <div className="space-y-6">
-                {s.why.map((item, idx) => (
-                  <div key={idx} className="bg-[#141211] border border-white/10 p-6 rounded-2xl">
-                    <h3 className="text-lg font-bold flex items-center gap-3">
-                      <IconCircleCheckFilled className="w-5 h-5 text-[#FE083B] shrink-0" />
-                      {item.title}
-                    </h3>
-                    <p className="mt-2 text-sm text-neutral-400 pl-8 leading-relaxed">{item.desc}</p>
-                  </div>
-                ))}
+              <div className="space-y-4">
+                {s.why.map((item, idx) => {
+                  const isOpen = openWhy === idx;
+                  return (
+                    <div key={idx} className="group bg-[#000000] border border-white/10 hover:border-[#FE083B] hover:bg-[#FE083B]/5 rounded-2xl overflow-hidden transition-colors">
+                      <button
+                        onClick={() => toggleWhy(idx)}
+                        className="w-full px-6 py-5 text-left flex items-center justify-between gap-4"
+                      >
+                        <span className="text-lg font-bold flex items-center gap-3 group-hover:text-[#FE5211] transition-colors">
+                          <IconCircleCheckFilled className="w-5 h-5 text-[#FE083B] shrink-0 group-hover:text-[#FE5211] transition-colors" />
+                          {item.title}
+                        </span>
+                        <IconChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180 text-[#FE5211]" : "text-neutral-400"}`} />
+                      </button>
+                      {isOpen && (
+                        <p className="px-6 pb-5 pl-14 text-sm text-neutral-400 leading-relaxed">{item.desc}</p>
+                      )}
+                    </div>
+                  );
+                })}
               </div>
             </div>
           </div>
         </section>
 
         {/* Timeline Section */}
-        <section className="py-24 bg-[#0a0a0a]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-24 bg-[#000000]">
+          <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24">
             <div className="max-w-2xl mb-16">
               <span className="text-[#FE5211] font-semibold text-sm tracking-wider uppercase">Process</span>
               <h2 className="text-3xl font-bold sm:text-4xl mt-2">A predictable monthly <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">rhythm</span></h2>
@@ -232,9 +248,9 @@ export default function FinancialReporting() {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {s.process.map((step) => (
-                <div key={step.step} className="bg-[#141211] border border-white/10 rounded-2xl p-6 relative">
-                  <span className="text-3xl font-extrabold text-[#FE083B]/40 mb-4 block">{step.step}</span>
-                  <h3 className="text-lg font-bold">{step.title}</h3>
+                <div key={step.step} className="group bg-[#000000] border border-white/10 hover:border-[#FE083B] rounded-2xl p-6 relative transition-colors">
+                  <span className="text-3xl font-extrabold text-[#FE083B]/40 group-hover:text-[#FE5211] mb-4 block transition-colors">{step.step}</span>
+                  <h3 className="text-lg font-bold group-hover:text-[#FE5211] transition-colors">{step.title}</h3>
                   <p className="text-xs sm:text-sm text-neutral-400 mt-2 leading-relaxed">{step.desc}</p>
                 </div>
               ))}
@@ -243,8 +259,8 @@ export default function FinancialReporting() {
         </section>
 
         {/* FAQs Section */}
-        <section className="py-24 bg-[#12100f] border-t border-white/5">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-24 bg-[#000000] border-t border-white/5">
+          <div className="max-w-5xl mx-auto px-6 md:px-16 lg:px-24">
             <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12">
               <div>
                 <span className="text-[#FE5211] font-semibold text-sm tracking-wider uppercase">Support</span>
@@ -254,16 +270,16 @@ export default function FinancialReporting() {
 
               <div className="space-y-4">
                 {s.faqs.map((faq, idx) => (
-                  <div key={idx} className="border border-white/10 rounded-2xl bg-[#141211] overflow-hidden transition-all">
+                  <div key={idx} className="border border-white/10 rounded-2xl bg-[#000000] overflow-hidden transition-all">
                     <button
                       onClick={() => toggleFaq(idx)}
-                      className="w-full px-6 py-5 text-left font-semibold flex items-center justify-between gap-4 hover:text-[#FE083B]"
+                      className="w-full px-6 py-5 text-left flex items-center justify-between gap-4"
                     >
-                      <span className="flex items-center gap-3">
-                        <IconHelpCircle className="w-4 h-4 text-[#FE083B] shrink-0" />
+                      <span className="flex items-center gap-3 font-semibold text-[#FE083B]">
+                        <IconHelpCircle className="w-4 h-4 shrink-0" />
                         {faq.q}
                       </span>
-                      <IconChevronDown className={`w-5 h-5 transition-transform ${openFaq === idx ? "rotate-180 text-[#FE083B]" : "text-neutral-400"}`} />
+                      <IconChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-300 ${openFaq === idx ? "rotate-180 text-[#FE083B]" : "text-neutral-400"}`} />
                     </button>
                     {openFaq === idx && (
                       <div className="px-6 pb-5 text-sm text-neutral-400 leading-relaxed border-t border-white/5 pt-4">
@@ -279,7 +295,7 @@ export default function FinancialReporting() {
 
         {/* Disclaimer */}
         {s.disclaimer && (
-          <section className="py-6 bg-[#0a0a0a]">
+          <section className="py-6 bg-[#000000]">
             <div className="max-w-3xl mx-auto px-4 text-center">
               <p className="text-xs text-neutral-500">{s.disclaimer}</p>
             </div>
@@ -287,11 +303,11 @@ export default function FinancialReporting() {
         )}
 
         {/* Closing CTA Banner */}
-        <section className="py-20 bg-gradient-to-b from-[#0a0a0a] to-[#12100f] text-center">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 bg-[#141211] border border-white/10 rounded-3xl p-12 relative overflow-hidden shadow-2xl">
+        <section className="py-20 bg-gradient-to-b from-[#000000] to-[#000000] text-center">
+          <div className="group max-w-4xl mx-auto px-6 md:px-16 lg:px-24 bg-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-12 relative overflow-hidden shadow-2xl transition-colors">
             <div className="absolute top-0 right-0 w-96 h-96 bg-[#FE083B]/10 blur-3xl pointer-events-none rounded-full" />
-            
-            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight">Bring us your records as they are.</h2>
+
+            <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight group-hover:text-[#FE5211] transition-colors">Bring us your records as they are.</h2>
             <p className="mt-4 text-neutral-400 max-w-xl mx-auto text-base">
               We will tell you what needs tidying, what we can take over and what the monthly rhythm would look like.
             </p>
@@ -304,7 +320,7 @@ export default function FinancialReporting() {
               </a>
               <a 
                 href="/pricing" 
-                className="px-8 py-4 rounded-xl font-semibold bg-[#0a0a0a] border border-white/10 hover:border-[#FE083B]/50 text-white transition-all"
+                className="px-8 py-4 rounded-xl font-semibold bg-[#000000] border border-white/10 hover:border-[#FE083B] text-white transition-all"
               >
                 View pricing
               </a>

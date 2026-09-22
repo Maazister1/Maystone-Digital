@@ -53,51 +53,55 @@ const DeliveryProcess = () => {
         "Design guidelines & assets"
       ],
       ctaText: "Redefine your brand"
-    }
+    },
+  {
+  title: "Back Office Support",
+  heading: "Reliable 24/7 technical & operational support",
+  description: "We provide dedicated round-the-clock infrastructure monitoring, troubleshooting, and customer support escalation.",
+  features: [
+    "24/7 System monitoring & uptime",
+    "Incident response & debugging",
+    "Dedicated customer support desks",
+    "Security patching & backups"
+  ],
+  ctaText: "Secure your operations"
+}
   ];
 
   return (
-    <section className="relative w-full bg-[#000000] py-20 px-4 sm:px-6 overflow-hidden border-t border-neutral-800/80">
-      
+    <section className="relative w-full bg-[#000000] py-20 px-4 sm:px-6 overflow-hidden border-t border-neutral-800/80"> 
       {/* Background Glow */}
       <motion.div 
         initial={{ opacity: 0.1, scale: 0.9 }}
         whileInView={{ opacity: 0.25, scale: 1 }}
         transition={{ duration: 1.5, repeat: Infinity, repeatType: "reverse" }}
-        className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center"
-      >
+        className="absolute inset-0 z-0 pointer-events-none flex items-center justify-center">
         <div className="w-[500px] h-[250px] bg-gradient-to-r from-[#FA0E33]/30 to-[#FE5211]/20 rounded-full blur-[110px]"></div>
       </motion.div>
-
-      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center">
-        
+      <div className="relative z-10 max-w-4xl mx-auto flex flex-col items-center"> 
         {/* Section Header with Fade In Animation */}
         <motion.div 
           initial={{ opacity: 0, y: -25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="w-full text-center mb-10 flex flex-col items-center"
-        >
+          className="w-full text-center mb-10 flex flex-col items-center">
           <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#FE5211] mb-2">
             CAPABILITIES
           </p>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
             Explore how we <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">deliver</span>
           </h2>
         </motion.div>
-
         {/* Interactive Layout */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 w-full items-start">
-          
           {/* Left Side: Tabs with Smooth Staggered Slide-In */}
           <motion.div 
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="lg:col-span-4 flex flex-col gap-2.5 w-full"
-          >
+            className="lg:col-span-4 flex flex-col gap-2.5 w-full">
             {tabsData.map((tab, index) => {
               const isActive = activeTab === index;
               return (
@@ -110,8 +114,7 @@ const DeliveryProcess = () => {
                     isActive
                       ? 'bg-neutral-900/95 border-[#FA0E33] text-white shadow-lg shadow-[#FA0E33]/15'
                       : 'bg-neutral-950/40 border-neutral-800/80 text-neutral-400 hover:border-neutral-700 hover:text-white'
-                  }`}
-                >
+                  }`}>
                   <span>{tab.title}</span>
                   {isActive && (
                     <motion.span 
@@ -123,14 +126,13 @@ const DeliveryProcess = () => {
               );
             })}
           </motion.div>
-
           {/* Right Side: Dynamic Content Card with Smooth Enter & Switch Animation */}
           <motion.div 
             initial={{ opacity: 0, x: 40, scale: 0.97 }}
             whileInView={{ opacity: 1, x: 0, scale: 1 }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: 0.1 }}
-            className="lg:col-span-8 bg-[#0D0B0B] border border-neutral-800/80 hover:border-neutral-700 rounded-2xl p-6 sm:p-8 relative overflow-hidden backdrop-blur-md shadow-xl"
+            className="lg:col-span-8 bg-[#000000] border border-neutral-800/80 hover:border-neutral-700 rounded-2xl p-6 sm:p-8 relative overflow-hidden backdrop-blur-md shadow-xl"
           >
             
             {/* Top Red Glow Accent */}

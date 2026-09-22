@@ -54,11 +54,11 @@ const WhyUsSection = () => {
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-[#FE5211] mb-2"
+            className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#FE5211] mb-2"
           >
             WHY MAYSTONE
           </motion.p>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white max-w-lg leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white max-w-lg leading-tight">
             Why leading businesses <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">choose us</span>
           </h2>
         </motion.div>
@@ -82,7 +82,7 @@ const WhyUsSection = () => {
                   scale: 1.01,
                   transition: { duration: 0.25, ease: "easeOut" }
                 }}
-                className="bg-[#0D0B0B] border border-neutral-800/80 hover:border-[#FA0E33] rounded-2xl p-7 relative overflow-hidden backdrop-blur-md transition-colors duration-300 group shadow-xl cursor-pointer"
+                className="bg-[#000000] border border-neutral-800/80 hover:border-[#FA0E33] rounded-2xl p-7 relative overflow-hidden backdrop-blur-md transition-colors duration-300 group shadow-xl cursor-pointer"
               >
                 {/* Standardized Consistent Top Gradient Border Accent */}
                 <div className="absolute top-0 left-6 right-6 h-[1.5px] bg-gradient-to-r from-transparent via-[#FA0E33] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

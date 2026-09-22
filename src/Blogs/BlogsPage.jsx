@@ -19,7 +19,7 @@ export default function BlogsPage() {
       category: "Web Development",
       date: "Sep 12, 2026",
       readTime: "6 min read",
-      imageBg: "from-[#FE083B]/20 via-black to-[#141211]"
+      imageBg: "from-[#FE083B]/20 via-black to-[#000000]"
     },
     {
       id: 2,
@@ -29,7 +29,7 @@ export default function BlogsPage() {
       category: "UI/UX Design",
       date: "Sep 08, 2026",
       readTime: "4 min read",
-      imageBg: "from-purple-900/20 via-black to-[#141211]"
+      imageBg: "from-purple-900/20 via-black to-[#000000]"
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ export default function BlogsPage() {
       category: "Performance Marketing",
       date: "Sep 03, 2026",
       readTime: "5 min read",
-      imageBg: "from-blue-900/20 via-black to-[#141211]"
+      imageBg: "from-blue-900/20 via-black to-[#000000]"
     },
     {
       id: 4,
@@ -49,7 +49,7 @@ export default function BlogsPage() {
       category: "Tech & AI",
       date: "Aug 28, 2026",
       readTime: "7 min read",
-      imageBg: "from-emerald-900/20 via-black to-[#141211]"
+      imageBg: "from-emerald-900/20 via-black to-[#000000]"
     },
     {
       id: 5,
@@ -59,7 +59,7 @@ export default function BlogsPage() {
       category: "Web Development",
       date: "Aug 20, 2026",
       readTime: "5 min read",
-      imageBg: "from-amber-900/20 via-black to-[#141211]"
+      imageBg: "from-amber-900/20 via-black to-[#000000]"
     },
     {
       id: 6,
@@ -69,7 +69,7 @@ export default function BlogsPage() {
       category: "UI/UX Design",
       date: "Aug 15, 2026",
       readTime: "4 min read",
-      imageBg: "from-rose-900/20 via-black to-[#141211]"
+      imageBg: "from-rose-900/20 via-black to-[#000000]"
     }
   ];
 
@@ -87,7 +87,7 @@ export default function BlogsPage() {
   });
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] py-12 px-6 md:px-16 lg:px-24">
+    <div className="min-h-screen bg-[#000000] text-white font-['Outfit'] py-12 px-6 md:px-16 lg:px-24">
       
       {/* 1. HERO SECTION */}
       <div className="max-w-4xl mx-auto text-center space-y-6 pt-8 mb-16">
@@ -99,7 +99,7 @@ Insights and Knowledge
 
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
           <span>Our Latest Blogs</span> 
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]"> & Tech Articles</span>
+          <span className="text-[#FE083B]"> & Tech Articles</span>
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-normal max-w-2xl mx-auto leading-relaxed">
@@ -108,7 +108,7 @@ Insights and Knowledge
 
         {/* Search Bar (Perfect Flex Layout Fix) */}
         <div className="max-w-md mx-auto pt-4">
-          <div className="flex items-center bg-[#141211] border border-white/10 rounded-2xl px-4 py-3.5 focus-within:border-[#FE083B] transition shadow-lg">
+          <div className="flex items-center bg-[#000000] border border-white/10 rounded-2xl px-4 py-3.5 focus-within:border-[#FE083B] transition shadow-lg">
             <IconSearch className="w-5 h-5 text-neutral-400 shrink-0 mr-3" />
             <input 
               type="text"
@@ -130,7 +130,7 @@ Insights and Knowledge
             className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition cursor-pointer ${
               selectedCategory === cat
                 ? 'bg-[#FE083B] text-white shadow-lg shadow-[#FE083B]/30'
-                : 'bg-[#141211] border border-white/10 text-neutral-300 hover:border-white/30'
+                : 'bg-[#000000] border border-white/10 text-neutral-300 hover:border-white/30'
             }`}
           >
             {cat}
@@ -146,7 +146,7 @@ Insights and Knowledge
             return (
               <div 
                 key={post.id}
-                className={`bg-gradient-to-br ${post.imageBg} border border-white/10 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden group hover:border-[#FE083B]/50 transition duration-300`}
+                className={`bg-gradient-to-br ${post.imageBg} border border-white/10 rounded-3xl p-8 sm:p-12 shadow-2xl relative overflow-hidden group hover:border-[#FE083B] transition duration-300`}
               >
                 <div className="absolute -right-16 -bottom-16 w-60 h-60 bg-[#FE083B]/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -159,7 +159,7 @@ Insights and Knowledge
                     <span className="flex items-center gap-1.5"><IconClock className="w-4 h-4 text-[#FE083B]" /> {post.readTime}</span>
                   </div>
 
-                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white group-hover:text-[#FE083B] transition">
+                  <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white group-hover:text-[#FE5211] transition">
                     {post.title}
                   </h2>
 
@@ -191,7 +191,7 @@ Insights and Knowledge
             );
           })
         ) : (
-          <div className="text-center py-16 space-y-4 bg-[#141211] border border-white/10 rounded-3xl">
+          <div className="text-center py-16 space-y-4 bg-[#000000] border border-white/10 rounded-3xl">
             <div className="w-12 h-12 bg-white/5 rounded-full flex items-center justify-center mx-auto text-neutral-400">
               <IconBook className="w-6 h-6" />
             </div>
@@ -202,10 +202,10 @@ Insights and Knowledge
       </div>
 
       {/* 4. NEWSLETTER / SUBSCRIBE SECTION */}
-      <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#141211] to-[#1c1918] border border-white/10 rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden">
+      <div className="group max-w-4xl mx-auto bg-gradient-to-r from-[#000000] to-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden transition-colors">
         <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#FE083B]/10 rounded-full blur-3xl pointer-events-none"></div>
-        
-        <h2 className="text-3xl sm:text-4xl font-bold text-white">
+
+        <h2 className="text-3xl sm:text-4xl font-bold text-white group-hover:text-[#FE5211] transition-colors">
           Subscribe to Our Tech Newsletter
         </h2>
         <p className="text-neutral-300 text-sm sm:text-base max-w-lg mx-auto">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { IconHeadset, IconSettings, IconDatabase, IconClipboardCheck, IconChevronDown, IconStar, IconArrowLeft, IconArrowRight, IconShieldCheck, IconNetwork, IconCpu, IconChartBar } from '@tabler/icons-react';
+import { IconHeadset, IconSettings, IconDatabase, IconClipboardCheck, IconChevronDown, IconStar, IconArrowLeft, IconArrowRight, IconShieldCheck, IconNetwork, IconCpu, IconChartBar, IconHelpCircle } from '@tabler/icons-react';
 import CTA from '../Components/CTA';
 
 export default function BackOfficeSupport() {
@@ -10,22 +10,22 @@ export default function BackOfficeSupport() {
 
   const testimonials = [
     {
-      quote: "Maystone Digital ne hamara back-office workflow completely streamline kardiya. Admin tasks automate hone se hamari team ab core business growth par focus karti hai.",
-      name: "Tariq Mehmood",
-      role: "Operations Head, Enterprise Logistics",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+      quote: "Maystone Digital completely streamlined our back-office workflow. With admin tasks automated, our team now focuses on core business growth.",
+      name: "Thomas Whitfield",
+      role: "Operations Head, Meridian Logistics",
+      avatar: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=200&auto=format&fit=crop"
     },
     {
-      quote: "Inki data entry, CRM management, aur support services ne hamari daily operational efficiency ko double kardiya. Extremely reliable team!",
-      name: "Ayesha Malik",
-      role: "Founder, E-Commerce Retail",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      quote: "Their data entry, CRM management, and support services doubled our daily operational efficiency. An extremely reliable team!",
+      name: "Amanda Cole",
+      role: "Founder, Harborline Retail",
+      avatar: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=200&auto=format&fit=crop"
     },
     {
       quote: "From handling client inquiries to managing internal workflows, their back-office team operates with absolute precision and professionalism.",
-      name: "Farhan Qureshi",
-      role: "Managing Director, Tech Agency",
-      avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop"
+      name: "Daniel Foxworth",
+      role: "Managing Director, Ashgrove Consulting",
+      avatar: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?q=80&w=200&auto=format&fit=crop"
     }
   ];
 
@@ -73,25 +73,25 @@ export default function BackOfficeSupport() {
 
   const faqs = [
     {
-      question: "Back-Office Support mein kaun kaun c services shamil hain?",
-      answer: "Isme administrative tasks, data entry, CRM management, workflow automation, client email support, aur routine reporting poori tarah handle ki jati hain."
+      question: "What services are included in Back-Office Support?",
+      answer: "This includes administrative tasks, data entry, CRM management, workflow automation, client email support, and routine reporting — all fully managed for you."
     },
     {
-      question: "Aap hamare business data ki security aur privacy kaise maintain karte hain?",
-      answer: "Hum strict confidentiality agreements (NDAs), secure encrypted databases, aur role-based access controls use karte hain taake aapka data 100% secure rahe."
+      question: "How do you maintain the security and privacy of our business data?",
+      answer: "We use strict confidentiality agreements (NDAs), secure encrypted databases, and role-based access controls to keep your data 100% secure."
     },
     {
-      question: "Kya aap hamare existing software aur CRM systems ke sath kaam kar sakte hain?",
-      answer: "Haan bilkul! Hum HubSpot, Salesforce, Notion, Excel, ya koi bhi custom tool jo aapki company use kar rahi hai, uske sath smoothly integrate ho jate hain."
+      question: "Can you work with our existing software and CRM systems?",
+      answer: "Absolutely! We integrate smoothly with HubSpot, Salesforce, Notion, Excel, or any custom tool your company already uses."
     },
     {
-      question: "Back-Office support team se communication ka kya tareeqa hota hai?",
-      answer: "Hum Slack, WhatsApp, ya Email ke zariye daily updates dete hain aur aapke designated project managers ke sath direct coordination rakhte hain."
+      question: "How does communication work with the Back-Office support team?",
+      answer: "We share daily updates via Slack, WhatsApp, or email, and maintain direct coordination with your designated project managers."
     }
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] py-12 overflow-hidden">
+    <div className="min-h-screen bg-[#000000] text-white font-['Outfit'] py-12 overflow-hidden">
       
       {/* Infinite Marquee Animation Style */}
       <style>{`
@@ -138,7 +138,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             ].map((item, idx) => {
               const IconComp = item.icon;
               return (
-                <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#141211] border border-white/10 text-xs text-neutral-300 font-medium shadow-md">
+                <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#000000] border border-white/10 text-xs text-neutral-300 font-medium shadow-md">
                   <IconComp className="w-4 h-4 text-[#FE083B]" />
                   <span>{item.label}</span>
                 </div>
@@ -156,7 +156,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             </a>
             <a 
               href="#services" 
-              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#141211] border border-white/10 hover:border-[#FE083B]/50 transition text-white"
+              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#000000] border border-white/10 hover:border-[#FE083B] transition text-white"
             >
               Explore Services
             </a>
@@ -165,15 +165,15 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
       </div>
 
       {/* 2. INFINITE MARQUEE SECTION */}
-      <div className="mt-24 border-t border-b border-white/10 py-10 bg-[#0c0a09]/60 backdrop-blur-md relative">
+      <div className="mt-24 border-t border-b border-white/10 py-10 bg-[#000000]/60 backdrop-blur-md relative">
         <div className="text-center mb-6">
           <p className="text-xs uppercase tracking-widest text-neutral-400 font-medium">
             Powered by industry-standard CRM, workspace, and automation tools
           </p>
         </div>
         <div className="relative overflow-hidden w-full flex">
-          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#000000] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#000000] to-transparent z-10 pointer-events-none"></div>
           <div className="animate-custom-marquee flex items-center gap-16 whitespace-nowrap">
             {[...techStack, ...techStack].map((tech, idx) => (
               <div key={idx} className="flex items-center gap-3 text-neutral-400 hover:text-white transition duration-300 opacity-60 hover:opacity-100 cursor-pointer">
@@ -206,10 +206,10 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           {/* Grid Item 1 */}
           <div className="p-8 md:p-12 border-b border-r border-white/10 flex flex-col justify-between group">
             <div>
-              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B]">
+              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors">
                 <IconNetwork className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Connected Workflows & Automations</h3>
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#FE5211] transition-colors">Connected Workflows & Automations</h3>
               <p className="text-neutral-400 text-sm leading-relaxed">
                 We integrate custom CRM pipelines, automated data triggers, and back-office squads directly with your operations so logic and data stay aligned.
               </p>
@@ -219,10 +219,10 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           {/* Grid Item 2 */}
           <div className="p-8 md:p-12 border-b border-white/10 flex flex-col justify-between group">
             <div>
-              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B]">
+              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors">
                 <IconShieldCheck className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Ready For Enterprise Complexity</h3>
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#FE5211] transition-colors">Ready For Enterprise Complexity</h3>
               <p className="text-neutral-400 text-sm leading-relaxed">
                 From secure API webhooks and data encryption to multi-tier BPO squads, we handle the infrastructure robust businesses demand.
               </p>
@@ -232,10 +232,10 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           {/* Grid Item 3 */}
           <div className="p-8 md:p-12 border-b md:border-b-0 border-r border-white/10 flex flex-col justify-between group">
             <div>
-              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B]">
+              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors">
                 <IconCpu className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Built For Faster Scaling</h3>
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#FE5211] transition-colors">Built For Faster Scaling</h3>
               <p className="text-neutral-400 text-sm leading-relaxed">
                 A streamlined automation setup means fewer manual bottlenecks, quicker response loops, and faster time-to-market.
               </p>
@@ -245,10 +245,10 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           {/* Grid Item 4 */}
           <div className="p-8 md:p-12 flex flex-col justify-between group">
             <div>
-              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B]">
+              <div className="w-12 h-12 rounded-xl bg-[#FE083B]/10 border border-[#FE083B]/20 flex items-center justify-center mb-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors">
                 <IconChartBar className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">Structured For Long-Term Growth</h3>
+              <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#FE5211] transition-colors">Structured For Long-Term Growth</h3>
               <p className="text-neutral-400 text-sm leading-relaxed">
                 We engineer systems with scalability in mind so your automated workflows and outsourced teams expand smoothly as you grow.
               </p>
@@ -278,11 +278,11 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           {/* Service 1 */}
           <div className="p-8 md:p-10 border-b md:border-b-0 border-r border-white/10 flex flex-col justify-between group">
             <div>
-              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#FE083B]">
+              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors">
                 <IconHeadset className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">1. Admin & Executive Assistance</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-6">Routine Operations & Support</p>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#FE5211] transition-colors">1. Admin & Executive Assistance</h3>
+              <p className="text-xs text-[#FE083B] group-hover:text-[#FE5211] font-semibold uppercase tracking-wider mb-6 transition-colors">Routine Operations & Support</p>
               <ul className="text-neutral-400 text-sm space-y-3 mb-8 leading-relaxed">
                 <li>• Calendar management & meeting scheduling</li>
                 <li>• Email inbox management & client sorting</li>
@@ -291,7 +291,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </ul>
             </div>
             <div className="pt-6 border-t border-white/10">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
+              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE5211] flex items-center gap-2 transition">
                 <span>Explore Admin Support</span>
                 <span>→</span>
               </a>
@@ -301,11 +301,11 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           {/* Service 2 */}
           <div className="p-8 md:p-10 border-b md:border-b-0 border-r border-white/10 flex flex-col justify-between group">
             <div>
-              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#FE083B]">
+              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors">
                 <IconDatabase className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">2. CRM & Data Management</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-6">Database Organization & Tracking</p>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#FE5211] transition-colors">2. CRM & Data Management</h3>
+              <p className="text-xs text-[#FE083B] group-hover:text-[#FE5211] font-semibold uppercase tracking-wider mb-6 transition-colors">Database Organization & Tracking</p>
               <ul className="text-neutral-400 text-sm space-y-3 mb-8 leading-relaxed">
                 <li>• HubSpot, Salesforce & Airtable data entry</li>
                 <li>• Lead pipeline tracking & clean-up</li>
@@ -314,7 +314,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </ul>
             </div>
             <div className="pt-6 border-t border-white/10">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
+              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE5211] flex items-center gap-2 transition">
                 <span>Explore CRM Support</span>
                 <span>→</span>
               </a>
@@ -324,11 +324,11 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           {/* Service 3 */}
           <div className="p-8 md:p-10 flex flex-col justify-between group">
             <div>
-              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#FE083B]">
+              <div className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors">
                 <IconSettings className="w-7 h-7" />
               </div>
-              <h3 className="text-xl font-bold text-white mb-2">3. Workflow Automation</h3>
-              <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-6">Zapier, Notion & System Setup</p>
+              <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#FE5211] transition-colors">3. Workflow Automation</h3>
+              <p className="text-xs text-[#FE083B] group-hover:text-[#FE5211] font-semibold uppercase tracking-wider mb-6 transition-colors">Zapier, Notion & System Setup</p>
               <ul className="text-neutral-400 text-sm space-y-3 mb-8 leading-relaxed">
                 <li>• Zapier integration & task automation</li>
                 <li>• Notion workspace setup & documentation</li>
@@ -337,7 +337,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </ul>
             </div>
             <div className="pt-6 border-t border-white/10">
-              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
+              <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE5211] flex items-center gap-2 transition">
                 <span>Explore Automation</span>
                 <span>→</span>
               </a>
@@ -383,7 +383,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </div>
               <div className="flex justify-between items-center">
                 <div>
-                  <h3 className="text-lg font-bold text-white">{project.title}</h3>
+                  <h3 className="text-lg font-bold text-white group-hover:text-[#FE5211] transition-colors">{project.title}</h3>
                   <p className="text-xs text-neutral-400 mt-1">{project.desc}</p>
                 </div>
                 <span className="w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#FE083B] group-hover:border-[#FE083B] transition">
@@ -413,13 +413,13 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
                 <span className="text-2xl md:text-3xl font-serif font-bold">“</span>
               </div>
               <div className="space-y-6">
-                <p className="text-neutral-200 text-base sm:text-lg md:text-xl font-normal leading-relaxed">
+                <p className="text-neutral-200 text-xs md:text-sm leading-relaxed">
                   {testimonials[currentTestimonial].quote}
                 </p>
                 <div className="flex items-center gap-3 pt-2">
-                  <img src={testimonials[currentTestimonial].avatar} alt={testimonials[currentTestimonial].name} className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border border-white/10" />
+                  <img src={testimonials[currentTestimonial].avatar} alt={testimonials[currentTestimonial].name} className="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border border-white/10" />
                   <div>
-                    <h4 className="text-white font-bold text-sm md:text-base">{testimonials[currentTestimonial].name}</h4>
+                    <h4 className="text-white font-bold text-xs sm:text-sm">{testimonials[currentTestimonial].name}</h4>
                     <p className="text-neutral-400 text-xs md:text-sm">{testimonials[currentTestimonial].role}</p>
                   </div>
                 </div>
@@ -433,10 +433,10 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
                 ))}
               </div>
               <div className="flex items-center gap-3">
-                <button onClick={prevTestimonial} className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Previous">
+                <button onClick={prevTestimonial} className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 hover:border-[#FE083B] flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Previous">
                   <IconArrowLeft className="w-5 h-5" />
                 </button>
-                <button onClick={nextTestimonial} className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Next">
+                <button onClick={nextTestimonial} className="w-11 h-11 rounded-xl bg-white/5 border border-white/10 hover:border-[#FE083B] flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Next">
                   <IconArrowRight className="w-5 h-5" />
                 </button>
               </div>
@@ -459,19 +459,20 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           </p>
         </div>
 
-        <div className="border-t border-white/10">
+        <div className="space-y-4">
           {faqs.map((faq, index) => {
             const isOpen = openFaq === index;
             return (
-              <div key={index} className="border-b border-white/10 transition">
-                <button onClick={() => toggleFaq(index)} className="w-full py-6 text-left flex items-center justify-between gap-4 focus:outline-none">
-                  <span className="font-semibold text-white text-base md:text-lg">{faq.question}</span>
-                  <span className={`w-8 h-8 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-neutral-300 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-[#FE083B]/20 text-[#FE083B] border-[#FE083B]/30' : ''}`}>
-                    <IconChevronDown className="w-4 h-4" />
+              <div key={index} className="bg-[#000000] border border-white/10 rounded-2xl overflow-hidden transition-all">
+                <button onClick={() => toggleFaq(index)} className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
+                  <span className="flex items-center gap-3 font-semibold text-[#FE083B]">
+                    <IconHelpCircle className="w-4 h-4 shrink-0" />
+                    {faq.question}
                   </span>
+                  <IconChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#FE083B]' : 'text-neutral-400'}`} />
                 </button>
                 {isOpen && (
-                  <div className="pb-6 pt-1 text-neutral-400 text-sm md:text-base leading-relaxed">
+                  <div className="px-6 pb-5 pt-4 text-neutral-400 text-sm md:text-base leading-relaxed border-t border-white/5">
                     {faq.answer}
                   </div>
                 )}
@@ -534,11 +535,11 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
                 
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
-                  <div className="border border-white/10 p-8 rounded-xl bg-transparent hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
-                    <span className="text-xs font-bold text-[#FE083B] uppercase tracking-wider font-mono">
+                  <div className="border border-white/10 p-8 rounded-xl bg-transparent hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
+                    <span className="text-xs font-bold text-[#FE083B] group-hover:text-[#FE5211] uppercase tracking-wider font-mono transition-colors">
                       Phase {item.step}
                     </span>
-                    <h3 className="text-xl font-bold text-white mt-1 mb-2 group-hover:text-[#FE083B] transition">
+                    <h3 className="text-xl font-bold text-white mt-1 mb-2 group-hover:text-[#FE5211] transition">
                       {item.title}
                     </h3>
                     <p className="text-neutral-400 text-sm leading-relaxed">
@@ -548,7 +549,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
                 </div>
 
                 {/* Center Badge Node */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-xl bg-[#0a0a0a] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.4)] z-10">
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#000000] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.4)] z-10">
                   {item.step}
                 </div>
 

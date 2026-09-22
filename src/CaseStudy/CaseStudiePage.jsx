@@ -55,7 +55,7 @@ export default function CaseStudiesPage() {
     : caseStudies.filter(item => item.category === activeTab);
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] py-12 px-6 md:px-16 lg:px-24">
+    <div className="min-h-screen bg-[#000000] text-white font-['Outfit'] py-12 px-6 md:px-16 lg:px-24">
       
       {/* 1. HERO SECTION */}
       <div className="max-w-4xl mx-auto text-center space-y-6 pt-8 mb-16">
@@ -84,7 +84,7 @@ export default function CaseStudiesPage() {
             className={`px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition cursor-pointer ${
               activeTab === cat
                 ? 'bg-[#FE083B] text-white shadow-lg shadow-[#FE083B]/30'
-                : 'bg-[#141211] border border-white/10 text-neutral-300 hover:border-white/30'
+                : 'bg-[#000000] border border-white/10 text-neutral-300 hover:border-white/30'
             }`}
           >
             {cat}
@@ -97,7 +97,7 @@ export default function CaseStudiesPage() {
         {filteredProjects.map((project) => (
           <div 
             key={project.id}
-            className="bg-[#141211] border border-white/10 rounded-3xl overflow-hidden shadow-2xl flex flex-col justify-between group hover:border-[#FE083B]/50 transition duration-300"
+            className="bg-[#000000] border border-white/10 rounded-3xl overflow-hidden shadow-2xl flex flex-col justify-between group hover:border-[#FE083B] transition duration-300"
           >
             <div>
               {/* Project Image Banner */}
@@ -117,7 +117,7 @@ export default function CaseStudiesPage() {
 
               {/* Content Section */}
               <div className="p-8 space-y-6">
-                <h3 className="text-2xl font-bold text-white group-hover:text-[#FE083B] transition">
+                <h3 className="text-2xl font-bold text-white group-hover:text-[#FE5211] transition">
                   {project.title}
                 </h3>
 
@@ -155,10 +155,10 @@ export default function CaseStudiesPage() {
       </div>
 
       {/* 4. CALL TO ACTION BANNER */}
-      <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#141211] to-[#1c1918] border border-white/10 rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden">
+      <div className="group max-w-4xl mx-auto bg-gradient-to-r from-[#000000] to-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden transition-colors">
         <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#FE083B]/10 rounded-full blur-3xl pointer-events-none"></div>
-        
-        <h2 className="text-3xl sm:text-4xl font-bold text-white">
+
+        <h2 className="text-3xl sm:text-4xl font-bold text-white group-hover:text-[#FE5211] transition-colors">
           Ready to Build Something Extraordinary With Maystone?
         </h2>
         <p className="text-neutral-300 text-sm sm:text-base max-w-lg mx-auto">

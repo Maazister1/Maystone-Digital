@@ -13,7 +13,7 @@ import {
   IconBuildingArch,
   IconShieldLock,
   IconChartBar,
-  IconPlus
+  IconHelpCircle
 } from '@tabler/icons-react';
 import CTA from '../Components/CTA';
 
@@ -25,21 +25,21 @@ export default function AiBpo() {
   const testimonials = [
     {
       quote: "Maystone Digital integrated custom AI chatbots and automated our lead workflows. Our response time dropped from hours to seconds!",
-      name: "Zainab Malik",
-      role: "Operations Director, SaaS Corp",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      name: "Olivia Grant",
+      role: "Operations Director, SaaS Vantage",
+      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&auto=format&fit=crop"
     },
     {
       quote: "The BPO outsourcing team combined with their automation pipelines cut our operational overhead by nearly 65%. Incredible work.",
-      name: "Farhan Ahmed",
-      role: "CEO, E-Commerce Scaleup",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+      name: "Ryan Coleman",
+      role: "CEO, Pinnacle Commerce",
+      avatar: "https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=200&auto=format&fit=crop"
     },
     {
-      quote: "His AI workflow automation handles our customer queries seamlessly 24/7. Absolute game-changer for our scaling business.",
-      name: "Sobia Khan",
-      role: "Founder, Digital Agency",
-      avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop"
+      quote: "Their AI workflow automation handles our customer queries seamlessly 24/7. Absolute game-changer for our scaling business.",
+      name: "Grace Sutherland",
+      role: "Founder, BrightPath Digital",
+      avatar: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
     }
   ];
 
@@ -157,7 +157,7 @@ export default function AiBpo() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] py-12 overflow-hidden relative">
+    <div className="min-h-screen bg-[#000000] text-white font-['Outfit'] py-12 overflow-hidden relative">
       
       {/* Background Neon Glow Accents */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[350px] bg-[#FE083B]/10 blur-[140px] pointer-events-none rounded-full" />
@@ -189,7 +189,7 @@ export default function AiBpo() {
          </div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
             <span>Scale Faster & Cut Costs With</span> 
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] via-[#ff4d6d] to-[#F72531]"> Intelligent AI & BPO</span>
+            <span className="text-[#FE083B]"> Intelligent AI & BPO</span>
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-normal max-w-2xl mx-auto leading-relaxed">
@@ -205,7 +205,7 @@ export default function AiBpo() {
             ].map((item, idx) => {
               const IconComp = item.icon;
               return (
-                <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#141211]/90 border border-white/10 hover:border-[#FE083B]/40 transition text-xs text-neutral-300 font-medium shadow-md backdrop-blur-sm">
+                <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#000000]/90 border border-white/10 hover:border-[#FE083B] transition text-xs text-neutral-300 font-medium shadow-md backdrop-blur-sm">
                   <IconComp className="w-4 h-4 text-[#FE083B]" />
                   <span>{item.label}</span>
                 </div>
@@ -223,7 +223,7 @@ export default function AiBpo() {
             </a>
             <a 
               href="#services" 
-              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#141211]/90 border border-white/10 hover:border-[#FE083B]/50 transition text-white backdrop-blur-sm"
+              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#000000]/90 border border-white/10 hover:border-[#FE083B] transition text-white backdrop-blur-sm"
             >
               Explore Solutions
             </a>
@@ -232,15 +232,15 @@ export default function AiBpo() {
       </div>
 
       {/* 2. INFINITE MARQUEE SECTION */}
-      <div className="mt-20 border-t border-b border-white/10 py-10 bg-[#0c0a09]/80 backdrop-blur-md relative z-10">
+      <div className="mt-20 border-t border-b border-white/10 py-10 bg-[#000000]/80 backdrop-blur-md relative z-10">
         <div className="text-center mb-6">
           <p className="text-xs uppercase tracking-widest text-neutral-400 font-medium">
             Powered by industry-leading AI models and integration tools
           </p>
         </div>
         <div className="relative overflow-hidden w-full flex">
-          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#000000] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#000000] to-transparent z-10 pointer-events-none"></div>
           <div className="animate-custom-marquee flex items-center gap-16 whitespace-nowrap">
             {[...techStack, ...techStack].map((tech, idx) => (
               <div key={idx} className="flex items-center gap-3 text-neutral-400 hover:text-white transition duration-300 opacity-60 hover:opacity-100 cursor-pointer">
@@ -274,10 +274,10 @@ export default function AiBpo() {
                   ${isLeftCol ? 'md:border-r border-white/10' : ''} 
                   ${isTopRow ? 'border-b border-white/10' : ''}`}
               >
-                <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:border-[#FE083B]/40 transition">
-                  <IconComp className="w-6 h-6 text-[#FE083B]" />
+                <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:border-[#FE083B] transition">
+                  <IconComp className="w-6 h-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors" />
                 </div>
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#FE083B] transition">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-[#FE5211] transition">
                   {card.title}
                 </h3>
                 <p className="text-neutral-400 text-sm md:text-base leading-relaxed">
@@ -316,17 +316,17 @@ export default function AiBpo() {
                   ${isNotLastCol ? 'md:border-r border-white/10' : ''}`}
               >
                 <div>
-                  <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 group-hover:border-[#FE083B]/40 transition">
-                    <IconComp className="w-8 h-8 text-[#FE083B]" />
+                  <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 overflow-hidden p-3 group-hover:scale-110 group-hover:border-[#FE083B] transition">
+                    <IconComp className="w-8 h-8 text-[#FE083B] group-hover:text-[#FE5211] transition-colors" />
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-2">{service.title}</h3>
-                  <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider mb-4 font-mono">{service.subtitle}</p>
+                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-[#FE5211] transition-colors">{service.title}</h3>
+                  <p className="text-xs text-[#FE083B] group-hover:text-[#FE5211] font-semibold uppercase tracking-wider mb-4 font-mono transition-colors">{service.subtitle}</p>
                   <p className="text-neutral-400 text-sm leading-relaxed">
                     {service.desc}
                   </p>
                 </div>
                 <div className="pt-6 mt-6 border-t border-white/5">
-                  <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE083B] flex items-center gap-2 transition">
+                  <a href="#contact" className="text-xs font-bold text-white group-hover:text-[#FE5211] flex items-center gap-2 transition">
                     <span>Let's Chat</span>
                     <span>→</span>
                   </a>
@@ -363,7 +363,7 @@ export default function AiBpo() {
             { img: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop", tag: "SaaS Operations", title: "Automated Billing & Onboarding", desc: "Make.com pipeline connecting Stripe, Slack, and HubSpot" },
             { img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop", tag: "Outsourced BPO", title: "Dedicated Remote Support Squad", desc: "Managed team of 10+ agents scaling client success operations" }
           ].map((project, idx) => (
-            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211]/90 border border-white/10 hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition-all duration-300 p-4 shadow-xl backdrop-blur-md">
+            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#000000]/90 border border-white/10 hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition-all duration-300 p-4 shadow-xl backdrop-blur-md">
               <div className="h-72 rounded-2xl bg-gradient-to-br from-neutral-900 to-black overflow-hidden relative border border-white/5">
                 <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-80" />
                 <div className="absolute top-4 left-4 bg-black/80 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-medium text-[#FE083B] border border-white/10 shadow-lg">
@@ -372,7 +372,7 @@ export default function AiBpo() {
               </div>
               <div className="p-4 flex justify-between items-center">
                 <div>
-                  <h3 className="text-lg font-bold text-white group-hover:text-[#FE083B] transition">{project.title}</h3>
+                  <h3 className="text-lg font-bold text-white group-hover:text-[#FE5211] transition">{project.title}</h3>
                   <p className="text-xs text-neutral-400 mt-1">{project.desc}</p>
                 </div>
                 <span className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#FE083B] group-hover:border-[#FE083B] transition shadow-md">
@@ -395,20 +395,20 @@ export default function AiBpo() {
           </h2>
         </div>
 
-        <div className="bg-[#141211]/90 border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative backdrop-blur-md">
+        <div className="bg-[#000000]/90 border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative backdrop-blur-md">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
             <div className="flex items-start gap-4 md:gap-6 flex-1">
               <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#FE083B]/10 border border-[#FE083B]/30 flex-shrink-0 flex items-center justify-center text-[#FE083B] shadow-inner">
                 <span className="text-2xl md:text-3xl font-serif font-bold">“</span>
               </div>
               <div className="space-y-6">
-                <p className="text-neutral-200 text-base sm:text-lg md:text-xl font-normal leading-relaxed">
+                <p className="text-neutral-200 text-xs md:text-sm leading-relaxed">
                   {testimonials[currentTestimonial].quote}
                 </p>
                 <div className="flex items-center gap-3 pt-2">
-                  <img src={testimonials[currentTestimonial].avatar} alt={testimonials[currentTestimonial].name} className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border border-white/10" />
+                  <img src={testimonials[currentTestimonial].avatar} alt={testimonials[currentTestimonial].name} className="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border border-white/10" />
                   <div>
-                    <h4 className="text-white font-bold text-sm md:text-base">{testimonials[currentTestimonial].name}</h4>
+                    <h4 className="text-white font-bold text-xs sm:text-sm">{testimonials[currentTestimonial].name}</h4>
                     <p className="text-neutral-400 text-xs md:text-sm">{testimonials[currentTestimonial].role}</p>
                   </div>
                 </div>
@@ -422,10 +422,10 @@ export default function AiBpo() {
                 ))}
               </div>
               <div className="flex items-center gap-3">
-                <button onClick={prevTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10 shadow-md" aria-label="Previous">
+                <button onClick={prevTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B] flex items-center justify-center text-white transition hover:bg-white/10 shadow-md" aria-label="Previous">
                   <IconArrowLeft className="w-5 h-5" />
                 </button>
-                <button onClick={nextTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10 shadow-md" aria-label="Next">
+                <button onClick={nextTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B] flex items-center justify-center text-white transition hover:bg-white/10 shadow-md" aria-label="Next">
                   <IconArrowRight className="w-5 h-5" />
                 </button>
               </div>
@@ -443,44 +443,14 @@ export default function AiBpo() {
             <div className="space-y-4">
               <h2 className="text-4xl sm:text-5xl font-bold tracking-tight text-white leading-[1.1]">
                 Got Questions?<br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] via-[#ff4d6d] to-[#F72531]">We've Got Answers</span>
+                <span className="text-4xl sm:text-5xl font-bold tracking-tight text-[#FE083B] leading-[1.1]">We've Got Answers</span>
               </h2>
               <p className="text-neutral-300 text-sm md:text-base leading-relaxed">
                 If you're unsure where to start or want to see how we can help, reach out, and we'll walk you through it.
               </p>
             </div>
 
-            {/* Booking Card */}
-            <div className="bg-[#141211]/90 border border-white/10 rounded-3xl p-6 shadow-2xl backdrop-blur-md space-y-6">
-              <div className="flex items-center gap-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" 
-                  alt="Consultant" 
-                  className="w-12 h-12 rounded-full object-cover border border-white/10" 
-                />
-                <div>
-                  <h4 className="text-white font-bold text-base">Book an Intro Call</h4>
-                  <p className="text-neutral-400 text-xs mt-0.5">Let's talk through your goals and timeline.</p>
-                </div>
-              </div>
-
-              <a 
-                href="#contact" 
-                className="w-full bg-[#0a0a0a] border border-white/10 hover:border-[#FE083B]/50 text-white px-5 py-4 rounded-full text-sm font-medium flex items-center justify-between transition shadow-inner group"
-              >
-                <span>Book a Call</span>
-                <span className="w-8 h-8 rounded-full bg-[#FE083B] flex items-center justify-center text-white group-hover:scale-105 transition">
-                  <IconArrowRight className="w-4 h-4" />
-                </span>
-              </a>
-
-              <div className="pt-2 border-t border-white/5 text-xs text-neutral-400 flex items-center gap-2">
-                <span>Prefer email?</span>
-                <a href="mailto:hello@maystone.digital" className="text-white hover:text-[#FE083B] underline transition">
-                  hello@maystone.digital
-                </a>
-              </div>
-            </div>
+         
           </div>
 
           {/* Right Column: Accordion FAQs */}
@@ -488,20 +458,19 @@ export default function AiBpo() {
             {faqs.map((faq, index) => {
               const isOpen = openFaq === index;
               return (
-                <div key={index} className="bg-[#141211]/90 border border-white/10 rounded-2xl overflow-hidden transition backdrop-blur-md shadow-lg">
-                  <button 
-                    onClick={() => toggleFaq(index)} 
-                    className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none group"
+                <div key={index} className="bg-[#000000] border border-white/10 rounded-2xl overflow-hidden transition-all">
+                  <button
+                    onClick={() => toggleFaq(index)}
+                    className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none"
                   >
-                    <span className="font-semibold text-white text-base md:text-lg group-hover:text-[#FE083B] transition">
+                    <span className="flex items-center gap-3 font-semibold text-[#FE083B]">
+                      <IconHelpCircle className="w-4 h-4 shrink-0" />
                       {faq.question}
                     </span>
-                    <span className={`w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-neutral-300 transition-transform duration-300 flex-shrink-0 ${isOpen ? 'rotate-45 bg-[#FE083B]/20 text-[#FE083B] border-[#FE083B]/30 shadow-[0_0_10px_rgba(254,8,59,0.3)]' : ''}`}>
-                      <IconPlus className="w-4 h-4" />
-                    </span>
+                    <IconChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#FE083B]' : 'text-neutral-400'}`} />
                   </button>
                   {isOpen && (
-                    <div className="px-6 pb-6 pt-1 text-neutral-400 text-sm md:text-base leading-relaxed border-t border-white/5">
+                    <div className="px-6 pb-5 pt-4 text-neutral-400 text-sm md:text-base leading-relaxed border-t border-white/5">
                       {faq.answer}
                     </div>
                   )}
@@ -565,11 +534,11 @@ Our Process
                 
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
-                  <div className="bg-[#141211]/90 border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group shadow-xl backdrop-blur-md">
-                    <span className="text-xs font-bold text-[#FE083B] uppercase tracking-wider font-mono">
+                  <div className="bg-[#000000]/90 border border-white/10 p-8 rounded-3xl hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group shadow-xl backdrop-blur-md">
+                    <span className="text-xs font-bold text-[#FE083B] group-hover:text-[#FE5211] uppercase tracking-wider font-mono transition-colors">
                       Phase {item.step}
                     </span>
-                    <h3 className="text-xl font-bold text-white mt-1 mb-2 group-hover:text-[#FE083B] transition">
+                    <h3 className="text-xl font-bold text-white mt-1 mb-2 group-hover:text-[#FE5211] transition">
                       {item.title}
                     </h3>
                     <p className="text-neutral-400 text-sm leading-relaxed">
@@ -579,7 +548,7 @@ Our Process
                 </div>
 
                 {/* Center Badge Node */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#141211] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.5)] z-10 font-mono">
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#000000] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.5)] z-10 font-mono">
                   {item.step}
                 </div>
 

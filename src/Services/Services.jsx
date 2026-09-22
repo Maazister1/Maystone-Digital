@@ -118,10 +118,10 @@ const Services = () => {
           transition={{ duration: 0.7, ease: "easeOut" }}
           className="text-center mb-16"
         >
-          <p className="text-[11px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-[#FE5211] mb-3">
+          <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#FE5211] mb-3">
             WHAT WE DO
           </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-white max-w-2xl leading-[1.15]">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white max-w-2xl leading-[1.15]">
             Everything you need, <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">under one roof</span>
           </h2>
           {/* <p className="text-neutral-400 text-xs sm:text-sm mt-4 max-w-xl mx-auto font-normal leading-relaxed">
@@ -150,7 +150,7 @@ const Services = () => {
                   scale: 1.01,
                   transition: { duration: 0.25, ease: "easeOut" }
                 }}
-                className={`group relative bg-[#0D0B0B] border border-neutral-800 hover:border-[#FA0E33] rounded-2xl p-8 flex flex-col justify-between shadow-xl shadow-black/60 hover:shadow-2xl hover:shadow-[#FA0E33]/30 backdrop-blur-md transition-colors duration-300 cursor-pointer overflow-hidden ${
+                className={`group relative bg-[#000000] border border-neutral-800 hover:border-[#FA0E33] rounded-2xl p-8 flex flex-col justify-between shadow-xl shadow-black/60 hover:shadow-2xl hover:shadow-[#FA0E33]/30 backdrop-blur-md transition-colors duration-300 cursor-pointer overflow-hidden ${
                   index === servicesList.length - 1 ? 'md:col-span-2 lg:col-span-1 lg:col-start-2' : ''
                 }`}
               >

@@ -48,7 +48,7 @@ const OurTeam = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-[#0a0a0a] text-neutral-100 py-20 px-6 md:px-16 lg:px-24 xl:px-32 relative overflow-hidden">
+    <section className="min-h-screen bg-[#000000] text-neutral-100 py-20 px-6 md:px-16 lg:px-24 xl:px-32 relative overflow-hidden">
       
       {/* Background Glow Effect */}
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-[#FE083B]/10 blur-[130px] rounded-full pointer-events-none" />
@@ -75,7 +75,7 @@ const OurTeam = () => {
           {teamMembers.map((member, index) => (
             <div 
               key={index}
-              className="group relative bg-[#121114] border border-white/10 rounded-2xl overflow-hidden hover:border-[#FE083B]/50 transition-all duration-300 flex flex-col justify-between shadow-xl"
+              className="group relative bg-[#000000] border border-white/10 rounded-2xl overflow-hidden hover:border-[#FE083B] transition-all duration-300 flex flex-col justify-between shadow-xl"
             >
               {/* Image Container with Grayscale Effect */}
               <div className="relative h-80 w-full overflow-hidden bg-neutral-900">
@@ -85,13 +85,13 @@ const OurTeam = () => {
                   className="w-full h-full object-cover object-top filter grayscale contrast-125 group-hover:scale-105 group-hover:grayscale-0 transition-all duration-500" 
                 />
                 {/* Gradient Shadow Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#121114] via-[#121114]/20 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#000000] via-[#000000]/20 to-transparent" />
               </div>
 
               {/* Content Details */}
               <div className="p-6 flex flex-col flex-grow justify-between">
                 <div>
-                  <h3 className="text-xl font-bold text-white group-hover:text-[#FE083B] transition-colors">
+                  <h3 className="text-xl font-bold text-white group-hover:text-[#FE5211] transition-colors">
                     {member.name}
                   </h3>
                   <p className="text-xs font-semibold text-[#FE083B] uppercase tracking-wider mt-1">
@@ -105,13 +105,13 @@ const OurTeam = () => {
                 {/* Social Icons Footer */}
                 <div className="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
                   <div className="flex items-center space-x-3 text-neutral-400">
-                    <a href="#linkedin" className="hover:text-[#FE083B] transition-colors p-1 bg-white/5 rounded-lg border border-white/5 hover:border-[#FE083B]/30">
+                    <a href="#linkedin" className="hover:text-[#FE083B] transition-colors p-1 bg-white/5 rounded-lg border border-white/5 hover:border-[#FE083B]">
                       <IconBrandLinkedin className="w-4 h-4" />
                     </a>
-                    <a href="#twitter" className="hover:text-[#FE083B] transition-colors p-1 bg-white/5 rounded-lg border border-white/5 hover:border-[#FE083B]/30">
+                    <a href="#twitter" className="hover:text-[#FE083B] transition-colors p-1 bg-white/5 rounded-lg border border-white/5 hover:border-[#FE083B]">
                       <IconBrandTwitter className="w-4 h-4" />
                     </a>
-                    <a href="#website" className="hover:text-[#FE083B] transition-colors p-1 bg-white/5 rounded-lg border border-white/5 hover:border-[#FE083B]/30">
+                    <a href="#website" className="hover:text-[#FE083B] transition-colors p-1 bg-white/5 rounded-lg border border-white/5 hover:border-[#FE083B]">
                       <IconWorld className="w-4 h-4" />
                     </a>
                   </div>

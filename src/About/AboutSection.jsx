@@ -59,20 +59,20 @@ const AboutSection = () => {
               initial={{ opacity: 0, y: -10 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-[#FE5211] mb-2"
+              className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#FE5211] mb-2"
             >
               ABOUT MAYSTONE
             </motion.p>
 
-            <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white mb-4 leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-4 leading-tight">
               A premium digital partner <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">built for UK growth</span>
             </h2>
 
-            <p className="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-4">
+            <p className="text-neutral-400 text-xs sm:text-sm md:text-base font-normal leading-relaxed mb-4">
               Maystone Digital is a full-service digital solutions agency helping UK businesses modernise, automate and grow. We combine world-class engineering, creative craft and operational expertise to deliver outcomes — not just deliverables.
             </p>
 
-            <p className="text-neutral-400 text-xs sm:text-sm leading-relaxed mb-6">
+            <p className="text-neutral-400 text-xs sm:text-sm md:text-base font-normal leading-relaxed mb-6">
               From startups to established enterprises, our multidisciplinary teams act as a true extension of your business, obsessed with quality and measurable results.
             </p>
 
@@ -106,7 +106,7 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, x: 0, scale: 1, filter: "blur(0px)" }}
             viewport={{ once: true, margin: "-80px" }}
             transition={{ duration: 0.9, type: "spring", stiffness: 80, damping: 20, delay: 0.2 }}
-            className="lg:col-span-6 bg-[#0D0B0B] border border-neutral-800/80 rounded-2xl p-5 sm:p-6 relative overflow-hidden backdrop-blur-md flex flex-col gap-3.5 shadow-2xl shadow-black/80"
+            className="lg:col-span-6 bg-[#000000] border border-neutral-800/80 rounded-2xl p-5 sm:p-6 relative overflow-hidden backdrop-blur-md flex flex-col gap-3.5 shadow-2xl shadow-black/80"
           >
             
             {/* Top Red Glow Accent */}

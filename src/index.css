@@ -21,7 +21,7 @@ html {
   .backdrop-blur-xl {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
-    background-color: rgba(28, 19, 19, 0.95) !important; /* Solid dark background */
+    background-color: rgba(0, 0, 0, 0.95) !important; /* Solid dark background */
   }
 
   /* Mobile par saare heavy box-shadows hata dein jo GPU khinchtay hain */
@@ -33,6 +33,6 @@ html {
 /* Set Outfit as default font family */
 body {
   font-family: 'Outfit', sans-serif;
-  background-color: #0a0a0a;
+  background-color: #000000;
   color: #ffffff;
 }

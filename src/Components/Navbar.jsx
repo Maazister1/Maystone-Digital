@@ -97,7 +97,7 @@ const Navbar = () => {
   };
 
   return (
-    <header className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-6 w-full bg-[#0a0a0a]/90 backdrop-blur-xl border-b border-white/5 sticky top-0 z-50">
+    <header className="flex items-center justify-between px-6 md:px-16 lg:px-24 xl:px-32 py-6 w-full bg-[#000000]/90 backdrop-blur-xl border-b border-white/5 sticky top-0 z-50">
       
       {/* Brand Logo Only (Navbar.png) */}
       <Link to="/" className="flex items-center">
@@ -111,7 +111,7 @@ const Navbar = () => {
       {/* Navigation Menu */}
       <nav
         id="menu"
-        className={`max-md:fixed max-md:inset-0 max-md:bg-[#0a0a0a]/98 max-md:backdrop-blur-2xl max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:p-8 max-md:overflow-y-auto transition-all duration-300 flex-row flex items-center gap-8 text-neutral-300 text-sm font-medium ${
+        className={`max-md:fixed max-md:inset-0 max-md:bg-[#000000]/98 max-md:backdrop-blur-2xl max-md:flex max-md:flex-col max-md:justify-center max-md:items-center max-md:p-8 max-md:overflow-y-auto transition-all duration-300 flex-row flex items-center gap-8 text-neutral-300 text-sm font-medium ${
           isOpen ? 'max-md:opacity-100 max-md:pointer-events-auto' : 'max-md:opacity-0 max-md:pointer-events-none'
         }`}
       >
@@ -133,7 +133,7 @@ const Navbar = () => {
 
           {/* Lovable Style Glassmorphism Dropdown Card (2 Columns Layout) */}
           {isServicesOpen && (
-            <div className="absolute top-full left-0 md:-left-20 w-[90vw] sm:w-[680px] bg-[#0e0e11]/90 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.8)] p-5 grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 text-left z-50 animate-in fade-in zoom-in-95 duration-200">
+            <div className="absolute top-full left-0 md:-left-20 w-[90vw] sm:w-[680px] bg-[#000000]/90 backdrop-blur-2xl border border-white/10 rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.8)] p-5 grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 text-left z-50 animate-in fade-in zoom-in-95 duration-200">
               {servicesList.map((service, index) => (
                 <Link 
                   to={service.path}
@@ -144,7 +144,7 @@ const Navbar = () => {
                   }}
                   className="flex items-start gap-3.5 p-3 rounded-xl hover:bg-white/[0.07] hover:border-red-500/30 border border-transparent transition-all group/item"
                 >
-                  <div className="p-2.5 rounded-xl border border-white/10 bg-[#16161a] group-hover/item:border-red-500/60 group-hover/item:bg-red-500/10 flex items-center justify-center shrink-0 transition-colors">
+                  <div className="p-2.5 rounded-xl border border-white/10 bg-[#000000] group-hover/item:border-red-500/60 group-hover/item:bg-red-500/10 flex items-center justify-center shrink-0 transition-colors">
                     {service.icon}
                   </div>
                   <div>

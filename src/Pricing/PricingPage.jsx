@@ -230,7 +230,7 @@ export default function PricingPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] py-12 px-6 md:px-16 lg:px-24">
+    <div className="min-h-screen bg-[#000000] text-white font-['Outfit'] py-12 px-6 md:px-16 lg:px-24">
       
       {/* 1. HERO SECTION */}
       <div className="max-w-4xl mx-auto text-center space-y-6 pt-8 mb-16">
@@ -253,12 +253,12 @@ export default function PricingPage() {
       {/* 2. FIXED PRE-BUILT PRICING CARDS */}
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 mb-24">
         {fixedPlans.map((plan, idx) => (
-          <div 
+          <div
             key={idx}
-            className={`bg-[#141211] border rounded-3xl p-8 sm:p-10 flex flex-col justify-between shadow-2xl relative transition duration-300 ${
-              plan.popular 
-                ? 'border-[#FE083B] shadow-[#FE083B]/10 lg:-translate-y-2' 
-                : 'border-white/10 hover:border-white/30'
+            className={`group bg-[#000000] border rounded-3xl p-8 sm:p-10 flex flex-col justify-between shadow-2xl relative transition duration-300 ${
+              plan.popular
+                ? 'border-[#FE083B] shadow-[#FE083B]/10 lg:-translate-y-2'
+                : 'border-white/10 hover:border-[#FE083B]'
             }`}
           >
             {plan.popular && (
@@ -269,7 +269,7 @@ export default function PricingPage() {
 
             <div className="space-y-6">
               <div>
-                <h3 className="text-2xl font-bold text-white mb-2">{plan.name}</h3>
+                <h3 className="text-2xl font-bold text-white mb-2 group-hover:text-[#FE5211] transition-colors">{plan.name}</h3>
                 <p className="text-xs text-neutral-400 min-h-[36px]">{plan.tagline}</p>
               </div>
 
@@ -311,14 +311,14 @@ export default function PricingPage() {
       </div>
 
       {/* 3. INTERACTIVE CUSTOM PACKAGE BUILDER SECTION */}
-      <div className="max-w-5xl mx-auto bg-[#141211] border border-white/10 rounded-3xl p-8 sm:p-12 shadow-2xl mb-20 relative overflow-hidden">
+      <div className="group max-w-5xl mx-auto bg-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-8 sm:p-12 shadow-2xl mb-20 relative overflow-hidden transition-colors">
         <div className="absolute top-0 right-0 w-96 h-96 bg-[#FE083B]/5 rounded-full blur-3xl pointer-events-none" />
 
         <div className="text-center space-y-3 mb-10 relative z-10">
           <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             Custom Solution Builder
           </span>
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white group-hover:text-[#FE5211] transition-colors">
             Build Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">Custom Scope</span>
           </h2>
           {/* <p className="text-neutral-400 text-sm max-w-xl mx-auto">
@@ -413,7 +413,7 @@ export default function PricingPage() {
         <div className="pt-6 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-6 relative z-10">
           <div>
             <span className="text-xs text-neutral-400 uppercase tracking-wider block">Estimated Total Investment</span>
-            <span className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">
+            <span className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531] group-hover:from-[#FE5211] group-hover:to-[#FE5211] transition-colors">
               ${calculatedTotal.toLocaleString()}
             </span>
           </div>
@@ -429,10 +429,10 @@ export default function PricingPage() {
       </div>
 
       {/* 4. CALL TO ACTION BANNER */}
-      <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#141211] to-[#1c1918] border border-white/10 rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden">
+      <div className="group max-w-4xl mx-auto bg-gradient-to-r from-[#000000] to-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden transition-colors">
         <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#FE083B]/10 rounded-full blur-3xl pointer-events-none"></div>
-        
-        <h2 className="text-3xl sm:text-4xl font-bold text-white">
+
+        <h2 className="text-3xl sm:text-4xl font-bold text-white group-hover:text-[#FE5211] transition-colors">
           Ready to Bring Your Idea to Life?
         </h2>
         <p className="text-neutral-300 text-sm sm:text-base max-w-lg mx-auto">

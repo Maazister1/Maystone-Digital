@@ -3,16 +3,16 @@ import { IconPlus } from '@tabler/icons-react';
 
 export default function CTA() {
   return (
-    <div className="w-full bg-[#0a0a0a] py-16 px-6 md:px-12 font-['Outfit'] relative overflow-hidden border-t border-white/10">
+    <div className="w-full bg-[#000000] py-16 px-6 md:px-12 font-['Outfit'] relative overflow-hidden border-t border-white/10">
       
       {/* Background Subtle Glow */}
       <div className="absolute inset-0 bg-gradient-to-r from-red-950/10 via-transparent to-red-950/10 pointer-events-none"></div>
 
-      <div className="max-w-4xl mx-auto bg-[#141211] border border-white/10 rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-xl flex flex-col items-center text-center">
-        
+      <div className="group max-w-4xl mx-auto bg-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-8 md:p-12 relative overflow-hidden shadow-xl flex flex-col items-center text-center transition-colors">
+
         {/* Main Heading & Subtitle */}
         <div className="space-y-3 max-w-xl z-10">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-white group-hover:text-[#FE5211] transition-colors">
             Ready to Build Something Great?
           </h2>
           <p className="text-neutral-400 text-sm sm:text-base">
@@ -37,7 +37,7 @@ export default function CTA() {
           {/* Secondary Outline Button */}
           <a 
             href="#consultation" 
-            className="bg-[#0a0a0a] hover:border-red-500/50 text-white border border-white/10 px-6 py-3 rounded-full text-xs sm:text-sm font-medium flex items-center gap-2 transition"
+            className="bg-[#000000] hover:border-red-500/50 text-white border border-white/10 px-6 py-3 rounded-full text-xs sm:text-sm font-medium flex items-center gap-2 transition"
           >
             <span>Book a Free Consultation</span>
             <span className="w-4 h-4 rounded-full bg-white/10 flex items-center justify-center text-[10px]">

@@ -11,22 +11,22 @@ const TestimonialsSection = () => {
     },
     {
       quote: "Their senior-led execution is unmatched. They delivered our fintech web app ahead of schedule with zero quality compromises.",
-      name: "Marcus Vance",
+      name: "Jonathan Pierce",
       role: "CTO, Sterling Pay UK"
     },
     {
       quote: "The level of transparency and technical prowess they bring is incredible. Our conversions jumped 64% right after launch.",
-      name: "Elena Rostova",
+      name: "Charlotte Bennett",
       role: "Founder, Aura DTC"
     },
     {
       quote: "From enterprise security to agile execution, Maystone transformed how our back-office handles scale. Highly recommended!",
-      name: "David Alistair",
+      name: "Michael Donovan",
       role: "Managing Director, BPO Global"
     },
     {
       quote: "An absolute powerhouse of digital capability. They didn't just build a product; they built a reliable growth engine for our business.",
-      name: "Liam O'Connor",
+      name: "Rebecca Hayes",
       role: "CEO, Innovate London"
     }
   ];
@@ -85,11 +85,11 @@ const TestimonialsSection = () => {
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-[#FE5211] mb-2"
+            className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#FE5211] mb-2"
           >
             TESTIMONIALS
           </motion.p>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
             What our clients <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">say</span>
           </h2>
         </motion.div>
@@ -100,7 +100,7 @@ const TestimonialsSection = () => {
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           viewport={{ once: true, margin: "-40px" }}
           transition={{ duration: 0.8, type: "spring", stiffness: 75, damping: 18 }}
-          className="w-full max-w-2xl bg-[#0D0B0B] border border-neutral-800/80 rounded-3xl p-6 sm:p-9 relative overflow-hidden backdrop-blur-md shadow-2xl shadow-black/60"
+          className="w-full max-w-2xl bg-[#000000] border border-neutral-800/80 rounded-3xl p-6 sm:p-9 relative overflow-hidden backdrop-blur-md shadow-2xl shadow-black/60"
         >
           
           {/* Top Red Glow Accent */}

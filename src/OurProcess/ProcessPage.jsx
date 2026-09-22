@@ -6,42 +6,42 @@ export default function ProcessPage() {
   const processSteps = [
     {
       step: "01",
-      icon: <IconMessageCircle className="w-6 h-6 text-[#FE083B]" />,
+      icon: <IconMessageCircle className="w-6 h-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors" />,
       title: "Discovery & Requirement Analysis",
       subtitle: "Listening & Understanding Your Vision",
       description: "We begin by deeply understanding your business goals, target audience, and exact requirements. By listening to your current bottlenecks and challenges, we establish a clear direction."
     },
     {
       step: "02",
-      icon: <IconSearch className="w-6 h-6 text-[#FE083B]" />,
+      icon: <IconSearch className="w-6 h-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors" />,
       title: "Research & Strategic Planning",
       subtitle: "Market Analysis & Roadmap",
       description: "We analyze your industry competitors and market trends to craft a comprehensive strategy. This is where project timelines, technology stacks, and key deliverables are finalized."
     },
     {
       step: "03",
-      icon: <IconBulb className="w-6 h-6 text-[#FE083B]" />,
+      icon: <IconBulb className="w-6 h-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors" />,
       title: "UI/UX Prototyping & Design",
       subtitle: "Visualizing The Solution",
       description: "Using Figma and modern design tools, we create user-friendly wireframes and high-fidelity prototypes so you can visualize the final look and feel in advance."
     },
     {
       step: "04",
-      icon: <IconCode className="w-6 h-6 text-[#FE083B]" />,
+      icon: <IconCode className="w-6 h-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors" />,
       title: "Development & Engineering",
       subtitle: "Building With Precision",
       description: "Our expert full-stack team (React, Next.js, Node.js, and modern databases) writes clean, scalable, and optimized code. Every component goes through rigorous testing."
     },
     {
       step: "05",
-      icon: <IconShieldCheck className="w-6 h-6 text-[#FE083B]" />,
+      icon: <IconShieldCheck className="w-6 h-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors" />,
       title: "Quality Assurance & Testing",
       subtitle: "Zero-Error Guarantee",
       description: "Before deployment, we conduct thorough testing of website or application speed, responsiveness, security, and cross-browser compatibility."
     },
     {
       step: "06",
-      icon: <IconRocket className="w-6 h-6 text-[#FE083B]" />,
+      icon: <IconRocket className="w-6 h-6 text-[#FE083B] group-hover:text-[#FE5211] transition-colors" />,
       title: "Launch & Post-Support",
       subtitle: "Going Live & Scaling",
       description: "Even after a successful live launch, we provide continuous monitoring, maintenance, and support to ensure your business grows without interruptions."
@@ -49,7 +49,7 @@ export default function ProcessPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] py-12 px-6 md:px-16 lg:px-24">
+    <div className="min-h-screen bg-[#000000] text-white font-['Outfit'] py-12 px-6 md:px-16 lg:px-24">
       
       {/* 1. HERO SECTION */}
       <div className="max-w-4xl mx-auto text-center space-y-6 pt-8 mb-20">
@@ -74,9 +74,9 @@ export default function ProcessPage() {
         {processSteps.map((item, idx) => (
           <div 
             key={idx} 
-            className="bg-[#141211] border border-white/10 rounded-3xl p-8 sm:p-10 flex flex-col justify-between hover:border-[#FE083B]/50 transition group shadow-xl relative overflow-hidden"
+            className="bg-[#000000] border border-white/10 rounded-3xl p-8 sm:p-10 flex flex-col justify-between hover:border-[#FE083B] transition group shadow-xl relative overflow-hidden"
           >
-            <div className="absolute top-6 right-8 text-4xl sm:text-5xl font-extrabold text-white/5 group-hover:text-[#FE083B]/10 transition font-mono">
+            <div className="absolute top-6 right-8 text-4xl sm:text-5xl font-extrabold text-white/5 group-hover:text-[#FE5211]/10 transition font-mono">
               {item.step}
             </div>
 
@@ -89,7 +89,7 @@ export default function ProcessPage() {
                 <span className="text-xs font-bold text-[#FE083B] uppercase tracking-wider font-mono">
                   Phase {item.step}
                 </span>
-                <h3 className="text-2xl font-bold text-white mt-1 mb-1">
+                <h3 className="text-2xl font-bold text-white mt-1 mb-1 group-hover:text-[#FE5211] transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-xs text-neutral-400 font-medium">
@@ -111,8 +111,8 @@ export default function ProcessPage() {
       </div>
 
       {/* 3. WHY OUR PROCESS WORKS SECTION */}
-      <div className="max-w-4xl mx-auto bg-[#141211] border border-white/10 rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl mb-20">
-        <h2 className="text-2xl sm:text-3xl font-bold text-white">
+      <div className="group max-w-4xl mx-auto bg-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl mb-20 transition-colors">
+        <h2 className="text-2xl sm:text-3xl font-bold text-white group-hover:text-[#FE5211] transition-colors">
           Why Clients Trust Our Workflow
         </h2>
         <p className="text-neutral-300 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">
@@ -128,10 +128,10 @@ export default function ProcessPage() {
       </div>
 
       {/* 4. CALL TO ACTION */}
-      <div className="max-w-4xl mx-auto bg-gradient-to-r from-[#141211] to-[#1c1918] border border-white/10 rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden">
+      <div className="group max-w-4xl mx-auto bg-gradient-to-r from-[#000000] to-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-8 sm:p-12 text-center space-y-6 shadow-2xl relative overflow-hidden transition-colors">
         <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-[#FE083B]/10 rounded-full blur-3xl pointer-events-none"></div>
-        
-        <h2 className="text-3xl sm:text-4xl font-bold text-white">
+
+        <h2 className="text-3xl sm:text-4xl font-bold text-white group-hover:text-[#FE5211] transition-colors">
           Ready to Start Your Project With Us?
         </h2>
         <p className="text-neutral-300 text-sm sm:text-base max-w-lg mx-auto">

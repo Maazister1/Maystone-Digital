@@ -6,9 +6,10 @@ import {
   IconStack, 
   IconDeviceLaptop, 
   IconShieldCheck, 
-  IconChevronDown, 
-  IconStar, 
-  IconArrowLeft 
+  IconChevronDown,
+  IconStar,
+  IconArrowLeft,
+  IconHelpCircle
 } from '@tabler/icons-react';
 import CTA from '../Components/CTA';
 
@@ -20,21 +21,21 @@ export default function WebsiteDevelopment() {
   const testimonials = [
     {
       quote: "Maystone Digital engineered our entire SaaS platform from scratch. The code quality, performance, and component architecture are world-class.",
-      name: "Zainab Alvi",
+      name: "Victoria Ashworth",
       role: "CTO, CloudScale Inc.",
-      avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?q=80&w=200&auto=format&fit=crop"
     },
     {
       quote: "Nothing was bolted on afterwards. Every layer was specified, built, and tested seamlessly. Our conversion rates doubled within a month.",
-      name: "Farhan Qureshi",
+      name: "William Harding",
       role: "Founder, Apex Commerce",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=200&auto=format&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=200&auto=format&fit=crop"
     },
     {
       quote: "Clean documented code, full ownership handed over, and blazing-fast loading speeds. They carry your business, not just your brand.",
-      name: "Hamza Malik",
+      name: "Henry Blackwood",
       role: "Director of Product, Nexus Labs",
-      avatar: "https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=200&auto=format&fit=crop"
+      avatar: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?q=80&w=200&auto=format&fit=crop"
     }
   ];
 
@@ -105,7 +106,7 @@ export default function WebsiteDevelopment() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white font-['Outfit'] selection:bg-[#FE083B] selection:text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#000000] text-white font-['Outfit'] selection:bg-[#FE083B] selection:text-white overflow-x-hidden">
       
       {/* Infinite Marquee Animation Style */}
       <style>{`
@@ -152,7 +153,7 @@ export default function WebsiteDevelopment() {
             ].map((item, idx) => {
               const IconComp = item.icon;
               return (
-                <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#141211] border border-white/10 text-xs text-neutral-300 font-medium shadow-md">
+                <div key={idx} className="flex items-center gap-2 px-4 py-2 rounded-xl bg-[#000000] border border-white/10 text-xs text-neutral-300 font-medium shadow-md">
                   <IconComp className="w-4 h-4 text-[#FE083B]" />
                   <span>{item.label}</span>
                 </div>
@@ -170,7 +171,7 @@ export default function WebsiteDevelopment() {
             </a>
             <a 
               href="#case-studies" 
-              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#141211] border border-white/10 hover:border-[#FE083B]/50 transition text-white"
+              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#000000] border border-white/10 hover:border-[#FE083B] transition text-white"
             >
               See the work
             </a>
@@ -179,7 +180,7 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* 2. INTRO / MOCKUP SECTION */}
-      <section className="py-20 px-6 md:px-16 lg:px-24 border-t border-white/10 bg-[#0c0a09]/40">
+      <section className="py-20 px-6 md:px-16 lg:px-24 border-t border-white/10 bg-[#000000]/40">
         <div className="max-w-7xl mx-auto">
           <div className="grid items-center gap-14 lg:grid-cols-[1fr_1.15fr]">
             <div className="space-y-6">
@@ -201,7 +202,7 @@ export default function WebsiteDevelopment() {
               </div>
             </div>
 
-            <div className="rounded-3xl overflow-hidden border border-white/10 bg-[#141211] p-3 shadow-2xl relative group">
+            <div className="rounded-3xl overflow-hidden border border-white/10 bg-[#000000] p-3 shadow-2xl relative group">
               <div className="absolute inset-0 bg-gradient-to-tr from-[#FE083B]/10 to-transparent pointer-events-none"></div>
               <img 
                 src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" 
@@ -214,7 +215,7 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* 3. LAYERS SECTION */}
-      <section className="py-24 px-6 md:px-16 lg:px-24 border-t border-white/10 bg-[#0c0a09]/60">
+      <section className="py-24 px-6 md:px-16 lg:px-24 border-t border-white/10 bg-[#000000]/60">
         <div className="max-w-7xl mx-auto">
           <div className="max-w-3xl mb-16 space-y-4">
             <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
@@ -230,9 +231,9 @@ export default function WebsiteDevelopment() {
 
           <ol className="space-y-4">
             {layers.map((l, i) => (
-              <li key={l.label} className="group grid items-baseline gap-4 rounded-2xl border border-white/10 bg-[#141211] px-6 py-6 transition-all hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] sm:grid-cols-[4rem_14rem_1fr] sm:px-9 shadow-lg">
+              <li key={l.label} className="group grid items-baseline gap-4 rounded-2xl border border-white/10 bg-[#000000] px-6 py-6 transition-all hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] sm:grid-cols-[4rem_14rem_1fr] sm:px-9 shadow-lg">
                 <span className="font-mono text-sm text-[#FE083B]">{String(i + 1).padStart(2, "0")}</span>
-                <span className="text-xl font-semibold text-white group-hover:text-[#FE083B] transition">{l.label}</span>
+                <span className="text-xl font-semibold text-white group-hover:text-[#FE5211] transition">{l.label}</span>
                 <span className="text-sm text-neutral-400 leading-relaxed">{l.desc}</span>
               </li>
             ))}
@@ -241,15 +242,15 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* 4. INFINITE TECH MARQUEE SECTION */}
-      <section className="border-t border-b border-white/10 py-10 bg-[#0c0a09]/80 backdrop-blur-md relative overflow-hidden">
+      <section className="border-t border-b border-white/10 py-10 bg-[#000000]/80 backdrop-blur-md relative overflow-hidden">
         <div className="text-center mb-6">
           <p className="text-xs uppercase tracking-widest text-neutral-400 font-medium">
             Modern technologies and frameworks we engineer with
           </p>
         </div>
         <div className="relative overflow-hidden w-full flex">
-          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
-          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#0a0a0a] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-[#000000] to-transparent z-10 pointer-events-none"></div>
+          <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-[#000000] to-transparent z-10 pointer-events-none"></div>
           <div className="animate-custom-marquee flex items-center gap-16 whitespace-nowrap">
             {[...techGroups, ...techGroups].map((group, idx) => (
               <div key={idx} className="flex items-center gap-3 text-neutral-300 hover:text-white transition duration-300 px-4 py-2 rounded-xl bg-white/5 border border-white/10">
@@ -285,11 +286,11 @@ export default function WebsiteDevelopment() {
             { value: "< 1.2s", label: "Average Page Load Speed", desc: "Optimized asset delivery, server-side rendering, and strict performance budgets." },
             { value: "100%", label: "Code Ownership & Handover", desc: "Clean, documented codebases handed directly to your internal engineering team." }
           ].map((stat, idx) => (
-            <div key={idx} className="p-8 rounded-3xl bg-[#141211] border border-white/10 hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group space-y-3">
-              <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">
+            <div key={idx} className="p-8 rounded-3xl bg-[#000000] border border-white/10 hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group space-y-3">
+              <div className="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531] group-hover:from-[#FE5211] group-hover:to-[#FE5211] transition-colors">
                 {stat.value}
               </div>
-              <h3 className="text-lg font-bold text-white">{stat.label}</h3>
+              <h3 className="text-lg font-bold text-white group-hover:text-[#FE5211] transition-colors">{stat.label}</h3>
               <p className="text-sm text-neutral-400 leading-relaxed">{stat.desc}</p>
             </div>
           ))}
@@ -297,7 +298,7 @@ export default function WebsiteDevelopment() {
       </section>
 
       {/* 6. TECH STACK BREAKDOWN */}
-      <section className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 bg-[#0c0a09]/40">
+      <section className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10 bg-[#000000]/40">
         <div className="text-center max-w-2xl mx-auto mb-16 space-y-3">
           <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
            Tech Ecosystem
@@ -309,7 +310,7 @@ export default function WebsiteDevelopment() {
 
         <div className="grid gap-px overflow-hidden rounded-3xl border border-white/10 bg-white/10 md:grid-cols-2 lg:grid-cols-4">
           {techGroups.map((g) => (
-            <div key={g.label} className="bg-[#141211] p-8 space-y-4 hover:bg-[#1a1716] transition">
+            <div key={g.label} className="bg-[#000000] p-8 space-y-4 hover:bg-[#000000] transition">
               <h3 className="text-sm font-semibold text-[#FE083B] font-mono uppercase tracking-wider">{g.label}</h3>
               <ul className="space-y-3">
                 {g.items.map((i) => (
@@ -376,11 +377,11 @@ export default function WebsiteDevelopment() {
                 
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
-                  <div className="bg-[#141211] border border-white/10 p-8 rounded-3xl hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group shadow-xl">
-                    <span className="text-xs font-bold text-[#FE083B] uppercase tracking-wider font-mono">
+                  <div className="bg-[#000000] border border-white/10 p-8 rounded-3xl hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group shadow-xl">
+                    <span className="text-xs font-bold text-[#FE083B] group-hover:text-[#FE5211] uppercase tracking-wider font-mono transition-colors">
                       Phase {item.step}
                     </span>
-                    <h3 className="text-xl font-bold text-white mt-1 mb-2 group-hover:text-[#FE083B] transition">
+                    <h3 className="text-xl font-bold text-white mt-1 mb-2 group-hover:text-[#FE5211] transition">
                       {item.title}
                     </h3>
                     <p className="text-neutral-400 text-sm leading-relaxed">
@@ -390,7 +391,7 @@ export default function WebsiteDevelopment() {
                 </div>
 
                 {/* Center Badge Node */}
-                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#141211] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.4)] z-10">
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#000000] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.4)] z-10">
                   {item.step}
                 </div>
 
@@ -429,7 +430,7 @@ export default function WebsiteDevelopment() {
             { img: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=1000&auto=format&fit=crop", tag: "SaaS Application", title: "Cloud Workflow Automation", desc: "Secure multi-tenant architecture with real-time sync." },
             { img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1000&auto=format&fit=crop", tag: "Mobile UI / Web", title: "Collaborative Workspace Portal", desc: "Real-time collaboration tools with sub-millisecond latency." }
           ].map((project, idx) => (
-            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#141211] border border-white/10 p-4 hover:border-[#FE083B]/50 hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition">
+            <div key={idx} className="group relative rounded-3xl overflow-hidden bg-[#000000] border border-white/10 p-4 hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition">
               <div className="h-72 rounded-2xl bg-gradient-to-br from-neutral-900 to-black overflow-hidden relative border border-white/5">
                 <img src={project.img} alt={project.title} className="w-full h-full object-cover group-hover:scale-105 transition duration-700 opacity-80" />
                 <div className="absolute top-4 left-4 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs font-medium text-[#FE083B] border border-white/10">
@@ -438,7 +439,7 @@ export default function WebsiteDevelopment() {
               </div>
               <div className="p-4 flex justify-between items-center">
                 <div>
-                  <h3 className="text-lg font-bold text-white">{project.title}</h3>
+                  <h3 className="text-lg font-bold text-white group-hover:text-[#FE5211] transition-colors">{project.title}</h3>
                   <p className="text-xs text-neutral-400 mt-1">{project.desc}</p>
                 </div>
                 <span className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white group-hover:bg-[#FE083B] group-hover:border-[#FE083B] transition">
@@ -461,20 +462,20 @@ export default function WebsiteDevelopment() {
           </h2>
         </div>
 
-        <div className="bg-[#141211] border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative">
+        <div className="bg-[#000000] border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
             <div className="flex items-start gap-4 md:gap-6 flex-1">
               <div className="w-12 h-12 md:w-16 md:h-16 rounded-full bg-[#FE083B]/10 border border-[#FE083B]/20 flex-shrink-0 flex items-center justify-center text-[#FE083B] shadow-inner">
                 <span className="text-2xl md:text-3xl font-serif font-bold">“</span>
               </div>
               <div className="space-y-6">
-                <p className="text-neutral-200 text-base sm:text-lg md:text-xl font-normal leading-relaxed">
+                <p className="text-neutral-200 text-xs md:text-sm leading-relaxed">
                   {testimonials[currentTestimonial].quote}
                 </p>
                 <div className="flex items-center gap-3 pt-2">
-                  <img src={testimonials[currentTestimonial].avatar} alt={testimonials[currentTestimonial].name} className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover border border-white/10" />
+                  <img src={testimonials[currentTestimonial].avatar} alt={testimonials[currentTestimonial].name} className="w-9 h-9 md:w-10 md:h-10 rounded-full object-cover border border-white/10" />
                   <div>
-                    <h4 className="text-white font-bold text-sm md:text-base">{testimonials[currentTestimonial].name}</h4>
+                    <h4 className="text-white font-bold text-xs sm:text-sm">{testimonials[currentTestimonial].name}</h4>
                     <p className="text-neutral-400 text-xs md:text-sm">{testimonials[currentTestimonial].role}</p>
                   </div>
                 </div>
@@ -488,10 +489,10 @@ export default function WebsiteDevelopment() {
                 ))}
               </div>
               <div className="flex items-center gap-3">
-                <button onClick={prevTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Previous">
+                <button onClick={prevTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B] flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Previous">
                   <IconArrowLeft className="w-5 h-5" />
                 </button>
-                <button onClick={nextTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B]/50 flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Next">
+                <button onClick={nextTestimonial} className="w-11 h-11 rounded-full bg-white/5 border border-white/10 hover:border-[#FE083B] flex items-center justify-center text-white transition hover:bg-white/10" aria-label="Next">
                   <IconArrowRight className="w-5 h-5" />
                 </button>
               </div>
@@ -518,15 +519,16 @@ export default function WebsiteDevelopment() {
           {faqs.map((faq, index) => {
             const isOpen = openFaq === index;
             return (
-              <div key={index} className="bg-[#141211] border border-white/10 rounded-2xl overflow-hidden transition">
+              <div key={index} className="bg-[#000000] border border-white/10 rounded-2xl overflow-hidden transition-all">
                 <button onClick={() => toggleFaq(index)} className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 focus:outline-none">
-                  <span className="font-semibold text-white text-base md:text-lg">{faq.question}</span>
-                  <span className={`w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-neutral-300 transition-transform duration-300 ${isOpen ? 'rotate-180 bg-[#FE083B]/20 text-[#FE083B] border-[#FE083B]/30' : ''}`}>
-                    <IconChevronDown className="w-4 h-4" />
+                  <span className="flex items-center gap-3 font-semibold text-[#FE083B]">
+                    <IconHelpCircle className="w-4 h-4 shrink-0" />
+                    {faq.question}
                   </span>
+                  <IconChevronDown className={`w-5 h-5 shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-180 text-[#FE083B]' : 'text-neutral-400'}`} />
                 </button>
                 {isOpen && (
-                  <div className="px-6 pb-5 pt-1 text-neutral-400 text-sm md:text-base leading-relaxed border-t border-white/5">
+                  <div className="px-6 pb-5 pt-4 text-neutral-400 text-sm md:text-base leading-relaxed border-t border-white/5">
                     {faq.answer}
                   </div>
                 )}

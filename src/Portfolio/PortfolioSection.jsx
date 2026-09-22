@@ -60,11 +60,11 @@ const PortfolioSection = () => {
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-[10px] sm:text-xs font-semibold tracking-[0.25em] uppercase text-[#FE5211] mb-2"
+            className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#FE5211] mb-2"
           >
             SELECTED WORK
           </motion.p>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight text-white">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
             A glimpse of our <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">portfolio</span>
           </h2>
         </motion.div>
@@ -90,7 +90,7 @@ const PortfolioSection = () => {
                   borderColor: "rgba(250, 14, 51, 0.5)",
                   backgroundColor: "rgba(17, 15, 15, 0.95)"
                 }}
-                className="bg-[#0D0B0B] border border-neutral-800/80 hover:border-[#FA0E33] rounded-2xl overflow-hidden relative flex flex-col backdrop-blur-md transition-colors duration-300 group shadow-xl shadow-black/50 cursor-pointer"
+                className="bg-[#000000] border border-neutral-800/80 hover:border-[#FA0E33] rounded-2xl overflow-hidden relative flex flex-col backdrop-blur-md transition-colors duration-300 group shadow-xl shadow-black/50 cursor-pointer"
               >
                 {/* Standardized Consistent Top Gradient Border Accent */}
                 <div className="absolute top-0 left-6 right-6 h-[1.5px] bg-gradient-to-r from-transparent via-[#FA0E33] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"></div>

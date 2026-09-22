@@ -79,14 +79,14 @@ const PricingSection = () => {
             initial={{ opacity: 0, y: -10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-[11px] font-bold tracking-[0.25em] uppercase text-[#FA0E33] mb-3"
+            className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#FA0E33] mb-3"
           >
             PRICING
           </motion.p>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-3 max-w-2xl leading-tight">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white mb-3 max-w-2xl leading-tight">
             Transparent plans that <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">scale with you</span>
           </h2>
-          <p className="text-neutral-400 text-xs sm:text-sm">
+          <p className="text-neutral-400 text-base sm:text-lg md:text-xl font-normal leading-relaxed">
             Flexible engagements for every stage. No hidden fees — ever.
           </p>
         </motion.div>
@@ -119,7 +119,7 @@ const PricingSection = () => {
                   borderColor: "rgba(250, 14, 51, 0.6)",
                   backgroundColor: "rgba(17, 15, 15, 0.95)"
                 }}
-                className={`bg-[#0D0B0B] rounded-3xl p-6 sm:p-8 relative flex flex-col justify-between backdrop-blur-md transition-colors duration-300 ${
+                className={`bg-[#000000] rounded-3xl p-6 sm:p-8 relative flex flex-col justify-between backdrop-blur-md transition-colors duration-300 ${
                   plan.popular 
                     ? 'border-2 border-[#FA0E33] shadow-[0_0_50px_rgba(250,14,51,0.3)]' 
                     : 'border border-neutral-800/80 shadow-xl shadow-black/50'

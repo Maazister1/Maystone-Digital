@@ -77,7 +77,7 @@ function App() {
     };
   }, []);
   return (
-    <div className="bg-[#0a0a0a] min-h-screen text-white font-['Outfit']">
+    <div className="bg-[#000000] min-h-screen text-white font-['Outfit']">
       <Navbar />
       <Routes>
         {/* Main Home Page */}

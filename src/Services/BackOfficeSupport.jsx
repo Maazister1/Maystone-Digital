@@ -194,15 +194,12 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
     Our Difference
   </span>
 </div>
-
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white max-w-3xl mx-auto leading-tight mb-20">
+ <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white max-w-3xl mx-auto leading-tight mb-20">
           <span>Intelligent Architecture Built For</span> <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">Smart Businesses And BPO Scaling</span>
         </h2>
-
         {/* Line-grid layout with no rounded box corners */}
-        <div className="grid grid-cols-1 md:grid-cols-2 border-t border-white/10 text-left">
-          
+        <div className="grid grid-cols-1 md:grid-cols-2 border-t border-white/10 text-left">    
           {/* Grid Item 1 */}
           <div className="p-8 md:p-12 border-b border-r border-white/10 flex flex-col justify-between group">
             <div>
@@ -215,7 +212,6 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </p>
             </div>
           </div>
-
           {/* Grid Item 2 */}
           <div className="p-8 md:p-12 border-b border-white/10 flex flex-col justify-between group">
             <div>
@@ -228,7 +224,6 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </p>
             </div>
           </div>
-
           {/* Grid Item 3 */}
           <div className="p-8 md:p-12 border-b md:border-b-0 border-r border-white/10 flex flex-col justify-between group">
             <div>
@@ -241,7 +236,6 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </p>
             </div>
           </div>
-
           {/* Grid Item 4 */}
           <div className="p-8 md:p-12 flex flex-col justify-between group">
             <div>
@@ -254,7 +248,6 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </p>
             </div>
           </div>
-
         </div>
       </div>
 
@@ -297,7 +290,6 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </a>
             </div>
           </div>
-
           {/* Service 2 */}
           <div className="p-8 md:p-10 border-b md:border-b-0 border-r border-white/10 flex flex-col justify-between group">
             <div>
@@ -320,7 +312,6 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </a>
             </div>
           </div>
-
           {/* Service 3 */}
           <div className="p-8 md:p-10 flex flex-col justify-between group">
             <div>
@@ -343,10 +334,8 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               </a>
             </div>
           </div>
-
         </div>
       </div>
-
       {/* 5. PORTFOLIO / CASE STUDIES SECTION */}
       <div id="case-studies" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
@@ -531,8 +520,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           ].map((item, index) => {
             const isEven = index % 2 === 0;
             return (
-              <div key={index} className={`relative flex flex-col md:flex-row items-center ${isEven ? 'md:flex-row-reverse' : ''} gap-8`}>
-                
+              <div key={index} className={`relative flex flex-col md:flex-row items-center ${isEven ? 'md:flex-row-reverse' : ''} gap-8`}>    
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
                   <div className="border border-white/10 p-8 rounded-xl bg-transparent hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group">
@@ -547,24 +535,19 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
                     </p>
                   </div>
                 </div>
-
                 {/* Center Badge Node */}
                 <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#000000] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.4)] z-10">
                   {item.step}
                 </div>
-
                 {/* Empty Spacer for Layout balance */}
                 <div className="hidden md:block w-1/2"></div>
-
               </div>
             );
           })}
         </div>
       </div>
-
       {/* Global CTA Component */}
       <CTA />
-
     </div>
   );
 }

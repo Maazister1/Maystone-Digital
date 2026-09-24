@@ -84,11 +84,9 @@ export default function DigitalMarketing() {
               Campaigns, Content And Channels That <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">Earn Attention</span>
             </h1>
-
             <p className="mt-6 text-base sm:text-lg text-neutral-400 max-w-2xl mx-auto leading-relaxed">
               Engineered marketing programs built to acquire high-value customers, compound organic visibility, and protect your margins through data-first attribution.
             </p>
-
             {/* Feature Badges below Description */}
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#000000] border border-white/10 text-xs sm:text-sm font-medium text-neutral-300">
@@ -104,19 +102,16 @@ export default function DigitalMarketing() {
                 <IconCloud className="w-4 h-4 text-[#FE083B]" /> Cloud Scalability
               </div>
             </div>
-
             {/* CTA Buttons */}
             <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
               <a 
                 href="/contact" 
-                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white hover:opacity-90 shadow-xl shadow-[#FE083B]/25 transition-all"
-              >
+                className="inline-flex items-center gap-2 px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white hover:opacity-90 shadow-xl shadow-[#FE083B]/25 transition-all">
                 Plan a campaign <IconArrowRight className="h-4 w-4" />
               </a>
               <a 
                 href="/case-studies" 
-                className="inline-flex items-center px-8 py-4 rounded-xl font-semibold bg-[#000000] border border-white/10 hover:border-[#FE083B] text-white transition-all"
-              >
+                className="inline-flex items-center px-8 py-4 rounded-xl font-semibold bg-[#000000] border border-white/10 hover:border-[#FE083B] text-white transition-all">
                 See the work
               </a>
             </div>
@@ -242,8 +237,7 @@ export default function DigitalMarketing() {
                 <img 
                   src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=800" 
                   alt="Creative workspace preview" 
-                  className="w-full h-[350px] object-cover rounded-xl opacity-80"
-                />
+                  className="w-full h-[350px] object-cover rounded-xl opacity-80"/>
                 <div className="absolute bottom-10 left-10 right-10 bg-[#000000]/90 backdrop-blur-md p-5 rounded-xl border border-white/10">
                   <p className="text-xs text-[#FE083B] font-semibold uppercase tracking-wider">Campaign Velocity</p>
                   <p className="text-sm font-medium mt-1">Multi-channel deployment optimized for maximum engagement.</p>
@@ -252,7 +246,6 @@ export default function DigitalMarketing() {
             </div>
           </div>
         </section>
-
         {/* Statement Stats Section */}
         <section className="py-20 bg-[#000000] border-y border-white/5">
           <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24">
@@ -274,7 +267,6 @@ export default function DigitalMarketing() {
             </div>
           </div>
         </section>
-
         {/* FAQs Section */}
         <section className="py-24 bg-[#000000]">
           <div className="max-w-5xl mx-auto px-6 md:px-16 lg:px-24">
@@ -284,14 +276,12 @@ export default function DigitalMarketing() {
                 <h2 className="text-3xl font-bold mt-2">Marketing <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]">Questions</span></h2>
                 <p className="text-neutral-400 text-sm mt-4">Everything you need to know about how we partner, report, and drive predictable growth.</p>
               </div>
-
               <div className="space-y-4">
                 {faqs.map((faq, idx) => (
                   <div key={faq.q} className="border border-white/10 rounded-2xl bg-[#000000] overflow-hidden transition-all">
                     <button
                       onClick={() => toggleFaq(idx)}
-                      className="w-full px-6 py-5 text-left flex items-center justify-between gap-4"
-                    >
+                      className="w-full px-6 py-5 text-left flex items-center justify-between gap-4">
                       <span className="flex items-center gap-3 font-semibold text-[#FE083B]">
                         <IconHelpCircle className="w-4 h-4 shrink-0" />
                         {faq.q}
@@ -309,12 +299,10 @@ export default function DigitalMarketing() {
             </div>
           </div>
         </section>
-
         {/* Closing CTA Banner */}
         <section className="py-20 bg-gradient-to-b from-[#000000] to-[#000000] text-center">
           <div className="group max-w-4xl mx-auto px-6 md:px-16 lg:px-24 bg-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-12 relative overflow-hidden shadow-2xl transition-colors">
             <div className="absolute top-0 right-0 w-96 h-96 bg-[#FE083B]/10 blur-3xl pointer-events-none rounded-full" />
-
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight group-hover:text-[#FE5211] transition-colors">Tell us who you need to reach.</h2>
             <p className="mt-4 text-neutral-400 max-w-xl mx-auto text-base">
               We will come back with a comprehensive channel plan, a structured content rhythm, and a transparent written quote.
@@ -322,14 +310,12 @@ export default function DigitalMarketing() {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a 
                 href="/contact" 
-                className="px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white hover:opacity-90 shadow-lg shadow-[#FE083B]/25 transition-all"
-              >
+                className="px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white hover:opacity-90 shadow-lg shadow-[#FE083B]/25 transition-all">
                 Start a campaign
               </a>
               <a 
                 href="/pricing" 
-                className="px-8 py-4 rounded-xl font-semibold bg-[#000000] border border-white/10 hover:border-[#FE083B] text-white transition-all"
-              >
+                className="px-8 py-4 rounded-xl font-semibold bg-[#000000] border border-white/10 hover:border-[#FE083B] text-white transition-all">
                 View pricing
               </a>
             </div>

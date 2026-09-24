@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Lenis from 'lenis';
 
 import Navbar from './Components/Navbar';
+import CustomCursor from './Components/CustomCursor';
 import Hero from './Components/Hero';
 import Stack from './Components/Stack';
 import Services from './Services/Services';
@@ -78,6 +79,7 @@ function App() {
   }, []);
   return (
     <div className="bg-[#000000] min-h-screen text-white font-['Outfit']">
+      <CustomCursor />
       <Navbar />
       <Routes>
         {/* Main Home Page */}
@@ -91,14 +93,14 @@ function App() {
         <Route path="/services/creative-branding" element={<CreativeBranding />} />
         <Route path="/services/back-office" element={<BackOfficeSupport />} />
         <Route path="/components/cta" element={<CTA />} />
-       <Route path="/about/aboutpage" element={<AboutPage />} />
-       <Route path="/about/processpage" element={<ProcessPage />} />
-       <Route path="/blogs/blogspage" element={<BlogsPage />} />
-       <Route path="/casestudy/casestudiepage" element={<CaseStudiesPage />} />
-       <Route path="/contact/startproject" element={<StartProject />} /> 
-       <Route path="/pricing/pricingpage" element={<Pricing />} />
-       <Route path="/services/software-sas" element={<SoftwareSaaSPage />} />  
-         <Route path="/ourteam/ourteam" element={<OurTeam />} />  
+        <Route path="/about/aboutpage" element={<AboutPage />} />
+        <Route path="/about/processpage" element={<ProcessPage />} />
+        <Route path="/blogs/blogspage" element={<BlogsPage />} />
+        <Route path="/casestudy/casestudiepage" element={<CaseStudiesPage />} />
+        <Route path="/contact/startproject" element={<StartProject />} /> 
+        <Route path="/pricing/pricingpage" element={<Pricing />} />
+        <Route path="/services/software-sas" element={<SoftwareSaaSPage />} />  
+        <Route path="/ourteam/ourteam" element={<OurTeam />} />  
       </Routes>
       <FooterSection />
     </div>

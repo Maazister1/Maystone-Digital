@@ -59,7 +59,6 @@ export default function CreativeBranding() {
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
   };
-
   const techStack = [
     { name: "Figma", text: "Figma UI/UX Design" },
     { name: "Adobe Illustrator", text: "Vector & Logo Design" },
@@ -118,16 +117,13 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
     Creative Branding & Graphic Design
   </span>
 </div>
-
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
+<h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-white leading-[1.15]">
             <span>Build Iconic Brand Identity</span> 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]"> & Stunning UI/UX Design <br /> & Graphic Designing</span>
           </h1>
-
           <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-normal max-w-2xl mx-auto leading-relaxed">
             Apne business ko professional look dein unforgettable graphic design, brand identity systems, aur user-friendly digital interfaces ke sath.
           </p>
-
           <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
             {[
               { label: 'Brand Identity & Logos', icon: IconPalette },
@@ -144,19 +140,16 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               );
             })}
           </div>
-
           <div className="flex flex-wrap items-center justify-center gap-4 pt-4">
             <a 
               href="#contact" 
-              className="bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white px-8 py-3.5 rounded-full text-sm font-medium flex items-center gap-2 hover:opacity-90 transition shadow-lg shadow-[#FE083B]/25"
-            >
+              className="bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white px-8 py-3.5 rounded-full text-sm font-medium flex items-center gap-2 hover:opacity-90 transition shadow-lg shadow-[#FE083B]/25" >
               <span>Start Your Brand Project</span>
               <IconArrowRight className="w-4 h-4" />
             </a>
             <a 
               href="#services" 
-              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#000000] border border-white/10 hover:border-[#FE083B] transition text-white"
-            >
+              className="px-8 py-3.5 rounded-full text-sm font-medium bg-[#000000] border border-white/10 hover:border-[#FE083B] transition text-white">
               Explore Services
             </a>
           </div>
@@ -381,9 +374,7 @@ text-[#FE5211]  font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
         <div className="group bg-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-8 md:p-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center transition-colors">
           <div className="space-y-6">
-          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
-Who We Are
-  </span>
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">Who We Are</span>
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-white group-hover:text-[#FE5211] transition-colors">
               A Team That Turns Ideas Into Digital Experiences
             </h2>
@@ -420,8 +411,8 @@ Who We Are
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
         <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
           <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
- Flexible Investment
-  </span>
+          Flexible Investment
+          </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             Choose a Plan That Fits Your Goals
           </h2>
@@ -429,15 +420,13 @@ Who We Are
             Transparent pricing packages designed for startups, growing brands, and established enterprises.
           </p>
         </div>
-
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
           {[
             {
               name: "Brand Starter",
               price: "$799",
               desc: "Ideal for early-stage startups needing a solid identity foundation.",
-              features: ["Custom Logo Design", "Color Palette & Typography", "Basic Brand Guidelines", "Stationery Kit", "Vector Source Files (AI, EPS)"]
-            },
+              features: ["Custom Logo Design", "Color Palette & Typography", "Basic Brand Guidelines", "Stationery Kit", "Vector Source Files (AI, EPS)"]},
             {
               name: "UI/UX Suite",
               price: "$1,499",
@@ -481,7 +470,6 @@ Who We Are
           ))}
         </div>
       </div>
-
       {/* 8. CLIENT FEEDBACK SECTION */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-20 border-t border-white/10">
         <div className="space-y-3 mb-10">
@@ -492,7 +480,6 @@ Who We Are
             What Founders Say About Our Design Work
           </h2>
         </div>
-
         <div className="bg-[#000000] border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative">
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8">
             <div className="flex items-start gap-4 md:gap-6 flex-1">
@@ -512,7 +499,6 @@ Who We Are
                 </div>
               </div>
             </div>
-
             <div className="flex items-center justify-between lg:justify-end gap-6 pt-6 lg:pt-0 border-t lg:border-t-0 border-white/5">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
@@ -531,13 +517,12 @@ Who We Are
           </div>
         </div>
       </div>
-
       {/* 9. FAQ SECTION */}
       <div className="max-w-4xl mx-auto px-6 py-20 border-t border-white/10">
         <div className="text-center space-y-4 mb-16">
           <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
-Got Questions?
-  </span>
+           Got Questions?
+           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             Frequently Asked Questions
           </h2>
@@ -573,8 +558,8 @@ Got Questions?
       <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative overflow-hidden">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
           <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
-   OUR PROCESS
-  </span>
+           OUR PROCESS
+           </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             A Creative & Collaborative Design Process
           </h2>
@@ -582,12 +567,10 @@ Got Questions?
             Moodboarding se lekar final design system handover tak, hum har step par aapki vision ko zinda rakhte hain.
           </p>
         </div>
-
         <div className="max-w-5xl mx-auto relative space-y-12 md:space-y-16">
           {/* Vertical Timeline Bar */}
           <div className="hidden md:block absolute left-1/2 top-10 bottom-10 w-[2px] bg-white/10 -translate-x-1/2"></div>
           <div className="hidden md:block absolute left-1/2 top-10 w-[2px] bg-[#FE083B] -translate-x-1/2 transition-all duration-75 ease-out shadow-[0_0_12px_rgba(254,8,59,0.8)]" style={{ height: `${scrollProgress}%` }}></div>
-
           {[
             {
               step: "01",

@@ -172,21 +172,18 @@ export default function MobileDevelopment() {
           <div className="flex flex-wrap items-center justify-center gap-4 pt-6">
             <a 
               href="#contact" 
-              className="bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white px-8 py-4 rounded-full text-sm font-medium flex items-center gap-2 hover:opacity-95 transition shadow-lg shadow-[#FE083B]/30 group"
-            >
+              className="bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white px-8 py-4 rounded-full text-sm font-medium flex items-center gap-2 hover:opacity-95 transition shadow-lg shadow-[#FE083B]/30 group">
               <span>Start Your App</span>
               <IconArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </a>
             <a 
               href="#case-studies" 
-              className="px-8 py-4 rounded-full text-sm font-medium bg-[#000000] border border-white/10 hover:border-[#FE083B] transition text-white shadow-lg"
-            >
+              className="px-8 py-4 rounded-full text-sm font-medium bg-[#000000] border border-white/10 hover:border-[#FE083B] transition text-white shadow-lg">
               Explore Apps
             </a>
           </div>
         </div>
       </div>
-
       {/* 2. INFINITE MARQUEE SECTION */}
       <div className="mt-28 border-t border-b border-white/10 py-10 bg-[#000000]/60 backdrop-blur-md relative">
         <div className="text-center mb-6">
@@ -213,7 +210,6 @@ export default function MobileDevelopment() {
 
       {/* 3. MOBILE APP SERVICES - CENTERED HEADING & PARAGRAPH BELOW */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-28 border-t border-white/10 mt-20">
-        
         {/* Section Header - Centered Layout matching requested image */}
         <div className="max-w-4xl mx-auto text-center mb-20 space-y-6">
           <div>
@@ -232,10 +228,8 @@ export default function MobileDevelopment() {
             </p>
           </div>
         </div>
-
         {/* 2x2 Grid with Divider Lines */}
-        <div className="grid grid-cols-1 md:grid-cols-2 border-t border-b border-white/10">
-          
+        <div className="grid grid-cols-1 md:grid-cols-2 border-t border-b border-white/10">   
           {/* Card 1 */}
           <div className="p-8 md:p-12 md:border-r md:border-b border-white/10 flex flex-col justify-between group hover:bg-[#000000]/40 transition duration-300">
             <div>
@@ -257,7 +251,6 @@ export default function MobileDevelopment() {
               </a>
             </div>
           </div>
-
           {/* Card 2 */}
           <div className="p-8 md:p-12 md:border-b border-white/10 flex flex-col justify-between group hover:bg-[#000000]/40 transition duration-300">
             <div>
@@ -373,7 +366,6 @@ export default function MobileDevelopment() {
           ))}
         </div>
       </div>
-
       {/* 5. CLIENT FEEDBACK SECTION */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10">
         <div className="space-y-3 mb-10 text-center md:text-left">
@@ -385,7 +377,6 @@ export default function MobileDevelopment() {
             What Our App Founders Say
           </h2>
         </div>
-
         <div className="bg-[#000000] border border-white/10 rounded-3xl p-6 sm:p-10 md:p-12 shadow-2xl relative overflow-hidden">
           <div className="absolute top-0 right-0 w-64 h-64 bg-[#FE083B]/5 rounded-full blur-3xl pointer-events-none"></div>
           <div className="flex flex-col lg:flex-row lg:items-center justify-between gap-8 relative z-10">
@@ -406,7 +397,6 @@ export default function MobileDevelopment() {
                 </div>
               </div>
             </div>
-
             <div className="flex items-center justify-between lg:justify-end gap-6 pt-6 lg:pt-0 border-t lg:border-t-0 border-white/5">
               <div className="flex items-center gap-1">
                 {[...Array(5)].map((_, i) => (
@@ -425,11 +415,9 @@ export default function MobileDevelopment() {
           </div>
         </div>
       </div>
-
       {/* 6. FAQ SECTION (Matched with second reference image layout) */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          
           {/* Left Side: Headings, description & Call Card */}
           <div className="lg:col-span-5 space-y-8 sticky top-24">
             <div className="space-y-3">
@@ -443,36 +431,6 @@ export default function MobileDevelopment() {
                 If you're unsure where to start or want to see how we can help, reach out, and we'll walk you through it.
               </p>
             </div>
-
-            {/* Intro Call Box */}
-            {/* <div className="group bg-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-6 sm:p-8 shadow-2xl relative overflow-hidden space-y-6 transition-colors">
-              <div className="flex items-center gap-4">
-                <img
-                  src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop"
-                  alt="Founder"
-                  className="w-12 h-12 rounded-full object-cover border border-white/10"
-                />
-                <div>
-                  <h3 className="text-white font-bold text-base group-hover:text-[#FE5211] transition-colors">Book an Intro Call</h3>
-                  <p className="text-neutral-400 text-xs">Let's talk through your goals and timeline.</p>
-                </div>
-              </div>
-
-              <a 
-                href="#contact" 
-                className="w-full bg-[#000000] border border-white/10 hover:border-[#FE083B] text-white p-4 rounded-2xl flex items-center justify-between group transition"
-              >
-                <span className="font-semibold text-sm">Book a Call</span>
-                <span className="w-8 h-8 rounded-full bg-[#FE083B] text-white flex items-center justify-center group-hover:scale-110 transition">
-                  <IconArrowRight className="w-4 h-4" />
-                </span>
-              </a>
-
-              <div className="flex items-center gap-2 text-xs text-neutral-400 pt-1">
-                <IconWorld className="w-4 h-4 text-[#FE083B]" />
-                <span>Prefer email? <a href="mailto:hello@maystone.digital" className="text-white underline hover:text-[#FE083B] transition">hello@maystone.digital</a></span>
-              </div>
-            </div> */}
           </div>
 
           {/* Right Side: FAQ Accordions */}
@@ -497,7 +455,6 @@ export default function MobileDevelopment() {
               );
             })}
           </div>
-
         </div>
       </div>
 
@@ -505,8 +462,8 @@ export default function MobileDevelopment() {
       <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative overflow-hidden">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
         <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
-   OUR PROCESS
-  </span>
+         OUR PROCESS
+         </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             A Clear, Collaborative Process
           </h2>
@@ -514,7 +471,6 @@ export default function MobileDevelopment() {
             From discovery to store launch, we keep things transparent and efficient.
           </p>
         </div>
-
         <div className="max-w-5xl mx-auto relative space-y-12 md:space-y-16">
           {/* Vertical Timeline Bar */}
           <div className="hidden md:block absolute left-1/2 top-10 bottom-10 w-[2px] bg-white/10 -translate-x-1/2"></div>
@@ -549,8 +505,7 @@ export default function MobileDevelopment() {
           ].map((item, index) => {
             const isEven = index % 2 === 0;
             return (
-              <div key={index} className={`relative flex flex-col md:flex-row items-center ${isEven ? 'md:flex-row-reverse' : ''} gap-8`}>
-                
+              <div key={index} className={`relative flex flex-col md:flex-row items-center ${isEven ? 'md:flex-row-reverse' : ''} gap-8`}>   
                 {/* Content Card */}
                 <div className="w-full md:w-1/2">
                   <div className="bg-[#000000] border border-white/10 p-8 rounded-3xl hover:border-[#FE083B] hover:shadow-[0_0_30px_rgba(254,8,59,0.15)] transition group shadow-xl relative overflow-hidden">
@@ -566,24 +521,19 @@ export default function MobileDevelopment() {
                     </p>
                   </div>
                 </div>
-
                 {/* Center Badge Node */}
                 <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#000000] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.4)] z-10">
                   {item.step}
                 </div>
-
                 {/* Empty Spacer for Layout balance */}
                 <div className="hidden md:block w-1/2"></div>
-
               </div>
             );
           })}
         </div>
       </div>
-
       {/* Global CTA Component */}
       <CTA />
-
     </div>
   );
 }

@@ -77,7 +77,6 @@ const SoftwareSaaSPage = () => {
           </div>
         </div>
       </section>
-
       {/* Core Capabilities Grid */}
       <section className="px-6 md:px-16 lg:px-24 xl:px-32 py-16 border-t border-white/5 bg-[#000000]/50">
         <div className="max-w-7xl mx-auto">

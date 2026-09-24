@@ -116,30 +116,24 @@ const Services = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.7, ease: "easeOut" }}
-          className="text-center mb-16"
-        >
+          className="text-center mb-16">
           <p className="text-[10px] sm:text-xs font-semibold tracking-[0.2em] uppercase text-[#FE5211] mb-3">
             WHAT WE DO
           </p>
           <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-tight text-white max-w-2xl leading-[1.15]">
             Everything you need, <span className="bg-gradient-to-r from-[#FA0E33] to-[#FE5211] bg-clip-text text-transparent">under one roof</span>
           </h2>
-          {/* <p className="text-neutral-400 text-xs sm:text-sm mt-4 max-w-xl mx-auto font-normal leading-relaxed">
-            Connected disciplines that work together to move your business forward.
-          </p> */}
           <p className="text-base sm:text-lg md:text-xl text-neutral-400 font-normal max-w-2xl mx-auto leading-relaxed text-center mb-6 md:mb-8">
-  Connected disciplines that work together to move your business forward.
-</p>
+          Connected disciplines that work together to move your business forward.
+          </p>
         </motion.div>
-
         {/* Services Grid with Staggered Container */}
         <motion.div 
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full"
-        >
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
           {servicesList.map((service, index) => {
             return (
               <motion.div

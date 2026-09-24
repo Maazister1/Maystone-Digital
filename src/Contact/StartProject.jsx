@@ -25,10 +25,8 @@ export default function StartProject() {
 
   const toggleService = (service) => {
     if (selectedServices.includes(service)) {
-      setSelectedServices(selectedServices.filter(s => s !== service));
-    } else {
-      setSelectedServices([...selectedServices, service]);
-    }
+      setSelectedServices(selectedServices.filter(s => s !== service));} else {
+      setSelectedServices([...selectedServices, service]);}
   };
 
   const handleSubmit = (e) => {

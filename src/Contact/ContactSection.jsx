@@ -191,18 +191,14 @@ const ContactSection = () => {
                   <span className="text-neutral-300 text-xs font-medium group-hover:text-white transition-colors">London, United Kingdom</span>
                 </motion.div>
               </div>
-
             </motion.div>
-
             {/* Right Side: Form Fields */}
             <motion.div 
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.3 }}
-              className="lg:col-span-7 flex flex-col gap-4"
-            >
-              
+              className="lg:col-span-7 flex flex-col gap-4" >     
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Full Name */}
                 <div className="flex flex-col gap-1.5">
@@ -254,7 +250,6 @@ const ContactSection = () => {
                       <IconChevronDown className="w-4 h-4 text-[#FA0E33]" />
                     </motion.div>
                   </div>
-
                   <AnimatePresence>
                     {isOpen && (
                       <motion.div 
@@ -275,9 +270,7 @@ const ContactSection = () => {
                             className={`flex items-center justify-between px-3 py-2.5 rounded-xl text-xs cursor-pointer transition-all ${
                               selectedCategory === category 
                                 ? "bg-[#FA0E33]/15 text-[#FA0E33] font-semibold" 
-                                : "text-neutral-300 hover:bg-neutral-900 hover:text-white"
-                            }`}
-                          >
+                                : "text-neutral-300 hover:bg-neutral-900 hover:text-white"}`}>
                             <span>{category}</span>
                             {selectedCategory === category && <IconCheck className="w-3.5 h-3.5 text-[#FA0E33]" />}
                           </div>
@@ -287,7 +280,6 @@ const ContactSection = () => {
                   </AnimatePresence>
                 </div>
               </div>
-
               {/* Dynamic Checkboxes for Sub-services (Appears when a category is selected) */}
               <AnimatePresence>
                 {selectedCategory && serviceCategories[selectedCategory] && (
@@ -296,8 +288,7 @@ const ContactSection = () => {
                     animate={{ opacity: 1, height: 'auto' }}
                     exit={{ opacity: 0, height: 0 }}
                     transition={{ duration: 0.3 }}
-                    className="flex flex-col gap-2 pt-1 pb-1 overflow-hidden"
-                  >
+                    className="flex flex-col gap-2 pt-1 pb-1 overflow-hidden">
                     <label className="text-[11px] font-medium text-[#FE5211] flex items-center justify-between">
                       <span>Select specific requirements for {selectedCategory}:</span>
                       <span className="text-[10px] text-neutral-500 font-normal">Multiple selection allowed</span>
@@ -351,16 +342,11 @@ const ContactSection = () => {
                 <span>Send inquiry</span>
                 <IconArrowRight className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" />
               </motion.button>
-
             </motion.div>
-
           </div>
-
         </motion.div>
-
       </div>
     </section>
   );
 };
-
 export default ContactSection;

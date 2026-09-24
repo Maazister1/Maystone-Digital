@@ -21,7 +21,6 @@ export default function FinancialReporting() {
   const toggleWhy = (index) => {
     setOpenWhy(openWhy === index ? null : index);
   };
-
   const s = {
     heroDesc: "Clear financial oversight, compliant books, and proactive tax strategy designed to protect your margins and scale your enterprise.",
     intro: {
@@ -292,21 +291,17 @@ export default function FinancialReporting() {
             </div>
           </div>
         </section>
-
         {/* Disclaimer */}
         {s.disclaimer && (
           <section className="py-6 bg-[#000000]">
             <div className="max-w-3xl mx-auto px-4 text-center">
               <p className="text-xs text-neutral-500">{s.disclaimer}</p>
             </div>
-          </section>
-        )}
-
+          </section> )}
         {/* Closing CTA Banner */}
         <section className="py-20 bg-gradient-to-b from-[#000000] to-[#000000] text-center">
           <div className="group max-w-4xl mx-auto px-6 md:px-16 lg:px-24 bg-[#000000] border border-white/10 hover:border-[#FE083B] rounded-3xl p-12 relative overflow-hidden shadow-2xl transition-colors">
             <div className="absolute top-0 right-0 w-96 h-96 bg-[#FE083B]/10 blur-3xl pointer-events-none rounded-full" />
-
             <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight group-hover:text-[#FE5211] transition-colors">Bring us your records as they are.</h2>
             <p className="mt-4 text-neutral-400 max-w-xl mx-auto text-base">
               We will tell you what needs tidying, what we can take over and what the monthly rhythm would look like.
@@ -314,14 +309,12 @@ export default function FinancialReporting() {
             <div className="mt-8 flex flex-wrap justify-center gap-4">
               <a 
                 href="/contact" 
-                className="px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white hover:opacity-90 shadow-lg shadow-[#FE083B]/25 transition-all"
-              >
+                className="px-8 py-4 rounded-xl font-semibold bg-gradient-to-r from-[#FE083B] to-[#F72531] text-white hover:opacity-90 shadow-lg shadow-[#FE083B]/25 transition-all">
                 Get started
               </a>
               <a 
                 href="/pricing" 
-                className="px-8 py-4 rounded-xl font-semibold bg-[#000000] border border-white/10 hover:border-[#FE083B] text-white transition-all"
-              >
+                className="px-8 py-4 rounded-xl font-semibold bg-[#000000] border border-white/10 hover:border-[#FE083B] text-white transition-all">
                 View pricing
               </a>
             </div>

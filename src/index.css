@@ -36,3 +36,13 @@ body {
   background-color: #000000;
   color: #ffffff;
 }
+
+/* Hide native cursor only on desktop/mouse devices so the custom cursor is used instead */
+@media (min-width: 640px) and (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none;
+  }
+  a, button, [role="button"], input, textarea, select {
+    cursor: none;
+  }
+}

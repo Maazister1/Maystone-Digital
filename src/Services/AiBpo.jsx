@@ -9,7 +9,6 @@ import {
   IconChevronDown, 
   IconStar, 
   IconArrowLeft,
-  IconCheck,
   IconBuildingArch,
   IconShieldLock,
   IconChartBar,
@@ -485,9 +484,7 @@ export default function AiBpo() {
       {/* 8. OUR PROCESS SECTION */}
       <div id="process-section" className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-24 border-t border-white/10 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-3 mb-20">
-          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
-Our Process
-  </span>
+          <span className="text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]"> Our Process </span>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight text-white">
             A Clear, Collaborative Implementation Process
           </h2>
@@ -546,26 +543,21 @@ Our Process
                     </p>
                   </div>
                 </div>
-
                 {/* Center Badge Node */}
                 <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 w-12 h-12 rounded-full bg-[#000000] border-2 border-[#FE083B] items-center justify-center text-[#FE083B] font-bold text-sm shadow-[0_0_15px_rgba(254,8,59,0.5)] z-10 font-mono">
                   {item.step}
                 </div>
-
                 {/* Empty Spacer for Layout balance */}
                 <div className="hidden md:block w-1/2"></div>
-
               </div>
             );
           })}
         </div>
       </div>
-
       {/* Global CTA Component */}
       <div className="relative z-10 pt-12">
         <CTA />
       </div>
-
     </div>
   );
 }

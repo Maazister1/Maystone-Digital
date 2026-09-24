@@ -10,10 +10,8 @@ import {
 import footerLogo from '../assets/footer.png';
 import usaFlag from '../assets/usa-icon.png';
 import ukFlag from '../assets/uk-icon.png';
-import pakistanFlag from '../assets/pakistan-icon.png';
 import canadaFlag from '../assets/canada-icon.png';
 import maystoneFooterImg from '../assets/MAYSTONE FOOTER.png';
-
 import instagramPng from '../assets/instagram.png';
 import youtubePng from '../assets/youtube.png';
 import xPng from '../assets/x.png';
@@ -146,17 +144,6 @@ const FooterSection = () => {
               </div>
               <p className="text-[11px] text-neutral-400 leading-relaxed">
                 71-75 Shelton Street, London, WC2H 9JQ
-              </p>
-            </div>
-
-            {/* Pakistan */}
-            <div className="flex flex-col gap-2 pt-4 lg:pt-0 lg:px-4">
-              <div className="flex items-center gap-2.5">
-                <img src={pakistanFlag} alt="Pakistan" className="w-8 h-6 object-cover rounded shadow-sm" />
-                <span className="text-white text-sm font-bold">Pakistan</span>
-              </div>
-              <p className="text-[11px] text-neutral-400 leading-relaxed">
-                Gulberg III, Lahore 54660
               </p>
             </div>
 

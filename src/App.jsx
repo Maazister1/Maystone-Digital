@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React, { useEffect, useRef } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import Lenis from 'lenis';
 
 import Navbar from './Components/Navbar';
@@ -59,6 +59,20 @@ function HomeView() {
 }
 
 function App() {
+  const lenisRef = useRef(null);
+  const { pathname } = useLocation();
+
+  // Scroll to top (hero section) whenever the route changes
+  useEffect(() => {
+    if ('scrollRestoration' in window.history) {
+      window.history.scrollRestoration = 'manual';
+    }
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(0, { immediate: true });
+    }
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
   useEffect(() => {
     if (window.innerWidth < 768) {
       return;
@@ -69,12 +83,14 @@ function App() {
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
       smooth: true,
     });
+    lenisRef.current = lenis;
     function raf(time) {
       lenis.raf(time);
       requestAnimationFrame(raf);}
       requestAnimationFrame(raf);
     return () => {
       lenis.destroy();
+      lenisRef.current = null;
     };
   }, []);
   return (

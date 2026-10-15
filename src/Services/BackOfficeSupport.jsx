@@ -126,7 +126,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
           </h1>
 
           <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-normal max-w-2xl mx-auto leading-relaxed">
-            Apne business ke administrative bojh ko khatam karein aur reliable back-office management aur workflow automation ke sath core growth par focus karein.
+            Eliminate your business's administrative burden and focus on core growth with reliable back-office management and workflow automation.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
@@ -262,7 +262,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             Admin Support, CRM & Workflow Solutions
           </h2>
           <p className="text-neutral-400 text-sm md:text-base">
-            Aapki business operations ko smooth aur error-free chalane ke liye complete back-office suite.
+            A complete back-office suite to keep your business operations running smoothly and error-free.
           </p>
         </div>
 
@@ -482,7 +482,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             A Structured & Secure Support Process
           </h2>
           <p className="text-neutral-400 text-sm md:text-base">
-            Operational audit se lekar seamless daily execution tak, hum har step par absolute precision ensure karte hain.
+            From operational audit to seamless daily execution, we ensure absolute precision at every step.
           </p>
         </div>
 
@@ -495,27 +495,27 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             {
               step: "01",
               title: "Workflow Audit & Mapping",
-              desc: "Hum aapke current administrative bottlenecks aur repetitive tasks ko analyze karke optimization plan banate hain."
+              desc: "We analyse your current administrative bottlenecks and repetitive tasks to build an optimisation plan."
             },
             {
               step: "02",
               title: "Tool Integration & Security",
-              desc: "HubSpot, Notion ya Zapier tools setup kiye jate hain aur strict data privacy & NDA protocols ensure kiye jate hain."
+              desc: "We set up tools like HubSpot, Notion or Zapier and enforce strict data privacy & NDA protocols."
             },
             {
               step: "03",
               title: "SOP Creation & Handover",
-              desc: "Standard Operating Procedures (SOPs) document kiye jate hain taake har task standardized tareeqay se execute ho."
+              desc: "We document Standard Operating Procedures (SOPs) so every task is executed in a standardised way."
             },
             {
               step: "04",
               title: "Daily Execution & Management",
-              desc: "Hamari dedicated back-office team routine admin, CRM updates aur support tasks seamlessly execute karti hai."
+              desc: "Our dedicated back-office team seamlessly handles routine admin, CRM updates and support tasks."
             },
             {
               step: "05",
               title: "Quality Review & Scaling",
-              desc: "Regular performance reports aur feedback sessions ke zariye workflows ko mazeed optimize aur scale kiya jata hai."
+              desc: "Regular performance reports and feedback sessions help us further optimise and scale your workflows."
             }
           ].map((item, index) => {
             const isEven = index % 2 === 0;

@@ -103,7 +103,7 @@ Insights and Knowledge
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-normal max-w-2xl mx-auto leading-relaxed">
-          Web development, UI/UX design, performance marketing, aur modern tech trends par hamare expert insights aur guides explore karein.
+          Explore our expert insights and guides on web development, UI/UX design, performance marketing, and modern tech trends.
         </p>
 
         {/* Search Bar (Perfect Flex Layout Fix) */}
@@ -196,7 +196,7 @@ Insights and Knowledge
               <IconBook className="w-6 h-6" />
             </div>
             <h3 className="text-xl font-bold text-white">No articles found</h3>
-            <p className="text-neutral-400 text-sm">Aapke search query ya category se match karta koi article nahi mila.</p>
+            <p className="text-neutral-400 text-sm">No articles match your search query or category.</p>
           </div>
         )}
       </div>
@@ -209,7 +209,7 @@ Insights and Knowledge
           Subscribe to Our Tech Newsletter
         </h2>
         <p className="text-neutral-300 text-sm sm:text-base max-w-lg mx-auto">
-          Latest web development tips, design systems, aur marketing strategies seedhe apne inbox mein prapt karein. No spam ever!
+          Get the latest web development tips, design systems, and marketing strategies delivered straight to your inbox. No spam ever!
         </p>
 
         <form onSubmit={(e) => { e.preventDefault(); alert('Subscribed successfully!'); }} className="max-w-md mx-auto flex flex-col sm:flex-row gap-3 pt-2">

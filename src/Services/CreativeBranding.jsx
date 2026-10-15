@@ -122,7 +122,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FE083B] to-[#F72531]"> & Stunning UI/UX Design <br /> & Graphic Designing</span>
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-normal max-w-2xl mx-auto leading-relaxed">
-            Apne business ko professional look dein unforgettable graphic design, brand identity systems, aur user-friendly digital interfaces ke sath.
+            Give your business a professional look with unforgettable graphic design, brand identity systems, and user-friendly digital interfaces.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
             {[
@@ -191,7 +191,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
         </h2>
 
         <p className="text-neutral-300 text-base md:text-lg font-normal max-w-2xl mx-auto leading-relaxed">
-          Aapka brand wohi hota hai jo log aapke peeche baat hain. Hum appealing visual identities aur seamless digital interfaces banate hain jo lambi yaadgar chhorhte hain.
+          Your brand is what people say about you when you're not in the room. We create appealing visual identities and seamless digital interfaces that leave a lasting impression.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 pt-6">
@@ -223,7 +223,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             Graphic Design, Brand Identity & UI/UX Suite
           </h2>
           <p className="text-neutral-400 text-sm md:text-base">
-            Har creative asset aur interface detail aapke business ki kamyabi ke liye perfection ke sath design ki jati hai.
+            Every creative asset and interface detail is designed to perfection for your business's success.
           </p>
         </div>
 
@@ -379,7 +379,7 @@ text-[#FE5211]  font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
               A Team That Turns Ideas Into Digital Experiences
             </h2>
             <p className="text-neutral-400 text-sm md:text-base leading-relaxed">
-              Hum sirf designs nahi banate, hum aisi visual stories create karte hain jo aapke audience ke sath connect karti hain aur business growth ko accelerate karti hain.
+              We don't just create designs, we craft visual stories that connect with your audience and accelerate business growth.
             </p>
             <div className="space-y-3 pt-2">
               <div className="flex items-center gap-3 text-sm text-neutral-300">
@@ -564,7 +564,7 @@ text-[#FE5211]  font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             A Creative & Collaborative Design Process
           </h2>
           <p className="text-neutral-400 text-sm md:text-base">
-            Moodboarding se lekar final design system handover tak, hum har step par aapki vision ko zinda rakhte hain.
+            From moodboarding to the final design system handover, we keep your vision alive at every step.
           </p>
         </div>
         <div className="max-w-5xl mx-auto relative space-y-12 md:space-y-16">
@@ -575,27 +575,27 @@ text-[#FE5211]  font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
             {
               step: "01",
               title: "Discovery & Moodboarding",
-              desc: "Hum target audience research karte hain, competitors analyze karte hain aur visual direction define karne ke liye moodboards banate hain."
+              desc: "We research your target audience, analyse competitors and create moodboards to define the visual direction."
             },
             {
               step: "02",
               title: "Concept Design & Sketching",
-              desc: "Multiple logo concepts, color schemes aur web/mobile app interface ke wireframe layouts explore kiye jaate hain."
+              desc: "We explore multiple logo concepts, colour schemes and wireframe layouts for web/mobile app interfaces."
             },
             {
               step: "03",
               title: "Refinement & Prototyping",
-              desc: "Figma aur Illustrator mein selected designs ko polish kiya jata hai, interactive prototypes aur brand style guides banate hain."
+              desc: "Selected designs are polished in Figma and Illustrator, and we build interactive prototypes and brand style guides."
             },
             {
               step: "04",
               title: "Client Review & Feedback",
-              desc: "Aapke sath close collaboration mein designs review kiye jate hain, adjustments incorporate kiye jate hain taake 100% satisfaction ho."
+              desc: "Designs are reviewed in close collaboration with you, and adjustments are incorporated to ensure 100% satisfaction."
             },
             {
               step: "05",
               title: "Final Delivery & Handover",
-              desc: "Saare source files, brand assets, vector formats aur development ke liye design system documentation export ki jati hai."
+              desc: "All source files, brand assets, vector formats and design system documentation for development are exported and handed over."
             }
           ].map((item, index) => {
             const isEven = index % 2 === 0;

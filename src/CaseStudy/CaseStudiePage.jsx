@@ -162,7 +162,7 @@ export default function CaseStudiesPage() {
           Ready to Build Something Extraordinary With Maystone?
         </h2>
         <p className="text-neutral-300 text-sm sm:text-base max-w-lg mx-auto">
-          Aayein mil kar aapke project ki requirement discuss karte hain aur ek high-impact digital solution tayar karte hain.
+          Let's discuss your project requirements together and build a high-impact digital solution.
         </p>
         <div className="pt-2">
           <Link 

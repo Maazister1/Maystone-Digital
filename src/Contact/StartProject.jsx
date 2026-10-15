@@ -31,7 +31,7 @@ export default function StartProject() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Yahan aap apna backend API call ya form submission logic laga sakte hain
+    // Add your backend API call or form submission logic here
     setSubmitted(true);
   };
 
@@ -52,7 +52,7 @@ export default function StartProject() {
         </h1>
 
         <p className="text-base sm:text-lg md:text-xl text-neutral-300 font-normal max-w-2xl mx-auto leading-relaxed">
-          Apne business ko next level par le jaane ke liye apni requirements share karein. Hamari expert team aapse jald rabta karegi.
+          Share your requirements to take your business to the next level. Our expert team will get in touch with you shortly.
         </p>
       </div>
 
@@ -66,7 +66,7 @@ export default function StartProject() {
             </div>
             <h2 className="text-3xl font-bold text-white">Thank You! Message Received</h2>
             <p className="text-neutral-400 max-w-md mx-auto text-sm md:text-base">
-              Aapki details hum tak pohch gayi hain. Hamara representative 24 ghante ke andar aapse rabta karega.
+              We have received your details. Our representative will contact you within 24 hours.
             </p>
             <div className="pt-4">
               <button 
@@ -196,7 +196,7 @@ export default function StartProject() {
                 <textarea 
                   required 
                   rows="4"
-                  placeholder="Apne project ke baray mein batayein, aapke goals kya hain aur aapko kab tak complete chahiye..." 
+                  placeholder="Tell us about your project, your goals, and when you need it completed..." 
                   className="w-full bg-black/50 border border-white/10 rounded-2xl p-4 text-white text-sm focus:outline-none focus:border-[#FE083B] transition resize-none"
                 ></textarea>
               </div>

@@ -4,6 +4,7 @@ import Lenis from 'lenis';
 
 import Navbar from './Components/Navbar';
 import CustomCursor from './Components/CustomCursor';
+import ScrollProgressBar from './Components/ScrollProgressBar';
 import Hero from './Components/Hero';
 import Stack from './Components/Stack';
 import Services from './Services/Services';
@@ -36,6 +37,10 @@ import StartProject from './Contact/StartProject';
 import Pricing from './Pricing/PricingPage';
 import SoftwareSaaSPage from './Services/SoftwareSaaSPage';
 import OurTeam from './OurTeam/OurTeam';
+import LegalRequirements from './LegalRequirements/LegalRequirements';
+import OurPolicies from './OurPolicies/OurPolicies';
+import TermsOfService from './TermsOfService/TermsOfService';
+import PrivacyPolicy from './PrivacyPolicy/PrivacyPolicy';
 
 
 function HomeView() {
@@ -60,18 +65,24 @@ function HomeView() {
 
 function App() {
   const lenisRef = useRef(null);
-  const { pathname } = useLocation();
+  const location = useLocation();
 
-  // Scroll to top (hero section) whenever the route changes
+  // On every navigation: jump to the #section if the link has one,
+  // otherwise scroll to the top (hero section) of the page
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
       window.history.scrollRestoration = 'manual';
     }
-    if (lenisRef.current) {
-      lenisRef.current.scrollTo(0, { immediate: true });
+    let top = 0;
+    if (location.hash) {
+      const target = document.getElementById(location.hash.slice(1));
+      if (target) top = target.getBoundingClientRect().top + window.scrollY - 80;
     }
-    window.scrollTo(0, 0);
-  }, [pathname]);
+    if (lenisRef.current) {
+      lenisRef.current.scrollTo(top, { immediate: true });
+    }
+    window.scrollTo({ top, behavior: 'instant' });
+  }, [location.key, location.hash]);
 
   useEffect(() => {
     if (window.innerWidth < 768) {
@@ -96,8 +107,11 @@ function App() {
   return (
     <div className="bg-[#000000] min-h-screen text-white font-['Outfit']">
       <CustomCursor />
+      <ScrollProgressBar />
       <Navbar />
-      <Routes>
+      {/* Keyed by path so every page change replays the enter animation */}
+      <div key={location.pathname} className="page-transition">
+      <Routes location={location}>
         {/* Main Home Page */}
         <Route path="/" element={<HomeView />} />
         {/* Dedicated Web Development Page */}
@@ -114,10 +128,16 @@ function App() {
         <Route path="/blogs/blogspage" element={<BlogsPage />} />
         <Route path="/casestudy/casestudiepage" element={<CaseStudiesPage />} />
         <Route path="/contact/startproject" element={<StartProject />} /> 
+        <Route path="/start-project" element={<StartProject />} />
         <Route path="/pricing/pricingpage" element={<Pricing />} />
         <Route path="/services/software-sas" element={<SoftwareSaaSPage />} />  
         <Route path="/ourteam/ourteam" element={<OurTeam />} />  
+        <Route path="/legal/legal-requirements" element={<LegalRequirements />} />
+        <Route path="/legal/our-policies" element={<OurPolicies />} />
+        <Route path="/legal/terms-of-service" element={<TermsOfService />} />
+        <Route path="/legal/privacy-policy" element={<PrivacyPolicy />} />
       </Routes>
+      </div>
       <FooterSection />
     </div>
   );

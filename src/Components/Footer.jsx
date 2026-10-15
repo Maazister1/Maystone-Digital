@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   IconArrowRight, IconPhone, IconMail, IconMapPin, 
   IconCode, IconDeviceMobile, IconPalette, IconVideo, IconDeviceLaptop, IconShare3,
@@ -44,15 +45,15 @@ const FooterSection = () => {
               We design and build scalable digital products that elevate brands and create real impact.
             </p>
 
-            <a 
-              href="/start-project" 
+            <Link 
+              to="/contact/startproject" 
               className="inline-flex items-center justify-between w-full max-w-[220px] bg-black border border-[#FE083B]/60 hover:border-[#FE083B] text-white px-5 py-3 rounded-full text-xs font-bold transition-all duration-300 shadow-[0_0_20px_rgba(254,8,59,0.15)] group"
             >
               <span>Our Company Deck</span>
               <span className="w-6 h-6 rounded-full bg-[#FE083B] flex items-center justify-center text-white transition-transform group-hover:translate-x-1">
                 <IconArrowRight className="w-3.5 h-3.5" />
               </span>
-            </a>
+            </Link>
 
             {/* Contact Info */}
             <div className="flex flex-col gap-3 pt-2 text-xs text-neutral-300">
@@ -78,12 +79,12 @@ const FooterSection = () => {
             <div className="flex flex-col gap-4">
               <h4 className="text-white text-xs font-bold uppercase tracking-widest">Services</h4>
               <ul className="flex flex-col gap-3 text-xs text-neutral-400">
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconCode className="w-3.5 h-3.5" /></span> Website Dev</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconDeviceMobile className="w-3.5 h-3.5" /></span> Mobile App</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconPalette className="w-3.5 h-3.5" /></span> Logo Design</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconVideo className="w-3.5 h-3.5" /></span> Animation</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconDeviceLaptop className="w-3.5 h-3.5" /></span> UI/UX Design</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconShare3 className="w-3.5 h-3.5" /></span> SMM Service</a></li>
+                <li><Link to="/services/web-development" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconCode className="w-3.5 h-3.5" /></span> Website Dev</Link></li>
+                <li><Link to="/services/app-development" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconDeviceMobile className="w-3.5 h-3.5" /></span> Mobile App</Link></li>
+                <li><Link to="/services/creative-branding" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconPalette className="w-3.5 h-3.5" /></span> Logo Design</Link></li>
+                <li><Link to="/services/creative-branding" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconVideo className="w-3.5 h-3.5" /></span> Animation</Link></li>
+                <li><Link to="/services/creative-branding" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconDeviceLaptop className="w-3.5 h-3.5" /></span> UI/UX Design</Link></li>
+                <li><Link to="/services/digital-marketing" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconShare3 className="w-3.5 h-3.5" /></span> SMM Service</Link></li>
               </ul>
             </div>
 
@@ -91,10 +92,10 @@ const FooterSection = () => {
             <div className="flex flex-col gap-4">
               <h4 className="text-white text-xs font-bold uppercase tracking-widest">Quick Links</h4>
               <ul className="flex flex-col gap-3 text-xs text-neutral-400">
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconHome className="w-3.5 h-3.5" /></span> Home</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconMessage className="w-3.5 h-3.5" /></span> Reviews</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconInfoCircle className="w-3.5 h-3.5" /></span> About Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconBriefcase className="w-3.5 h-3.5" /></span> Portfolio</a></li>
+                <li><Link to="/" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconHome className="w-3.5 h-3.5" /></span> Home</Link></li>
+                <li><Link to="/#reviews" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconMessage className="w-3.5 h-3.5" /></span> Reviews</Link></li>
+                <li><Link to="/about/aboutpage" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconInfoCircle className="w-3.5 h-3.5" /></span> About Us</Link></li>
+                <li><Link to="/#portfolio" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconBriefcase className="w-3.5 h-3.5" /></span> Portfolio</Link></li>
               </ul>
             </div>
 
@@ -102,10 +103,10 @@ const FooterSection = () => {
             <div className="flex flex-col gap-4">
               <h4 className="text-white text-xs font-bold uppercase tracking-widest">Legal</h4>
               <ul className="flex flex-col gap-3 text-xs text-neutral-400">
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconFileText className="w-3.5 h-3.5" /></span> Legal Requirements</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconShieldCheck className="w-3.5 h-3.5" /></span> Our Policies</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconFileText className="w-3.5 h-3.5" /></span> Terms of Service</a></li>
-                <li><a href="#" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconLock className="w-3.5 h-3.5" /></span> Privacy Policy</a></li>
+                <li><Link to="/legal/legal-requirements" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconFileText className="w-3.5 h-3.5" /></span> Legal Requirements</Link></li>
+                <li><Link to="/legal/our-policies" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconShieldCheck className="w-3.5 h-3.5" /></span> Our Policies</Link></li>
+                <li><Link to="/legal/terms-of-service" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconFileText className="w-3.5 h-3.5" /></span> Terms of Service</Link></li>
+                <li><Link to="/legal/privacy-policy" className="hover:text-white transition-colors flex items-center gap-2"><span className="text-[#FE083B]"><IconLock className="w-3.5 h-3.5" /></span> Privacy Policy</Link></li>
               </ul>
             </div>
 

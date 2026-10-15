@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { IconHeadset, IconSettings, IconDatabase, IconClipboardCheck, IconChevronDown, IconStar, IconArrowLeft, IconArrowRight, IconShieldCheck, IconNetwork, IconCpu, IconChartBar, IconHelpCircle } from '@tabler/icons-react';
 import CTA from '../Components/CTA';
+import TimelineProgress from '../Components/TimelineProgress';
 
 export default function BackOfficeSupport() {
   const [openFaq, setOpenFaq] = useState(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const testimonials = [
@@ -36,25 +36,6 @@ export default function BackOfficeSupport() {
   const prevTestimonial = () => {
     setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const element = document.getElementById('process-section');
-      if (!element) return;
-      
-      const rect = element.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      const totalScrollHeight = rect.height - windowHeight;
-      const currentScroll = windowHeight - rect.top;
-      
-      let progress = (currentScroll / totalScrollHeight) * 100;
-      progress = Math.max(0, Math.min(100, progress));
-      setScrollProgress(progress);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
@@ -488,8 +469,7 @@ text-[#FE5211] font-bold uppercase text-xs sm:text-sm tracking-[0.25em]">
 
         <div className="max-w-5xl mx-auto relative space-y-12 md:space-y-16">
           {/* Vertical Timeline Bar */}
-          <div className="hidden md:block absolute left-1/2 top-10 bottom-10 w-[2px] bg-white/10 -translate-x-1/2"></div>
-          <div className="hidden md:block absolute left-1/2 top-10 w-[2px] bg-[#FE083B] -translate-x-1/2 transition-all duration-75 ease-out shadow-[0_0_12px_rgba(254,8,59,0.8)]" style={{ height: `${scrollProgress}%` }}></div>
+          <TimelineProgress />
 
           {[
             {

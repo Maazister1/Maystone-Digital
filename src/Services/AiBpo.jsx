@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { 
   IconArrowRight, 
@@ -15,10 +15,10 @@ import {
   IconHelpCircle
 } from '@tabler/icons-react';
 import CTA from '../Components/CTA';
+import TimelineProgress from '../Components/TimelineProgress';
 
 export default function AiBpo() {
   const [openFaq, setOpenFaq] = useState(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   const testimonials = [
@@ -49,25 +49,6 @@ export default function AiBpo() {
   const prevTestimonial = () => {
     setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
   };
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const element = document.getElementById('process-section');
-      if (!element) return;
-      
-      const rect = element.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      const totalScrollHeight = rect.height - windowHeight;
-      const currentScroll = windowHeight - rect.top;
-      
-      let progress = (currentScroll / totalScrollHeight) * 100;
-      progress = Math.max(0, Math.min(100, progress));
-      setScrollProgress(progress);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const toggleFaq = (index) => {
     setOpenFaq(openFaq === index ? null : index);
@@ -495,8 +476,7 @@ export default function AiBpo() {
 
         <div className="max-w-5xl mx-auto relative space-y-12 md:space-y-16">
           {/* Vertical Timeline Bar */}
-          <div className="hidden md:block absolute left-1/2 top-10 bottom-10 w-[2px] bg-white/10 -translate-x-1/2"></div>
-          <div className="hidden md:block absolute left-1/2 top-10 w-[2px] bg-[#FE083B] -translate-x-1/2 transition-all duration-75 ease-out shadow-[0_0_15px_rgba(254,8,59,0.9)]" style={{ height: `${scrollProgress}%` }}></div>
+          <TimelineProgress glow="shadow-[0_0_15px_rgba(254,8,59,0.9)]" />
 
           {[
             {

@@ -56,7 +56,7 @@ const TestimonialsSection = () => {
   const current = testimonials[currentIndex];
 
   return (
-    <section className="relative w-full bg-[#000000] py-24 px-4 sm:px-6 overflow-hidden border-t border-neutral-800/80">
+    <section id="reviews" className="relative w-full bg-[#000000] py-24 px-4 sm:px-6 overflow-hidden border-t border-neutral-800/80">
       
       {/* VIP Dynamic Background Glow */}
       <motion.div 
